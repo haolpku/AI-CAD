@@ -32,6 +32,15 @@ npm run benchmark:full:build
 
 私有真值写入`data/private/case-001/full-quantity-v0/truth.json`。
 
+如需生成 v1.2 的递归实体 IR 和五图项目图谱，先转换全部可读 CAD，再运行：
+
+```bash
+npm run benchmark:full:evidence -- --all
+npm run benchmark:v1.2:ir
+```
+
+转换器对单张图失败时会记录`parseStatus=unavailable`并继续处理其他图，不会把缺图伪装成成功覆盖。公开质量指标见`preprocessing/v1-2/`。
+
 ## 评分
 
 预测文件必须保持与`prediction-template.json`相同的ID，只填写数值：

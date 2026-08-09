@@ -32,15 +32,31 @@ const drawings = [];
 for (const input of config.inputs.filter((item) => includeSupporting || !item.usedBy.includes("supporting-context"))) {
   const dwgPath = resolveFromConfig(input.path);
   const jsonPath = path.join(outputDir, `${input.id}.json`);
+  const temporaryJsonPath = `${jsonPath}.tmp`;
   try {
     if (refresh) throw new Error("refresh");
     await fs.access(jsonPath);
   } catch {
-    const conversion = spawnSync("dwgread", ["-v0", "-O", "JSON", "-o", jsonPath, dwgPath], {
+    await fs.rm(temporaryJsonPath, { force: true });
+    const conversion = spawnSync("dwgread", ["-v0", "-O", "JSON", "-o", temporaryJsonPath, dwgPath], {
       encoding: "utf8",
       maxBuffer: 20 * 1024 * 1024,
     });
-    if (conversion.status !== 0) throw new Error(`DWG conversion failed for ${input.id}: ${conversion.stderr || conversion.stdout}`);
+    if (conversion.status !== 0) {
+      await fs.rm(temporaryJsonPath, { force: true });
+      drawings.push({
+        id: input.id,
+        usedBy: input.usedBy,
+        parseStatus: "unavailable",
+        errorCode: /0x940/i.test(`${conversion.stderr}${conversion.stdout}`) ? "LIBREDWG_READ_0X940" : "DWG_CONVERSION_FAILED",
+        modelSpaceEntityCount: 0,
+        blockLabels: [],
+        relevantTexts: [],
+        layers: [],
+      });
+      continue;
+    }
+    await fs.rename(temporaryJsonPath, jsonPath);
   }
 
   const cad = JSON.parse(await fs.readFile(jsonPath, "utf8"));
@@ -86,6 +102,7 @@ for (const input of config.inputs.filter((item) => includeSupporting || !item.us
   drawings.push({
     id: input.id,
     usedBy: input.usedBy,
+    parseStatus: "complete",
     modelSpaceEntityCount: entities.length,
     blockLabels: ranked(blockLabels),
     relevantTexts: ranked(textLabels),

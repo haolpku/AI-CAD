@@ -1,0 +1,121 @@
+{
+  "schemaVersion": "1.2",
+  "benchmarkId": "full-quantity-v0",
+  "protocol": {
+    "truthAccess": "forbidden",
+    "rawCadPublished": false,
+    "intermediateInstancesPublished": false
+  },
+  "quality": {
+    "configuredDrawingCount": 5,
+    "parsedDrawingCount": 4,
+    "parseCoverage": 0.8,
+    "expandedInstanceCount": 404518,
+    "nestedRecoveredInstanceCount": 335582,
+    "duplicateStableIdCount": 0,
+    "titleCandidateCount": 170,
+    "projectGraphEdgeCount": 15
+  },
+  "drawings": [
+    {
+      "id": "electrical-cad",
+      "role": "quantity-source",
+      "parseStatus": "complete",
+      "modelSpaceReferenceCount": 22156,
+      "expandedInstanceCount": 197976,
+      "nestedInstanceCount": 175820,
+      "nestedRecoveryRatio": 0.888087,
+      "insertOccurrenceCount": 3108,
+      "nestedInsertOccurrenceCount": 138,
+      "titleCandidateCount": 83,
+      "floorVocabularySize": 23,
+      "duplicateStableIdCount": 0,
+      "cycleSkipCount": 0,
+      "depthSkipCount": 0,
+      "instanceLimitHit": false
+    },
+    {
+      "id": "plumbing-cad",
+      "role": "quantity-source",
+      "parseStatus": "complete",
+      "modelSpaceReferenceCount": 13113,
+      "expandedInstanceCount": 77221,
+      "nestedInstanceCount": 64108,
+      "nestedRecoveryRatio": 0.830189,
+      "insertOccurrenceCount": 1802,
+      "nestedInsertOccurrenceCount": 68,
+      "titleCandidateCount": 33,
+      "floorVocabularySize": 8,
+      "duplicateStableIdCount": 0,
+      "cycleSkipCount": 0,
+      "depthSkipCount": 0,
+      "instanceLimitHit": false
+    },
+    {
+      "id": "hvac-cad",
+      "role": "quantity-source",
+      "parseStatus": "complete",
+      "modelSpaceReferenceCount": 19258,
+      "expandedInstanceCount": 113050,
+      "nestedInstanceCount": 93792,
+      "nestedRecoveryRatio": 0.829651,
+      "insertOccurrenceCount": 2654,
+      "nestedInsertOccurrenceCount": 954,
+      "titleCandidateCount": 30,
+      "floorVocabularySize": 8,
+      "duplicateStableIdCount": 0,
+      "cycleSkipCount": 0,
+      "depthSkipCount": 0,
+      "instanceLimitHit": false
+    },
+    {
+      "id": "architecture-cad",
+      "role": "supporting-context",
+      "parseStatus": "unavailable",
+      "errorCode": "LIBREDWG_READ_0X940",
+      "modelSpaceReferenceCount": 0,
+      "expandedInstanceCount": 0,
+      "nestedInstanceCount": 0,
+      "nestedRecoveryRatio": 0,
+      "insertOccurrenceCount": 0,
+      "nestedInsertOccurrenceCount": 0,
+      "titleCandidateCount": 0,
+      "floorVocabularySize": 0,
+      "duplicateStableIdCount": 0,
+      "cycleSkipCount": 0,
+      "depthSkipCount": 0,
+      "instanceLimitHit": false
+    },
+    {
+      "id": "general-cad",
+      "role": "supporting-context",
+      "parseStatus": "complete",
+      "modelSpaceReferenceCount": 14861,
+      "expandedInstanceCount": 16271,
+      "nestedInstanceCount": 1862,
+      "nestedRecoveryRatio": 0.114437,
+      "insertOccurrenceCount": 407,
+      "nestedInsertOccurrenceCount": 0,
+      "titleCandidateCount": 24,
+      "floorVocabularySize": 7,
+      "duplicateStableIdCount": 0,
+      "cycleSkipCount": 0,
+      "depthSkipCount": 0,
+      "instanceLimitHit": false
+    }
+  ],
+  "projectGraph": {
+    "nodeCount": 5,
+    "edgeCount": 15,
+    "edgeTypeCounts": {
+      "used-by": 8,
+      "shared-floor-vocabulary": 6,
+      "shared-bound-reference": 1
+    }
+  },
+  "limitations": [
+    "architecture-cad cannot be decoded by the current LibreDWG version; embedded bound-reference context remains available in discipline drawings",
+    "title and floor candidates are spatial evidence, not authoritative sheet boundaries",
+    "world-coordinate normalization does not by itself establish cross-drawing semantic equivalence"
+  ]
+}

@@ -49,6 +49,17 @@ CAD_BENCH_API_KEY=... CAD_BENCH_BASE_URL=... \
   npm run benchmark:v1.1:map -- gpt-5.6-sol --reasoning=medium
 ```
 
+## Preprocessing v1.2
+
+v1.2 不再把模型空间顶层实体当作全部信息，而是递归展开普通块/嵌套块，组合插入变换得到世界坐标，并为每个实体实例保留稳定 ID、源 handle、图层和完整块路径。同时把电气、给排水、暖通、建筑和总图组织成有角色与跨图关系的项目图谱。
+
+当前 4 张可解析图从 69,388 个顶层引用恢复出 404,518 个实体实例，其中 335,582 个来自嵌套块；稳定 ID 零冲突，未触发截断。建筑图因当前 LibreDWG 读取错误显式记为不可用，专业图内已绑定的建筑参照只作为替代上下文。实现、五图职责和质量口径见[Preprocessing v1.2](preprocessing/v1-2/README.md)。这些是预处理覆盖指标，不是新的 Bench Score。
+
+```bash
+npm run benchmark:full:evidence -- --all
+npm run benchmark:v1.2:ir
+```
+
 ## 运行
 
 依赖：Node.js 18+、LibreDWG 的 `dwgread`、`@oai/artifact-tool`。
@@ -79,7 +90,7 @@ npm run benchmark
 核心采用确定性 workflow：
 
 1. DWG 转换为实体 JSON
-2. 只取模型空间，解析图层、图块、属性和几何
+2. 从模型空间递归展开块实例，解析图层、属性、几何和世界坐标
 3. 用版本化规则映射为工程量类别
 4. 计算数量/长度/面积
 5. 与冻结真值比较并输出指标

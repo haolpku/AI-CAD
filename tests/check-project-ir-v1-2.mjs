@@ -1,0 +1,22 @@
+import assert from "node:assert/strict";
+import fs from "node:fs/promises";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
+
+const projectDir = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
+const manifest = JSON.parse(await fs.readFile(path.join(projectDir, "preprocessing", "v1-2", "manifest.json"), "utf8"));
+assert.equal(manifest.schemaVersion, "1.2");
+assert.equal(manifest.protocol.truthAccess, "forbidden");
+assert.equal(manifest.protocol.rawCadPublished, false);
+assert.equal(manifest.quality.configuredDrawingCount, 5);
+assert.equal(manifest.quality.parsedDrawingCount, 4);
+assert.ok(manifest.quality.expandedInstanceCount > manifest.drawings.reduce((sum, drawing) => sum + drawing.modelSpaceReferenceCount, 0));
+assert.ok(manifest.quality.nestedRecoveredInstanceCount > 0);
+assert.equal(manifest.quality.duplicateStableIdCount, 0);
+assert.equal(manifest.projectGraph.nodeCount, 5);
+assert.ok(manifest.projectGraph.edgeTypeCounts["used-by"] >= 5);
+assert.ok(manifest.drawings.some((drawing) => drawing.parseStatus === "unavailable"));
+assert.ok(manifest.drawings.filter((drawing) => drawing.parseStatus === "complete").every((drawing) => !drawing.instanceLimitHit && drawing.depthSkipCount === 0));
+const text = JSON.stringify(manifest);
+assert.doesNotMatch(text, /\/Users\/|sk-[A-Za-z0-9]|"bounds"|"floorMentionCounts"|"blockName"/);
+console.log("project IR v1.2 checks passed");
