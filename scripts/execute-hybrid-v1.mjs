@@ -10,6 +10,7 @@ const evidence = JSON.parse(await fs.readFile(path.join(projectDir, "outputs", "
 const baseArg = process.argv.find((value) => value.startsWith("--base="))?.slice("--base=".length)
   ?? "outputs/full-quantity-v0/predictions/gpt-5.6-sol--closed_world--full.json";
 const mappingArgs = process.argv.filter((value) => value.startsWith("--mapping=")).map((value) => value.slice("--mapping=".length));
+const segmentedEvidenceArg = process.argv.find((value) => value.startsWith("--segmented-evidence="))?.slice("--segmented-evidence=".length);
 const threshold = Number(process.argv.find((value) => value.startsWith("--threshold="))?.slice("--threshold=".length) ?? 0.75);
 const applyDerived = !process.argv.includes("--no-derived");
 const tag = process.argv.find((value) => value.startsWith("--tag="))?.slice("--tag=".length) ?? "hybrid-v1";
@@ -29,19 +30,33 @@ const evidenceMap = new Map(evidence.drawings.flatMap((drawing) => [
   ...drawing.blocks.map((item) => [item.id, { type: "block", drawing: drawing.id, ...item }]),
   ...drawing.routes.map((item) => [item.id, { type: "route", drawing: drawing.id, ...item }]),
 ]));
+if (segmentedEvidenceArg) {
+  const segmentedEvidence = JSON.parse(await fs.readFile(path.resolve(projectDir, segmentedEvidenceArg), "utf8"));
+  if (segmentedEvidence.protocol?.truthAccess !== "forbidden") throw new Error("Segmented evidence must declare truthAccess=forbidden.");
+  for (const item of segmentedEvidence.drawings.flatMap((drawing) => drawing.segments)) {
+    evidenceMap.set(item.id, { type: "route-segment", ...item });
+  }
+}
 const predictionMap = new Map((base.predictions ?? []).map((prediction) => [prediction.id, { ...prediction }]));
 const decisions = [];
-const eligibleMappings = mappingDocuments.flatMap((document) => document.mappings ?? []).filter((mapping) =>
+const allEligibleMappings = mappingDocuments.flatMap((document) => document.mappings ?? []).filter((mapping) =>
   targetMap.has(mapping.id)
   && mapping.confidence >= threshold
-  && ["block", "route"].includes(mapping.evidenceType));
+  && ["block", "route", "route-segment"].includes(mapping.evidenceType));
+const mappingPriority = { block: 1, route: 1, "route-segment": 2 };
+const eligibleByTarget = new Map();
+for (const mapping of allEligibleMappings) {
+  const current = eligibleByTarget.get(mapping.id);
+  if (!current || mappingPriority[mapping.evidenceType] > mappingPriority[current.evidenceType]) eligibleByTarget.set(mapping.id, mapping);
+}
+const eligibleMappings = [...eligibleByTarget.values()];
 const routeUseCount = new Map();
-for (const mapping of eligibleMappings.filter((item) => item.evidenceType === "route")) {
+for (const mapping of eligibleMappings.filter((item) => item.evidenceType.startsWith("route"))) {
   for (const evidenceId of new Set(mapping.evidenceIds ?? [])) routeUseCount.set(evidenceId, (routeUseCount.get(evidenceId) ?? 0) + 1);
 }
 for (const mapping of eligibleMappings) {
   const target = targetMap.get(mapping.id);
-  if (mapping.evidenceType === "route" && (mapping.evidenceIds ?? []).some((id) => routeUseCount.get(id) > 1)) {
+  if (mapping.evidenceType.startsWith("route") && (mapping.evidenceIds ?? []).some((id) => routeUseCount.get(id) > 1)) {
     decisions.push({ id: mapping.id, stage: "rejected-shared-route", confidence: mapping.confidence, evidenceIds: mapping.evidenceIds });
     continue;
   }
@@ -49,7 +64,9 @@ for (const mapping of eligibleMappings) {
   if (!selected.length || selected.some((item) => item.type !== mapping.evidenceType)) continue;
   const rawValue = mapping.evidenceType === "block"
     ? selected.reduce((sum, item) => sum + item.planCount, 0)
-    : selected.reduce((sum, item) => sum + item.planLengthM, 0);
+    : mapping.evidenceType === "route-segment"
+      ? selected.reduce((sum, item) => sum + item.lengthM, 0)
+      : selected.reduce((sum, item) => sum + item.planLengthM, 0);
   const value = target.unit === "个" ? Math.round(rawValue) : Number(rawValue.toFixed(3));
   if (!Number.isFinite(value) || value < 0) continue;
   const previous = predictionMap.get(mapping.id);
@@ -144,6 +161,7 @@ const result = {
     semanticMappingSources: mappingDocuments.map((document) => document.protocol),
     confidenceThreshold: threshold,
     deterministicDerivedFormulas: applyDerived,
+    segmentedEvidence: segmentedEvidenceArg ?? null,
   },
   predictions,
   decisions,

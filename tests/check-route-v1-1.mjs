@@ -1,0 +1,20 @@
+import assert from "node:assert/strict";
+import fs from "node:fs/promises";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
+
+const projectDir = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
+const evidence = JSON.parse(await fs.readFile(path.join(projectDir, "outputs", "full-quantity-v0", "route-segments-v1-1.json"), "utf8"));
+assert.equal(evidence.protocol.truthAccess, "forbidden");
+assert.equal(evidence.protocol.version, "route-segments-v1.1");
+assert.equal(evidence.protocol.annotationRadiusMm, 1000);
+assert.equal(evidence.drawings.length, 2);
+const segments = evidence.drawings.flatMap((drawing) => drawing.segments);
+assert.equal(new Set(segments.map((segment) => segment.id)).size, segments.length);
+assert.ok(segments.some((segment) => segment.dn != null));
+assert.ok(segments.some((segment) => segment.dn == null));
+assert.ok(segments.every((segment) => segment.lengthM > 0 && segment.segmentCount > 0));
+assert.ok(segments.filter((segment) => segment.dn != null).every((segment) => segment.seedTexts.length > 0));
+const text = JSON.stringify(evidence);
+assert.doesNotMatch(text, /"truth"\s*:|\/Users\/|10-1#|台湖|sk-[A-Za-z0-9]/);
+console.log("route v1.1 evidence checks passed");
