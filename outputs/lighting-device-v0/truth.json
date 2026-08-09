@@ -1,0 +1,154 @@
+[
+  {
+    "id": "wall_light",
+    "label": "壁装灯",
+    "unit": "个",
+    "value": 4,
+    "evidence": [
+      {
+        "item": "壁装LED灯-220V 13W",
+        "value": 2
+      },
+      {
+        "item": "壁装LED灯-1-220V 13W",
+        "value": 2
+      }
+    ]
+  },
+  {
+    "id": "single_tube_light",
+    "label": "单管灯",
+    "unit": "个",
+    "value": 16,
+    "evidence": [
+      {
+        "item": "单管LED防尘支架荧光灯-220V 20W",
+        "value": 16
+      }
+    ]
+  },
+  {
+    "id": "waterproof_light",
+    "label": "防水防尘灯",
+    "unit": "个",
+    "value": 21,
+    "evidence": [
+      {
+        "item": "防水LED灯-220V 13W",
+        "value": 21
+      }
+    ]
+  },
+  {
+    "id": "explosion_proof_light",
+    "label": "隔爆灯",
+    "unit": "个",
+    "value": 1,
+    "evidence": [
+      {
+        "item": "隔爆LED灯-220V 13W",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "id": "wall_seat_light",
+    "label": "墙上座灯",
+    "unit": "个",
+    "value": 10,
+    "evidence": [
+      {
+        "item": "墙上座灯-220V 13W",
+        "value": 10
+      }
+    ]
+  },
+  {
+    "id": "exhaust_fan",
+    "label": "换气扇",
+    "unit": "个",
+    "value": 11,
+    "evidence": [
+      {
+        "item": "换气扇-<空>",
+        "value": 1
+      },
+      {
+        "item": "换气扇-1-<空>",
+        "value": 2
+      },
+      {
+        "item": "换气扇-2-<空>",
+        "value": 2
+      },
+      {
+        "item": "换气扇-3-<空>",
+        "value": 2
+      },
+      {
+        "item": "换气扇-4-<空>",
+        "value": 2
+      },
+      {
+        "item": "换气扇-5-<空>",
+        "value": 2
+      }
+    ]
+  },
+  {
+    "id": "delay_switch",
+    "label": "延时开关",
+    "unit": "个",
+    "value": 21,
+    "evidence": [
+      {
+        "item": "声光控双触点延时开关-<空>",
+        "value": 21
+      }
+    ]
+  },
+  {
+    "id": "three_gang_switch",
+    "label": "三联开关",
+    "unit": "个",
+    "value": 5,
+    "evidence": [
+      {
+        "item": "三联单控暗开关-<空>",
+        "value": 5
+      }
+    ]
+  },
+  {
+    "id": "two_way_switch",
+    "label": "双控开关",
+    "unit": "个",
+    "value": 9,
+    "evidence": [
+      {
+        "item": "单联双控暗开关-<空>",
+        "value": 9
+      }
+    ]
+  },
+  {
+    "id": "direction_sign",
+    "label": "疏散方向指示灯",
+    "unit": "个",
+    "value": 58,
+    "evidence": [
+      {
+        "item": "智能型应急疏散方向指示标志灯-220V 1W",
+        "value": 45
+      },
+      {
+        "item": "智能型应急疏散方向指示标志灯-1-220V 1W",
+        "value": 11
+      },
+      {
+        "item": "智能型应急疏散方向指示标志灯-2-220V 1W",
+        "value": 2
+      }
+    ]
+  }
+]

@@ -1,0 +1,1205 @@
+{
+  "protocol": {
+    "split": "calibration",
+    "truthAccess": "forbidden",
+    "retrievalMode": "semantic_recall_across_all_layers",
+    "allowedInputs": [
+      "CAD模型空间全部带属性图块的语义标签",
+      "原始计数",
+      "标签所在图层分布",
+      "目标类别本体"
+    ],
+    "forbiddenInputs": [
+      "广联达Excel",
+      "GQI4内部数据库",
+      "广联达工程量数值",
+      "评分结果"
+    ]
+  },
+  "task": "把CAD图块属性标签映射到照明设备工程量类别",
+  "rules": [
+    "一个源标签最多映射到一个目标类别",
+    "标签可以不映射；禁止为了凑数量强行归类",
+    "只依据源标签语义和建筑电气常识，不推测广联达结果数值",
+    "数量由程序按映射关系确定性汇总，模型不直接修改源计数",
+    "图层名称只能作为弱证据：实际设备可能被画在EQUIP-动力、Defpoints等非预期图层",
+    "图例、系统图和重复引用可能造成额外图块；无法仅凭标签判断时保留映射但降低confidence"
+  ],
+  "targetCategories": [
+    {
+      "id": "wall_light",
+      "label": "壁装灯",
+      "definition": "壁装LED灯或明确标注为壁灯的灯具"
+    },
+    {
+      "id": "single_tube_light",
+      "label": "单管灯",
+      "definition": "单管荧光灯或单管LED支架灯"
+    },
+    {
+      "id": "waterproof_light",
+      "label": "防水防尘灯",
+      "definition": "防水灯、防尘灯或防水防尘灯"
+    },
+    {
+      "id": "explosion_proof_light",
+      "label": "隔爆灯",
+      "definition": "明确标注隔爆的灯具；防爆荧光灯不自动视为隔爆LED灯"
+    },
+    {
+      "id": "wall_seat_light",
+      "label": "墙上座灯",
+      "definition": "明确标注墙上座灯"
+    },
+    {
+      "id": "exhaust_fan",
+      "label": "换气扇",
+      "definition": "建筑电气照明平面中的换气扇或排气扇，不含普通吊扇"
+    },
+    {
+      "id": "delay_switch",
+      "label": "延时开关",
+      "definition": "声光控或其他延时开关"
+    },
+    {
+      "id": "three_gang_switch",
+      "label": "三联开关",
+      "definition": "三联单控等三联墙壁开关"
+    },
+    {
+      "id": "two_way_switch",
+      "label": "双控开关",
+      "definition": "单联双控等双控开关；双联开关不是双控开关"
+    },
+    {
+      "id": "direction_sign",
+      "label": "疏散方向指示灯",
+      "definition": "带方向或明确属于疏散方向指示的标志灯；不含仅表示出口、楼层或应急照明的灯具"
+    }
+  ],
+  "cadEvidence": {
+    "modelSpaceEntityCount": 22156,
+    "sourceLabels": [
+      {
+        "label": "感烟火灾探测器",
+        "count": 65,
+        "layers": {
+          "EQUIP-消防": 65
+        }
+      },
+      {
+        "label": "风机盘管",
+        "count": 60,
+        "layers": {
+          "EQUIP-动力": 60
+        }
+      },
+      {
+        "label": "开关",
+        "count": 40,
+        "layers": {
+          "EQUIP-照明": 40
+        }
+      },
+      {
+        "label": "CASE-001-A",
+        "count": 36,
+        "layers": {
+          "10组团平立剖1025$0$AXIS": 36
+        }
+      },
+      {
+        "label": "CASE-001-B",
+        "count": 36,
+        "layers": {
+          "10组团平立剖1025$0$AXIS": 36
+        }
+      },
+      {
+        "label": "CASE-001-C",
+        "count": 36,
+        "layers": {
+          "10组团平立剖1025$0$AXIS": 36
+        }
+      },
+      {
+        "label": "CASE-001-1",
+        "count": 36,
+        "layers": {
+          "10组团平立剖1025$0$AXIS": 36
+        }
+      },
+      {
+        "label": "CASE-001-2",
+        "count": 36,
+        "layers": {
+          "10组团平立剖1025$0$AXIS": 36
+        }
+      },
+      {
+        "label": "CASE-001-3",
+        "count": 36,
+        "layers": {
+          "10组团平立剖1025$0$AXIS": 36
+        }
+      },
+      {
+        "label": "CASE-001-4",
+        "count": 36,
+        "layers": {
+          "10组团平立剖1025$0$AXIS": 36
+        }
+      },
+      {
+        "label": "CASE-001-5",
+        "count": 36,
+        "layers": {
+          "10组团平立剖1025$0$AXIS": 36
+        }
+      },
+      {
+        "label": "应急灯",
+        "count": 34,
+        "layers": {
+          "EQUIP-照明": 34
+        }
+      },
+      {
+        "label": "应急疏散指示标识灯(向右)",
+        "count": 33,
+        "layers": {
+          "EQUIP-照明": 33
+        }
+      },
+      {
+        "label": "直流电焊机",
+        "count": 26,
+        "layers": {
+          "EQUIP-动力": 26
+        }
+      },
+      {
+        "label": "输入出模块",
+        "count": 26,
+        "layers": {
+          "EQUIP-消防": 26
+        }
+      },
+      {
+        "label": "70℃动作的常开防火阀",
+        "count": 25,
+        "layers": {
+          "EQUIP-消防": 22,
+          "EQUIP-照明": 3
+        }
+      },
+      {
+        "label": "照明配电箱",
+        "count": 23,
+        "layers": {
+          "EQUIP-箱柜": 23
+        }
+      },
+      {
+        "label": "输入模块",
+        "count": 20,
+        "layers": {
+          "EQUIP-消防": 20
+        }
+      },
+      {
+        "label": "漏电开关1",
+        "count": 20,
+        "layers": {
+          "ELEMENT": 20
+        }
+      },
+      {
+        "label": "天棚灯",
+        "count": 19,
+        "layers": {
+          "EQUIP-照明": 19
+        }
+      },
+      {
+        "label": "火灾应急广播扬声器",
+        "count": 18,
+        "layers": {
+          "EQUIP-消防": 18
+        }
+      },
+      {
+        "label": "防水防尘灯",
+        "count": 18,
+        "layers": {
+          "EQUIP-照明": 18
+        }
+      },
+      {
+        "label": "延迟开关",
+        "count": 18,
+        "layers": {
+          "EQUIP-照明": 18
+        }
+      },
+      {
+        "label": "消火栓起泵按钮",
+        "count": 17,
+        "layers": {
+          "EQUIP-消防": 15,
+          "EQUIP-照明": 2
+        }
+      },
+      {
+        "label": "单管荧光灯",
+        "count": 17,
+        "layers": {
+          "EQUIP-照明": 17
+        }
+      },
+      {
+        "label": "应急疏散指示标志灯",
+        "count": 16,
+        "layers": {
+          "EQUIP-照明": 16
+        }
+      },
+      {
+        "label": "感烟探测器",
+        "count": 15,
+        "layers": {
+          "EQUIP-消防": 5,
+          "EQUIP-照明": 10
+        }
+      },
+      {
+        "label": "火灾声光警报器",
+        "count": 14,
+        "layers": {
+          "EQUIP-消防": 14
+        }
+      },
+      {
+        "label": "隔离1",
+        "count": 12,
+        "layers": {
+          "ELEMENT": 12
+        }
+      },
+      {
+        "label": "可视对讲机",
+        "count": 12,
+        "layers": {
+          "EQUIP-通讯": 6,
+          "EQUIP-安防": 6
+        }
+      },
+      {
+        "label": "风扇",
+        "count": 11,
+        "layers": {
+          "EQUIP-动力": 4,
+          "EQUIP-照明": 6,
+          "Defpoints": 1
+        }
+      },
+      {
+        "label": "短路隔离器",
+        "count": 11,
+        "layers": {
+          "EQUIP-消防": 11
+        }
+      },
+      {
+        "label": "动力照明配电箱",
+        "count": 11,
+        "layers": {
+          "EQUIP-箱柜": 11
+        }
+      },
+      {
+        "label": "带保护接点暗装插座",
+        "count": 11,
+        "layers": {
+          "EQUIP-插座": 11
+        }
+      },
+      {
+        "label": "带电话插孔的手动报警按钮",
+        "count": 11,
+        "layers": {
+          "EQUIP-消防": 11
+        }
+      },
+      {
+        "label": "接触器(常开)",
+        "count": 10,
+        "layers": {
+          "ELEMENT": 10
+        }
+      },
+      {
+        "label": "电控锁",
+        "count": 10,
+        "layers": {
+          "EQUIP-安防": 10
+        }
+      },
+      {
+        "label": "墙上座灯",
+        "count": 9,
+        "layers": {
+          "EQUIP-照明": 9
+        }
+      },
+      {
+        "label": "熔断器",
+        "count": 9,
+        "layers": {
+          "ELEMENT": 9
+        }
+      },
+      {
+        "label": "隔离开关",
+        "count": 9,
+        "layers": {
+          "ELEMENT": 9
+        }
+      },
+      {
+        "label": "信号灯",
+        "count": 9,
+        "layers": {
+          "ELEMENT": 9
+        }
+      },
+      {
+        "label": "屏、台、箱、柜",
+        "count": 9,
+        "layers": {
+          "EQUIP-箱柜": 8,
+          "EQUIP-照明": 1
+        }
+      },
+      {
+        "label": "XCPS",
+        "count": 9,
+        "layers": {
+          "ELEMENT": 9
+        }
+      },
+      {
+        "label": "应急疏散指示标识灯(向左)",
+        "count": 9,
+        "layers": {
+          "EQUIP-照明": 9
+        }
+      },
+      {
+        "label": "用户四分支器",
+        "count": 8,
+        "layers": {
+          "EQUIP-电视": 8
+        }
+      },
+      {
+        "label": "紧急按钮开关",
+        "count": 8,
+        "layers": {
+          "EQUIP-安防": 8
+        }
+      },
+      {
+        "label": "双控开关",
+        "count": 8,
+        "layers": {
+          "EQUIP-照明": 7,
+          "Defpoints": 1
+        }
+      },
+      {
+        "label": "水流指示器",
+        "count": 7,
+        "layers": {
+          "EQUIP-消防": 7
+        }
+      },
+      {
+        "label": "信号阀1",
+        "count": 7,
+        "layers": {
+          "EQUIP-消防": 7
+        }
+      },
+      {
+        "label": "吊扇调速开关",
+        "count": 7,
+        "layers": {
+          "EQUIP-照明": 7
+        }
+      },
+      {
+        "label": "E",
+        "count": 7,
+        "layers": {
+          "EQUIP-照明": 7
+        }
+      },
+      {
+        "label": "带火警电话插孔的手动报警按钮",
+        "count": 6,
+        "layers": {
+          "EQUIP-消防": 6
+        }
+      },
+      {
+        "label": "区域型火灾报警控制器",
+        "count": 6,
+        "layers": {
+          "EQUIP-消防": 6
+        }
+      },
+      {
+        "label": "区域型火灾报警控制器1",
+        "count": 6,
+        "layers": {
+          "EQUIP-照明": 6
+        }
+      },
+      {
+        "label": "事故照明配电箱",
+        "count": 6,
+        "layers": {
+          "EQUIP-箱柜": 6
+        }
+      },
+      {
+        "label": "读卡器",
+        "count": 5,
+        "layers": {
+          "EQUIP-安防": 5
+        }
+      },
+      {
+        "label": "多种电源配电箱",
+        "count": 4,
+        "layers": {
+          "EQUIP-箱柜": 2,
+          "E-PLAN-BOX-EQUI": 1,
+          "EQUIP-照明": 1
+        }
+      },
+      {
+        "label": "火警电话",
+        "count": 4,
+        "layers": {
+          "EQUIP-消防": 4
+        }
+      },
+      {
+        "label": "280℃动作的常开排烟阀",
+        "count": 4,
+        "layers": {
+          "EQUIP-消防": 3,
+          "EQUIP-照明": 1
+        }
+      },
+      {
+        "label": "排烟口",
+        "count": 4,
+        "layers": {
+          "EQUIP-消防": 4
+        }
+      },
+      {
+        "label": "电源自动切换箱",
+        "count": 4,
+        "layers": {
+          "EQUIP-箱柜": 4
+        }
+      },
+      {
+        "label": "空调插座",
+        "count": 4,
+        "layers": {
+          "EQUIP-插座": 4
+        }
+      },
+      {
+        "label": "三联开关",
+        "count": 4,
+        "layers": {
+          "EQUIP-照明": 4
+        }
+      },
+      {
+        "label": "壁灯",
+        "count": 4,
+        "layers": {
+          "EQUIP-照明": 4
+        }
+      },
+      {
+        "label": "灯",
+        "count": 3,
+        "layers": {
+          "EQUIP-照明": 3
+        }
+      },
+      {
+        "label": "数据插座",
+        "count": 3,
+        "layers": {
+          "EQUIP-通讯": 3
+        }
+      },
+      {
+        "label": "电视插座",
+        "count": 3,
+        "layers": {
+          "EQUIP-通讯": 2,
+          "EQUIP-照明": 1
+        }
+      },
+      {
+        "label": "视频服务器",
+        "count": 3,
+        "layers": {
+          "EQUIP-安防": 3
+        }
+      },
+      {
+        "label": "楼层显示器",
+        "count": 3,
+        "layers": {
+          "EQUIP-消防": 3
+        }
+      },
+      {
+        "label": "输入/输出模块",
+        "count": 3,
+        "layers": {
+          "EQUIP-消防": 3
+        }
+      },
+      {
+        "label": "可燃气体报警控制器",
+        "count": 3,
+        "layers": {
+          "EQUIP-消防": 3
+        }
+      },
+      {
+        "label": "防爆荧光灯",
+        "count": 3,
+        "layers": {
+          "EQUIP-照明": 3
+        }
+      },
+      {
+        "label": "楼寓对讲电控防盗门主机",
+        "count": 3,
+        "layers": {
+          "EQUIP-通讯": 3
+        }
+      },
+      {
+        "label": "F",
+        "count": 3,
+        "layers": {
+          "EQUIP-照明": 3
+        }
+      },
+      {
+        "label": "对讲电话分机",
+        "count": 3,
+        "layers": {
+          "EQUIP-安防": 3
+        }
+      },
+      {
+        "label": "模块箱1",
+        "count": 3,
+        "layers": {
+          "EQUIP-照明": 3
+        }
+      },
+      {
+        "label": "信息插座",
+        "count": 2,
+        "layers": {
+          "EQUIP-通讯": 2
+        }
+      },
+      {
+        "label": "分支分配器箱",
+        "count": 2,
+        "layers": {
+          "EQUIP-电视": 2
+        }
+      },
+      {
+        "label": "火灾显示器",
+        "count": 2,
+        "layers": {
+          "EQUIP-消防": 2
+        }
+      },
+      {
+        "label": "模块箱",
+        "count": 2,
+        "layers": {
+          "EQUIP-消防": 2
+        }
+      },
+      {
+        "label": "70度防火阀",
+        "count": 2,
+        "layers": {
+          "EQUIP-动力": 2
+        }
+      },
+      {
+        "label": "280度防火阀",
+        "count": 2,
+        "layers": {
+          "EQUIP-动力": 2
+        }
+      },
+      {
+        "label": "防火门磁释放器",
+        "count": 2,
+        "layers": {
+          "EQUIP-消防": 2
+        }
+      },
+      {
+        "label": "隔爆灯",
+        "count": 2,
+        "layers": {
+          "EQUIP-照明": 1,
+          "Defpoints": 1
+        }
+      },
+      {
+        "label": "电磁阀",
+        "count": 2,
+        "layers": {
+          "EQUIP-动力": 2
+        }
+      },
+      {
+        "label": "电度表",
+        "count": 2,
+        "layers": {
+          "E-SYST-SWIT-EQUI": 1,
+          "ELEMENT": 1
+        }
+      },
+      {
+        "label": "避雷器",
+        "count": 2,
+        "layers": {
+          "ELEMENT": 2
+        }
+      },
+      {
+        "label": "接地",
+        "count": 2,
+        "layers": {
+          "ELEMENT": 2
+        }
+      },
+      {
+        "label": "短路隔离器1",
+        "count": 2,
+        "layers": {
+          "EQUIP-消防": 2
+        }
+      },
+      {
+        "label": "双联开关",
+        "count": 2,
+        "layers": {
+          "EQUIP-照明": 2
+        }
+      },
+      {
+        "label": "输入模块1",
+        "count": 2,
+        "layers": {
+          "EQUIP-消防": 2
+        }
+      },
+      {
+        "label": "温度传感器",
+        "count": 2,
+        "layers": {
+          "EQUIP-楼控": 2
+        }
+      },
+      {
+        "label": "密闭型按钮盒",
+        "count": 1,
+        "layers": {
+          "E-nuan-fa": 1
+        }
+      },
+      {
+        "label": "半球彩色摄像机",
+        "count": 1,
+        "layers": {
+          "EQUIP-安防": 1
+        }
+      },
+      {
+        "label": "半球带云台彩色摄像机",
+        "count": 1,
+        "layers": {
+          "EQUIP-安防": 1
+        }
+      },
+      {
+        "label": "报警扬声器",
+        "count": 1,
+        "layers": {
+          "EQUIP-广播": 1
+        }
+      },
+      {
+        "label": "对讲天线",
+        "count": 1,
+        "layers": {
+          "EQUIP-照明": 1
+        }
+      },
+      {
+        "label": "彩色摄像机",
+        "count": 1,
+        "layers": {
+          "EQUIP-安防": 1
+        }
+      },
+      {
+        "label": "直接数字控制器",
+        "count": 1,
+        "layers": {
+          "EQUIP-照明": 1
+        }
+      },
+      {
+        "label": "声光报警箱",
+        "count": 1,
+        "layers": {
+          "EQUIP-安防": 1
+        }
+      },
+      {
+        "label": "电锁按键",
+        "count": 1,
+        "layers": {
+          "EQUIP-照明": 1
+        }
+      },
+      {
+        "label": "EL",
+        "count": 1,
+        "layers": {
+          "EQUIP-照明": 1
+        }
+      },
+      {
+        "label": "电话插座",
+        "count": 1,
+        "layers": {
+          "EQUIP-通讯": 1
+        }
+      },
+      {
+        "label": "集合点",
+        "count": 1,
+        "layers": {
+          "EQUIP-通讯": 1
+        }
+      },
+      {
+        "label": "音量控制器",
+        "count": 1,
+        "layers": {
+          "EQUIP-广播": 1
+        }
+      },
+      {
+        "label": "壁龛交接线",
+        "count": 1,
+        "layers": {
+          "EQUIP-通讯": 1
+        }
+      },
+      {
+        "label": "带云台彩色摄像机",
+        "count": 1,
+        "layers": {
+          "EQUIP-安防": 1
+        }
+      },
+      {
+        "label": "紧急脚挑开关",
+        "count": 1,
+        "layers": {
+          "EQUIP-安防": 1
+        }
+      },
+      {
+        "label": "监视立柜",
+        "count": 1,
+        "layers": {
+          "EQUIP-安防": 1
+        }
+      },
+      {
+        "label": "监视器",
+        "count": 1,
+        "layers": {
+          "EQUIP-安防": 1
+        }
+      },
+      {
+        "label": "火灾警铃",
+        "count": 1,
+        "layers": {
+          "EQUIP-消防": 1
+        }
+      },
+      {
+        "label": "按钮盒",
+        "count": 1,
+        "layers": {
+          "EQUIP-消防": 1
+        }
+      },
+      {
+        "label": "普通灯",
+        "count": 1,
+        "layers": {
+          "EQUIP-消防": 1
+        }
+      },
+      {
+        "label": "火灾光信号装置",
+        "count": 1,
+        "layers": {
+          "EQUIP-消防": 1
+        }
+      },
+      {
+        "label": "组合声光报警装置",
+        "count": 1,
+        "layers": {
+          "EQUIP-消防": 1
+        }
+      },
+      {
+        "label": "气体探测器",
+        "count": 1,
+        "layers": {
+          "EQUIP-消防": 1
+        }
+      },
+      {
+        "label": "感温探测器",
+        "count": 1,
+        "layers": {
+          "EQUIP-消防": 1
+        }
+      },
+      {
+        "label": "输出模块",
+        "count": 1,
+        "layers": {
+          "EQUIP-消防": 1
+        }
+      },
+      {
+        "label": "预作用报警阀（组）",
+        "count": 1,
+        "layers": {
+          "EQUIP-消防": 1
+        }
+      },
+      {
+        "label": "雨淋报警阀（组）",
+        "count": 1,
+        "layers": {
+          "EQUIP-消防": 1
+        }
+      },
+      {
+        "label": "雨淋报警阀",
+        "count": 1,
+        "layers": {
+          "EQUIP-消防": 1
+        }
+      },
+      {
+        "label": "预作用报警阀",
+        "count": 1,
+        "layers": {
+          "EQUIP-消防": 1
+        }
+      },
+      {
+        "label": "湿式自动报警阀",
+        "count": 1,
+        "layers": {
+          "EQUIP-消防": 1
+        }
+      },
+      {
+        "label": "150度防火阀",
+        "count": 1,
+        "layers": {
+          "EQUIP-动力": 1
+        }
+      },
+      {
+        "label": "280℃动作的常闭防烟阀",
+        "count": 1,
+        "layers": {
+          "EQUIP-消防": 1
+        }
+      },
+      {
+        "label": "150℃动作的常开防火阀",
+        "count": 1,
+        "layers": {
+          "EQUIP-消防": 1
+        }
+      },
+      {
+        "label": "加压送风口",
+        "count": 1,
+        "layers": {
+          "EQUIP-消防": 1
+        }
+      },
+      {
+        "label": "压力开关",
+        "count": 1,
+        "layers": {
+          "EQUIP-消防": 1
+        }
+      },
+      {
+        "label": "安全栅",
+        "count": 1,
+        "layers": {
+          "EQUIP-消防": 1
+        }
+      },
+      {
+        "label": "双管荧光灯",
+        "count": 1,
+        "layers": {
+          "EQUIP-照明": 1
+        }
+      },
+      {
+        "label": "双管格栅荧光灯",
+        "count": 1,
+        "layers": {
+          "EQUIP-照明": 1
+        }
+      },
+      {
+        "label": "三管格栅荧光灯",
+        "count": 1,
+        "layers": {
+          "EQUIP-照明": 1
+        }
+      },
+      {
+        "label": "扬声器",
+        "count": 1,
+        "layers": {
+          "EQUIP-消防": 1
+        }
+      },
+      {
+        "label": "带熔断器的刀开关箱",
+        "count": 1,
+        "layers": {
+          "EQUIP-箱柜": 1
+        }
+      },
+      {
+        "label": "防火卷帘门控制器",
+        "count": 1,
+        "layers": {
+          "EQUIP-箱柜": 1
+        }
+      },
+      {
+        "label": "按钮",
+        "count": 1,
+        "layers": {
+          "EQUIP-照明": 1
+        }
+      },
+      {
+        "label": "电阻箱",
+        "count": 1,
+        "layers": {
+          "EQUIP-箱柜": 1
+        }
+      },
+      {
+        "label": "接线盒",
+        "count": 1,
+        "layers": {
+          "EQUIP-动力": 1
+        }
+      },
+      {
+        "label": "电铃",
+        "count": 1,
+        "layers": {
+          "EQUIP-动力": 1
+        }
+      },
+      {
+        "label": "应急疏散指示标识灯(向左、向右)",
+        "count": 1,
+        "layers": {
+          "EQUIP-照明": 1
+        }
+      },
+      {
+        "label": "水泵压力开关",
+        "count": 1,
+        "layers": {
+          "EQUIP-消防": 1
+        }
+      },
+      {
+        "label": "流量开关",
+        "count": 1,
+        "layers": {
+          "EQUIP-消防": 1
+        }
+      },
+      {
+        "label": "V",
+        "count": 1,
+        "layers": {
+          "ELEMENT": 1
+        }
+      },
+      {
+        "label": "元件2",
+        "count": 1,
+        "layers": {
+          "ELEMENT": 1
+        }
+      },
+      {
+        "label": "电流互感器",
+        "count": 1,
+        "layers": {
+          "ELEMENT": 1
+        }
+      },
+      {
+        "label": "双向分配放大器",
+        "count": 1,
+        "layers": {
+          "EQUIP-电视": 1
+        }
+      },
+      {
+        "label": "四路分配器",
+        "count": 1,
+        "layers": {
+          "EQUIP-电视": 1
+        }
+      },
+      {
+        "label": "匹配终端",
+        "count": 1,
+        "layers": {
+          "EQUIP-电视": 1
+        }
+      },
+      {
+        "label": "湿式报警阀（组）",
+        "count": 1,
+        "layers": {
+          "EQUIP-消防": 1
+        }
+      },
+      {
+        "label": "可燃气体探测器",
+        "count": 1,
+        "layers": {
+          "EQUIP-消防": 1
+        }
+      },
+      {
+        "label": "建筑设备监控系统设备箱",
+        "count": 1,
+        "layers": {
+          "EQUIP-箱柜": 1
+        }
+      },
+      {
+        "label": "综合布线配线架",
+        "count": 1,
+        "layers": {
+          "EQUIP-通讯": 1
+        }
+      },
+      {
+        "label": "前端箱",
+        "count": 1,
+        "layers": {
+          "EQUIP-电视": 1
+        }
+      },
+      {
+        "label": "带接地插孔防爆三相插座",
+        "count": 1,
+        "layers": {
+          "EQUIP-插座": 1
+        }
+      },
+      {
+        "label": "LEB",
+        "count": 1,
+        "layers": {
+          "EQUIP-照明": 1
+        }
+      },
+      {
+        "label": "输入/输出模块1",
+        "count": 1,
+        "layers": {
+          "EQUIP-消防": 1
+        }
+      },
+      {
+        "label": "报警电话",
+        "count": 1,
+        "layers": {
+          "EQUIP-照明": 1
+        }
+      },
+      {
+        "label": "CT",
+        "count": 1,
+        "layers": {
+          "EQUIP-楼控": 1
+        }
+      }
+    ]
+  }
+}

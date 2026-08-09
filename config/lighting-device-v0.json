@@ -1,0 +1,86 @@
+{
+  "id": "lighting-device-v0",
+  "title": "Case-001照明设备数量基线",
+  "split": "calibration",
+  "cad": "../data/private/case-001/electrical.dwg",
+  "truthWorkbook": "../data/private/case-001/lighting.xlsx",
+  "truthSheet": "电气设备工程量汇总表",
+  "cadLayers": ["EQUIP-照明"],
+  "categories": [
+    {
+      "id": "wall_light",
+      "label": "壁装灯",
+      "unit": "个",
+      "truthPatterns": ["^壁装LED灯(?:-1)?-"],
+      "cadPatterns": ["^壁灯$"]
+    },
+    {
+      "id": "single_tube_light",
+      "label": "单管灯",
+      "unit": "个",
+      "truthPatterns": ["^单管LED防尘支架荧光灯-"],
+      "cadPatterns": ["^单管荧光灯$"]
+    },
+    {
+      "id": "waterproof_light",
+      "label": "防水防尘灯",
+      "unit": "个",
+      "truthPatterns": ["^防水LED灯-"],
+      "cadPatterns": ["^防水防尘灯$"]
+    },
+    {
+      "id": "explosion_proof_light",
+      "label": "隔爆灯",
+      "unit": "个",
+      "truthPatterns": ["^隔爆LED灯-"],
+      "cadPatterns": ["^隔爆灯$"]
+    },
+    {
+      "id": "wall_seat_light",
+      "label": "墙上座灯",
+      "unit": "个",
+      "truthPatterns": ["^墙上座灯-"],
+      "cadPatterns": ["^墙上座灯$"]
+    },
+    {
+      "id": "exhaust_fan",
+      "label": "换气扇",
+      "unit": "个",
+      "truthPatterns": ["^换气扇(?:-\\d+)?-"],
+      "cadPatterns": ["^风扇$"]
+    },
+    {
+      "id": "delay_switch",
+      "label": "延时开关",
+      "unit": "个",
+      "truthPatterns": ["^声光控双触点延时开关-"],
+      "cadPatterns": ["^延迟开关$"]
+    },
+    {
+      "id": "three_gang_switch",
+      "label": "三联开关",
+      "unit": "个",
+      "truthPatterns": ["^三联单控暗开关-"],
+      "cadPatterns": ["^三联开关$"]
+    },
+    {
+      "id": "two_way_switch",
+      "label": "双控开关",
+      "unit": "个",
+      "truthPatterns": ["^单联双控暗开关-"],
+      "cadPatterns": ["^双控开关$"]
+    },
+    {
+      "id": "direction_sign",
+      "label": "疏散方向指示灯",
+      "unit": "个",
+      "truthPatterns": ["^智能型应急疏散方向指示标志灯(?:-\\d+)?-"],
+      "cadPatterns": ["^应急疏散指示标识灯\\(向左\\)$", "^应急疏散指示标识灯\\(向右\\)$", "^应急疏散指示标识灯\\(向左、向右\\)$"]
+    }
+  ],
+  "knownUnsupported": [
+    "电线长度需要回路根数、敷设方式和预留规则",
+    "配管长度需要识别管线路由、跨层立管和暗敷规则",
+    "同一图层混入了非照明专业图块，需要语义过滤"
+  ]
+}

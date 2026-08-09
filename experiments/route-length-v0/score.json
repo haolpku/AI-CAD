@@ -1,0 +1,24 @@
+{
+  "protocol": {
+    "predictionTruthAccess": "forbidden",
+    "scoreReadsTruthAfterPrediction": true
+  },
+  "pooledPipe": {
+    "truthM": 2075.045,
+    "predictedRouteM": 1905.5977750991615,
+    "errorM": -169.4472249008386,
+    "absolutePercentageError": 0.08165954227539093
+  },
+  "diagnosticOnly": {
+    "emergencyWirePerRouteRatio": 7.799327687865955,
+    "normalWirePerRouteRatio": 2.4423117216248458,
+    "note": "这些比率仅用于解释，未反馈给预测器。"
+  },
+  "truth": {
+    "pvc20M": 1294.097,
+    "steel20M": 780.948,
+    "nhBv25M": 6393.842,
+    "zrBv25M": 621.055,
+    "pooledPipeM": 2075.045
+  }
+}

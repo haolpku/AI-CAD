@@ -1,0 +1,21 @@
+{
+  "task": "把CAD图块属性标签映射到照明设备工程量类别",
+  "rules": [
+    "一个源标签最多映射到一个目标类别",
+    "标签可以不映射；禁止为了凑数量强行归类",
+    "只依据源标签语义和建筑电气常识，不推测广联达结果数值",
+    "数量由程序按映射关系确定性汇总，模型不直接修改源计数"
+  ],
+  "categories": [
+    {"id":"wall_light","label":"壁装灯","definition":"壁装LED灯或明确标注为壁灯的灯具"},
+    {"id":"single_tube_light","label":"单管灯","definition":"单管荧光灯或单管LED支架灯"},
+    {"id":"waterproof_light","label":"防水防尘灯","definition":"防水灯、防尘灯或防水防尘灯"},
+    {"id":"explosion_proof_light","label":"隔爆灯","definition":"明确标注隔爆的灯具；防爆荧光灯不自动视为隔爆LED灯"},
+    {"id":"wall_seat_light","label":"墙上座灯","definition":"明确标注墙上座灯"},
+    {"id":"exhaust_fan","label":"换气扇","definition":"建筑电气照明平面中的换气扇或排气扇，不含普通吊扇"},
+    {"id":"delay_switch","label":"延时开关","definition":"声光控或其他延时开关"},
+    {"id":"three_gang_switch","label":"三联开关","definition":"三联单控等三联墙壁开关"},
+    {"id":"two_way_switch","label":"双控开关","definition":"单联双控等双控开关；双联开关不是双控开关"},
+    {"id":"direction_sign","label":"疏散方向指示灯","definition":"带方向或明确属于疏散方向指示的标志灯；不含仅表示出口、楼层或应急照明的灯具"}
+  ]
+}

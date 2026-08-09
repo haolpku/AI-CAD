@@ -1,0 +1,139 @@
+{
+  "benchmark": {
+    "id": "lighting-device-v0",
+    "title": "Case-001照明设备数量基线",
+    "split": "calibration"
+  },
+  "sources": {
+    "cad": "../data/private/case-001/electrical.dwg",
+    "truthWorkbook": "../data/private/case-001/lighting.xlsx",
+    "truthSheet": "电气设备工程量汇总表"
+  },
+  "metrics": {
+    "categoryCount": 10,
+    "exactCategoryCount": 2,
+    "exactCategoryRate": 0.2,
+    "meanAbsoluteError": 3.1,
+    "meanAbsolutePercentageError": 0.15836026521371346,
+    "weightedAbsolutePercentageError": 0.1987179487179487,
+    "truthTotal": 156,
+    "predictionTotal": 127
+  },
+  "rows": [
+    {
+      "id": "wall_light",
+      "label": "壁装灯",
+      "unit": "个",
+      "truth": 4,
+      "prediction": 4,
+      "error": 0,
+      "absoluteError": 0,
+      "absolutePercentageError": 0,
+      "exact": true
+    },
+    {
+      "id": "single_tube_light",
+      "label": "单管灯",
+      "unit": "个",
+      "truth": 16,
+      "prediction": 17,
+      "error": 1,
+      "absoluteError": 1,
+      "absolutePercentageError": 0.0625,
+      "exact": false
+    },
+    {
+      "id": "waterproof_light",
+      "label": "防水防尘灯",
+      "unit": "个",
+      "truth": 21,
+      "prediction": 18,
+      "error": -3,
+      "absoluteError": 3,
+      "absolutePercentageError": 0.14285714285714285,
+      "exact": false
+    },
+    {
+      "id": "explosion_proof_light",
+      "label": "隔爆灯",
+      "unit": "个",
+      "truth": 1,
+      "prediction": 1,
+      "error": 0,
+      "absoluteError": 0,
+      "absolutePercentageError": 0,
+      "exact": true
+    },
+    {
+      "id": "wall_seat_light",
+      "label": "墙上座灯",
+      "unit": "个",
+      "truth": 10,
+      "prediction": 9,
+      "error": -1,
+      "absoluteError": 1,
+      "absolutePercentageError": 0.1,
+      "exact": false
+    },
+    {
+      "id": "exhaust_fan",
+      "label": "换气扇",
+      "unit": "个",
+      "truth": 11,
+      "prediction": 6,
+      "error": -5,
+      "absoluteError": 5,
+      "absolutePercentageError": 0.45454545454545453,
+      "exact": false
+    },
+    {
+      "id": "delay_switch",
+      "label": "延时开关",
+      "unit": "个",
+      "truth": 21,
+      "prediction": 18,
+      "error": -3,
+      "absoluteError": 3,
+      "absolutePercentageError": 0.14285714285714285,
+      "exact": false
+    },
+    {
+      "id": "three_gang_switch",
+      "label": "三联开关",
+      "unit": "个",
+      "truth": 5,
+      "prediction": 4,
+      "error": -1,
+      "absoluteError": 1,
+      "absolutePercentageError": 0.2,
+      "exact": false
+    },
+    {
+      "id": "two_way_switch",
+      "label": "双控开关",
+      "unit": "个",
+      "truth": 9,
+      "prediction": 7,
+      "error": -2,
+      "absoluteError": 2,
+      "absolutePercentageError": 0.2222222222222222,
+      "exact": false
+    },
+    {
+      "id": "direction_sign",
+      "label": "疏散方向指示灯",
+      "unit": "个",
+      "truth": 58,
+      "prediction": 43,
+      "error": -15,
+      "absoluteError": 15,
+      "absolutePercentageError": 0.25862068965517243,
+      "exact": false
+    }
+  ],
+  "limitations": [
+    "电线长度需要回路根数、敷设方式和预留规则",
+    "配管长度需要识别管线路由、跨层立管和暗敷规则",
+    "同一图层混入了非照明专业图块，需要语义过滤"
+  ]
+}

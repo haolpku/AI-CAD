@@ -1,0 +1,349 @@
+{
+  "source": "../data/private/case-001/electrical.dwg",
+  "converter": "LibreDWG 0.13.3",
+  "modelSpaceEntityCount": 22156,
+  "selectedLayers": [
+    "EQUIP-照明"
+  ],
+  "selectedLayerInsertCount": 312,
+  "labelCounts": [
+    {
+      "label": "开关",
+      "count": 40
+    },
+    {
+      "label": "应急灯",
+      "count": 34
+    },
+    {
+      "label": "应急疏散指示标识灯(向右)",
+      "count": 33
+    },
+    {
+      "label": "天棚灯",
+      "count": 19
+    },
+    {
+      "label": "防水防尘灯",
+      "count": 18
+    },
+    {
+      "label": "延迟开关",
+      "count": 18
+    },
+    {
+      "label": "单管荧光灯",
+      "count": 17
+    },
+    {
+      "label": "应急疏散指示标志灯",
+      "count": 16
+    },
+    {
+      "label": "感烟探测器",
+      "count": 10
+    },
+    {
+      "label": "墙上座灯",
+      "count": 9
+    },
+    {
+      "label": "应急疏散指示标识灯(向左)",
+      "count": 9
+    },
+    {
+      "label": "吊扇调速开关",
+      "count": 7
+    },
+    {
+      "label": "双控开关",
+      "count": 7
+    },
+    {
+      "label": "E",
+      "count": 7
+    },
+    {
+      "label": "区域型火灾报警控制器1",
+      "count": 6
+    },
+    {
+      "label": "风扇",
+      "count": 6
+    },
+    {
+      "label": "<无语义属性:$equip$00002540>",
+      "count": 6
+    },
+    {
+      "label": "三联开关",
+      "count": 4
+    },
+    {
+      "label": "壁灯",
+      "count": 4
+    },
+    {
+      "label": "灯",
+      "count": 3
+    },
+    {
+      "label": "防爆荧光灯",
+      "count": 3
+    },
+    {
+      "label": "F",
+      "count": 3
+    },
+    {
+      "label": "模块箱1",
+      "count": 3
+    },
+    {
+      "label": "70℃动作的常开防火阀",
+      "count": 3
+    },
+    {
+      "label": "<无语义属性:$equip$00002479>",
+      "count": 2
+    },
+    {
+      "label": "双联开关",
+      "count": 2
+    },
+    {
+      "label": "消火栓起泵按钮",
+      "count": 2
+    },
+    {
+      "label": "对讲天线",
+      "count": 1
+    },
+    {
+      "label": "<无语义属性:$equip$00002618>",
+      "count": 1
+    },
+    {
+      "label": "直接数字控制器",
+      "count": 1
+    },
+    {
+      "label": "电锁按键",
+      "count": 1
+    },
+    {
+      "label": "EL",
+      "count": 1
+    },
+    {
+      "label": "<无语义属性:$equip$00002617>",
+      "count": 1
+    },
+    {
+      "label": "电视插座",
+      "count": 1
+    },
+    {
+      "label": "隔爆灯",
+      "count": 1
+    },
+    {
+      "label": "双管荧光灯",
+      "count": 1
+    },
+    {
+      "label": "<无语义属性:$equip_U$00000077(tangxd14)>",
+      "count": 1
+    },
+    {
+      "label": "双管格栅荧光灯",
+      "count": 1
+    },
+    {
+      "label": "三管格栅荧光灯",
+      "count": 1
+    },
+    {
+      "label": "按钮",
+      "count": 1
+    },
+    {
+      "label": "应急疏散指示标识灯(向左、向右)",
+      "count": 1
+    },
+    {
+      "label": "<无语义属性:A$C37414D2F>",
+      "count": 1
+    },
+    {
+      "label": "<无语义属性:$equip$00002751>",
+      "count": 1
+    },
+    {
+      "label": "屏、台、箱、柜",
+      "count": 1
+    },
+    {
+      "label": "LEB",
+      "count": 1
+    },
+    {
+      "label": "报警电话",
+      "count": 1
+    },
+    {
+      "label": "多种电源配电箱",
+      "count": 1
+    },
+    {
+      "label": "280℃动作的常开排烟阀",
+      "count": 1
+    }
+  ],
+  "unmappedLabelCounts": [
+    {
+      "label": "开关",
+      "count": 40
+    },
+    {
+      "label": "应急灯",
+      "count": 34
+    },
+    {
+      "label": "天棚灯",
+      "count": 19
+    },
+    {
+      "label": "应急疏散指示标志灯",
+      "count": 16
+    },
+    {
+      "label": "感烟探测器",
+      "count": 10
+    },
+    {
+      "label": "吊扇调速开关",
+      "count": 7
+    },
+    {
+      "label": "E",
+      "count": 7
+    },
+    {
+      "label": "区域型火灾报警控制器1",
+      "count": 6
+    },
+    {
+      "label": "<无语义属性:$equip$00002540>",
+      "count": 6
+    },
+    {
+      "label": "灯",
+      "count": 3
+    },
+    {
+      "label": "防爆荧光灯",
+      "count": 3
+    },
+    {
+      "label": "F",
+      "count": 3
+    },
+    {
+      "label": "模块箱1",
+      "count": 3
+    },
+    {
+      "label": "70℃动作的常开防火阀",
+      "count": 3
+    },
+    {
+      "label": "<无语义属性:$equip$00002479>",
+      "count": 2
+    },
+    {
+      "label": "双联开关",
+      "count": 2
+    },
+    {
+      "label": "消火栓起泵按钮",
+      "count": 2
+    },
+    {
+      "label": "对讲天线",
+      "count": 1
+    },
+    {
+      "label": "<无语义属性:$equip$00002618>",
+      "count": 1
+    },
+    {
+      "label": "直接数字控制器",
+      "count": 1
+    },
+    {
+      "label": "电锁按键",
+      "count": 1
+    },
+    {
+      "label": "EL",
+      "count": 1
+    },
+    {
+      "label": "<无语义属性:$equip$00002617>",
+      "count": 1
+    },
+    {
+      "label": "电视插座",
+      "count": 1
+    },
+    {
+      "label": "双管荧光灯",
+      "count": 1
+    },
+    {
+      "label": "<无语义属性:$equip_U$00000077(tangxd14)>",
+      "count": 1
+    },
+    {
+      "label": "双管格栅荧光灯",
+      "count": 1
+    },
+    {
+      "label": "三管格栅荧光灯",
+      "count": 1
+    },
+    {
+      "label": "按钮",
+      "count": 1
+    },
+    {
+      "label": "<无语义属性:A$C37414D2F>",
+      "count": 1
+    },
+    {
+      "label": "<无语义属性:$equip$00002751>",
+      "count": 1
+    },
+    {
+      "label": "屏、台、箱、柜",
+      "count": 1
+    },
+    {
+      "label": "LEB",
+      "count": 1
+    },
+    {
+      "label": "报警电话",
+      "count": 1
+    },
+    {
+      "label": "多种电源配电箱",
+      "count": 1
+    },
+    {
+      "label": "280℃动作的常开排烟阀",
+      "count": 1
+    }
+  ]
+}

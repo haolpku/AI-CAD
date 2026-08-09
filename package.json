@@ -1,0 +1,15 @@
+{
+  "name": "cad-quantity-benchmark",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "benchmark": "node scripts/run-benchmark.mjs",
+    "test": "node tests/check-results.mjs && node tests/check-leakage.mjs",
+    "prepare:llm": "node scripts/prepare-llm-input.mjs",
+    "prepare:llm:all": "node scripts/prepare-llm-input-all-layers.mjs",
+    "predict:cross-layer": "node scripts/predict-cross-layer.mjs",
+    "score:llm": "node scripts/score-llm-experiment.mjs",
+    "predict:routes": "node scripts/extract-route-geometry.mjs",
+    "score:routes": "node scripts/score-route-geometry.mjs"
+  }
+}

@@ -1,0 +1,984 @@
+{
+  "protocol": {
+    "inputHash": "e0926354c11b59fae3815c7d9716e7cf8b8daab5a275d788ae55ee816804c40b",
+    "truthAccess": "forbidden",
+    "model": "gpt-5.6-sol",
+    "mode": "closed_world",
+    "elapsedMs": 102716,
+    "sourceInputHash": "ea81d06774b385cb5dcdbe998cba21f79e5f6b479f0fa03da59b0e982fdcb99d",
+    "anonymizedForPublication": true
+  },
+  "usage": {
+    "prompt_tokens": 9010,
+    "completion_tokens": 5541,
+    "total_tokens": 14551,
+    "prompt_tokens_details": {
+      "cached_tokens": 3840
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 355
+    }
+  },
+  "assignments": [
+    {
+      "source_label": "感烟火灾探测器",
+      "target_id": null,
+      "confidence": 0.99,
+      "reason": "消防探测设备，不属于目标类别"
+    },
+    {
+      "source_label": "风机盘管",
+      "target_id": null,
+      "confidence": 0.99,
+      "reason": "空调末端设备，不是换气扇"
+    },
+    {
+      "source_label": "开关",
+      "target_id": null,
+      "confidence": 0.55,
+      "reason": "名称过泛，无法区分延时、三联或双控开关"
+    },
+    {
+      "source_label": "CASE-001-A",
+      "target_id": null,
+      "confidence": 0.99,
+      "reason": "轴线或定位编号，无设备语义"
+    },
+    {
+      "source_label": "CASE-001-B",
+      "target_id": null,
+      "confidence": 0.99,
+      "reason": "轴线或定位编号，无设备语义"
+    },
+    {
+      "source_label": "CASE-001-C",
+      "target_id": null,
+      "confidence": 0.99,
+      "reason": "轴线或定位编号，无设备语义"
+    },
+    {
+      "source_label": "CASE-001-1",
+      "target_id": null,
+      "confidence": 0.99,
+      "reason": "轴线或定位编号，无设备语义"
+    },
+    {
+      "source_label": "CASE-001-2",
+      "target_id": null,
+      "confidence": 0.99,
+      "reason": "轴线或定位编号，无设备语义"
+    },
+    {
+      "source_label": "CASE-001-3",
+      "target_id": null,
+      "confidence": 0.99,
+      "reason": "轴线或定位编号，无设备语义"
+    },
+    {
+      "source_label": "CASE-001-4",
+      "target_id": null,
+      "confidence": 0.99,
+      "reason": "轴线或定位编号，无设备语义"
+    },
+    {
+      "source_label": "CASE-001-5",
+      "target_id": null,
+      "confidence": 0.99,
+      "reason": "轴线或定位编号，无设备语义"
+    },
+    {
+      "source_label": "应急灯",
+      "target_id": null,
+      "confidence": 0.97,
+      "reason": "普通应急照明灯，不等同疏散方向指示灯"
+    },
+    {
+      "source_label": "应急疏散指示标识灯(向右)",
+      "target_id": "direction_sign",
+      "confidence": 1,
+      "reason": "明确为向右疏散方向指示灯"
+    },
+    {
+      "source_label": "直流电焊机",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "动力设备，不属于目标类别"
+    },
+    {
+      "source_label": "输入出模块",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "消防输入输出模块，不属于目标类别"
+    },
+    {
+      "source_label": "70℃动作的常开防火阀",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "防火阀，不属于目标类别"
+    },
+    {
+      "source_label": "照明配电箱",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "配电箱，不属于目标类别"
+    },
+    {
+      "source_label": "输入模块",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "消防输入模块，不属于目标类别"
+    },
+    {
+      "source_label": "漏电开关1",
+      "target_id": null,
+      "confidence": 0.99,
+      "reason": "漏电保护开关，不是目标墙壁开关"
+    },
+    {
+      "source_label": "天棚灯",
+      "target_id": null,
+      "confidence": 0.94,
+      "reason": "仅说明吸顶安装，无法确定为目标灯具类型"
+    },
+    {
+      "source_label": "火灾应急广播扬声器",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "消防广播设备，不属于目标类别"
+    },
+    {
+      "source_label": "防水防尘灯",
+      "target_id": "waterproof_light",
+      "confidence": 1,
+      "reason": "名称与防水防尘灯类别完全一致"
+    },
+    {
+      "source_label": "延迟开关",
+      "target_id": "delay_switch",
+      "confidence": 0.99,
+      "reason": "延迟与延时为同义表述"
+    },
+    {
+      "source_label": "消火栓起泵按钮",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "消防起泵按钮，不属于目标类别"
+    },
+    {
+      "source_label": "单管荧光灯",
+      "target_id": "single_tube_light",
+      "confidence": 1,
+      "reason": "明确为单管荧光灯"
+    },
+    {
+      "source_label": "应急疏散指示标志灯",
+      "target_id": "direction_sign",
+      "confidence": 0.82,
+      "reason": "明确属于疏散指示标志灯，但未标具体方向"
+    },
+    {
+      "source_label": "感烟探测器",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "消防探测设备，不属于目标类别"
+    },
+    {
+      "source_label": "火灾声光警报器",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "消防报警设备，不属于目标类别"
+    },
+    {
+      "source_label": "隔离1",
+      "target_id": null,
+      "confidence": 0.99,
+      "reason": "电气元件标注，与目标类别无关"
+    },
+    {
+      "source_label": "可视对讲机",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "对讲设备，不属于目标类别"
+    },
+    {
+      "source_label": "风扇",
+      "target_id": "exhaust_fan",
+      "confidence": 0.62,
+      "reason": "闭集内最接近小型通风器具换气扇，但名称未明确排气用途"
+    },
+    {
+      "source_label": "短路隔离器",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "消防线路隔离器，不属于目标类别"
+    },
+    {
+      "source_label": "动力照明配电箱",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "配电箱，不属于目标类别"
+    },
+    {
+      "source_label": "带保护接点暗装插座",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "插座，不属于目标类别"
+    },
+    {
+      "source_label": "带电话插孔的手动报警按钮",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "消防手动报警按钮，不属于目标类别"
+    },
+    {
+      "source_label": "接触器(常开)",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "控制元件，不属于目标类别"
+    },
+    {
+      "source_label": "电控锁",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "门禁设备，不属于目标类别"
+    },
+    {
+      "source_label": "墙上座灯",
+      "target_id": "wall_seat_light",
+      "confidence": 1,
+      "reason": "名称与墙上座灯类别完全一致"
+    },
+    {
+      "source_label": "熔断器",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "保护元件，不属于目标类别"
+    },
+    {
+      "source_label": "隔离开关",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "电源隔离开关，不是目标墙壁开关"
+    },
+    {
+      "source_label": "信号灯",
+      "target_id": null,
+      "confidence": 0.99,
+      "reason": "电气指示元件，不是疏散方向指示灯"
+    },
+    {
+      "source_label": "屏、台、箱、柜",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "箱柜类设备，不属于目标类别"
+    },
+    {
+      "source_label": "XCPS",
+      "target_id": null,
+      "confidence": 0.99,
+      "reason": "控制保护电器代号，不属于目标类别"
+    },
+    {
+      "source_label": "应急疏散指示标识灯(向左)",
+      "target_id": "direction_sign",
+      "confidence": 1,
+      "reason": "明确为向左疏散方向指示灯"
+    },
+    {
+      "source_label": "用户四分支器",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "电视分支器，不属于目标类别"
+    },
+    {
+      "source_label": "紧急按钮开关",
+      "target_id": null,
+      "confidence": 0.99,
+      "reason": "安防紧急按钮，不是目标照明开关"
+    },
+    {
+      "source_label": "双控开关",
+      "target_id": "two_way_switch",
+      "confidence": 1,
+      "reason": "名称与双控开关类别完全一致"
+    },
+    {
+      "source_label": "水流指示器",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "消防水系统设备，不属于目标类别"
+    },
+    {
+      "source_label": "信号阀1",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "消防阀门设备，不属于目标类别"
+    },
+    {
+      "source_label": "吊扇调速开关",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "吊扇调速器，不是换气扇或目标开关"
+    },
+    {
+      "source_label": "E",
+      "target_id": null,
+      "confidence": 0.45,
+      "reason": "单字母代号语义不足，无法可靠分类"
+    },
+    {
+      "source_label": "带火警电话插孔的手动报警按钮",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "消防手动报警按钮，不属于目标类别"
+    },
+    {
+      "source_label": "区域型火灾报警控制器",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "火灾报警控制设备，不属于目标类别"
+    },
+    {
+      "source_label": "区域型火灾报警控制器1",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "火灾报警控制设备，不属于目标类别"
+    },
+    {
+      "source_label": "事故照明配电箱",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "配电箱，不属于目标类别"
+    },
+    {
+      "source_label": "读卡器",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "门禁设备，不属于目标类别"
+    },
+    {
+      "source_label": "多种电源配电箱",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "配电箱，不属于目标类别"
+    },
+    {
+      "source_label": "火警电话",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "消防通信设备，不属于目标类别"
+    },
+    {
+      "source_label": "280℃动作的常开排烟阀",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "排烟阀，不是换气扇"
+    },
+    {
+      "source_label": "排烟口",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "通风口部件，不是换气扇"
+    },
+    {
+      "source_label": "电源自动切换箱",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "配电切换箱，不属于目标类别"
+    },
+    {
+      "source_label": "空调插座",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "插座，不属于目标类别"
+    },
+    {
+      "source_label": "三联开关",
+      "target_id": "three_gang_switch",
+      "confidence": 1,
+      "reason": "名称与三联开关类别完全一致"
+    },
+    {
+      "source_label": "壁灯",
+      "target_id": "wall_light",
+      "confidence": 1,
+      "reason": "明确标注为壁灯"
+    },
+    {
+      "source_label": "灯",
+      "target_id": null,
+      "confidence": 0.5,
+      "reason": "名称过泛，无法唯一确定目标灯具类型"
+    },
+    {
+      "source_label": "数据插座",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "通信插座，不属于目标类别"
+    },
+    {
+      "source_label": "电视插座",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "电视插座，不属于目标类别"
+    },
+    {
+      "source_label": "视频服务器",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "安防视频设备，不属于目标类别"
+    },
+    {
+      "source_label": "楼层显示器",
+      "target_id": null,
+      "confidence": 0.99,
+      "reason": "消防楼层显示设备，不是疏散方向指示灯"
+    },
+    {
+      "source_label": "输入/输出模块",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "消防输入输出模块，不属于目标类别"
+    },
+    {
+      "source_label": "可燃气体报警控制器",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "气体报警控制设备，不属于目标类别"
+    },
+    {
+      "source_label": "防爆荧光灯",
+      "target_id": null,
+      "confidence": 0.98,
+      "reason": "仅标防爆荧光灯，按定义不自动归为隔爆灯"
+    },
+    {
+      "source_label": "楼寓对讲电控防盗门主机",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "楼宇对讲门禁设备，不属于目标类别"
+    },
+    {
+      "source_label": "F",
+      "target_id": null,
+      "confidence": 0.45,
+      "reason": "单字母代号语义不足，无法可靠分类"
+    },
+    {
+      "source_label": "对讲电话分机",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "对讲设备，不属于目标类别"
+    },
+    {
+      "source_label": "模块箱1",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "模块箱，不属于目标类别"
+    },
+    {
+      "source_label": "信息插座",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "通信插座，不属于目标类别"
+    },
+    {
+      "source_label": "分支分配器箱",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "电视分配箱，不属于目标类别"
+    },
+    {
+      "source_label": "火灾显示器",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "消防显示设备，不属于目标类别"
+    },
+    {
+      "source_label": "模块箱",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "模块箱，不属于目标类别"
+    },
+    {
+      "source_label": "70度防火阀",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "防火阀，不属于目标类别"
+    },
+    {
+      "source_label": "280度防火阀",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "防火阀，不属于目标类别"
+    },
+    {
+      "source_label": "防火门磁释放器",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "消防门控制设备，不属于目标类别"
+    },
+    {
+      "source_label": "隔爆灯",
+      "target_id": "explosion_proof_light",
+      "confidence": 1,
+      "reason": "名称与隔爆灯类别完全一致"
+    },
+    {
+      "source_label": "电磁阀",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "阀门执行设备，不属于目标类别"
+    },
+    {
+      "source_label": "电度表",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "电能计量设备，不属于目标类别"
+    },
+    {
+      "source_label": "避雷器",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "过电压保护元件，不属于目标类别"
+    },
+    {
+      "source_label": "接地",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "接地设施，不属于目标类别"
+    },
+    {
+      "source_label": "短路隔离器1",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "消防线路隔离器，不属于目标类别"
+    },
+    {
+      "source_label": "双联开关",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "双联表示两位开关，不等于双控开关"
+    },
+    {
+      "source_label": "输入模块1",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "消防输入模块，不属于目标类别"
+    },
+    {
+      "source_label": "温度传感器",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "楼控传感器，不属于目标类别"
+    },
+    {
+      "source_label": "密闭型按钮盒",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "按钮盒，不属于目标类别"
+    },
+    {
+      "source_label": "半球彩色摄像机",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "安防摄像设备，不属于目标类别"
+    },
+    {
+      "source_label": "半球带云台彩色摄像机",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "安防摄像设备，不属于目标类别"
+    },
+    {
+      "source_label": "报警扬声器",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "报警广播设备，不属于目标类别"
+    },
+    {
+      "source_label": "对讲天线",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "通信设备，不属于目标类别"
+    },
+    {
+      "source_label": "彩色摄像机",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "安防摄像设备，不属于目标类别"
+    },
+    {
+      "source_label": "直接数字控制器",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "楼宇控制设备，不属于目标类别"
+    },
+    {
+      "source_label": "声光报警箱",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "安防报警设备，不属于目标类别"
+    },
+    {
+      "source_label": "电锁按键",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "门禁按键，不属于目标类别"
+    },
+    {
+      "source_label": "EL",
+      "target_id": null,
+      "confidence": 0.45,
+      "reason": "字母代号语义不足，无法可靠分类"
+    },
+    {
+      "source_label": "电话插座",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "通信插座，不属于目标类别"
+    },
+    {
+      "source_label": "集合点",
+      "target_id": null,
+      "confidence": 0.99,
+      "reason": "集合点标识，不是疏散方向指示灯"
+    },
+    {
+      "source_label": "音量控制器",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "广播控制设备，不属于目标类别"
+    },
+    {
+      "source_label": "壁龛交接线",
+      "target_id": null,
+      "confidence": 0.98,
+      "reason": "通信交接设施，不属于目标类别"
+    },
+    {
+      "source_label": "带云台彩色摄像机",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "安防摄像设备，不属于目标类别"
+    },
+    {
+      "source_label": "紧急脚挑开关",
+      "target_id": null,
+      "confidence": 0.99,
+      "reason": "安防紧急脚踏开关，不是目标照明开关"
+    },
+    {
+      "source_label": "监视立柜",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "安防监视机柜，不属于目标类别"
+    },
+    {
+      "source_label": "监视器",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "安防显示设备，不属于目标类别"
+    },
+    {
+      "source_label": "火灾警铃",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "消防报警设备，不属于目标类别"
+    },
+    {
+      "source_label": "按钮盒",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "按钮盒，不属于目标类别"
+    },
+    {
+      "source_label": "普通灯",
+      "target_id": null,
+      "confidence": 0.75,
+      "reason": "普通灯无法唯一确定为壁灯、单管灯等目标类型"
+    },
+    {
+      "source_label": "火灾光信号装置",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "消防报警信号设备，不属于目标类别"
+    },
+    {
+      "source_label": "组合声光报警装置",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "消防报警设备，不属于目标类别"
+    },
+    {
+      "source_label": "气体探测器",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "消防探测设备，不属于目标类别"
+    },
+    {
+      "source_label": "感温探测器",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "消防探测设备，不属于目标类别"
+    },
+    {
+      "source_label": "输出模块",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "消防输出模块，不属于目标类别"
+    },
+    {
+      "source_label": "预作用报警阀（组）",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "消防水系统阀组，不属于目标类别"
+    },
+    {
+      "source_label": "雨淋报警阀（组）",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "消防水系统阀组，不属于目标类别"
+    },
+    {
+      "source_label": "雨淋报警阀",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "消防水系统阀门，不属于目标类别"
+    },
+    {
+      "source_label": "预作用报警阀",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "消防水系统阀门，不属于目标类别"
+    },
+    {
+      "source_label": "湿式自动报警阀",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "消防水系统阀门，不属于目标类别"
+    },
+    {
+      "source_label": "150度防火阀",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "防火阀，不属于目标类别"
+    },
+    {
+      "source_label": "280℃动作的常闭防烟阀",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "防烟阀，不是换气扇"
+    },
+    {
+      "source_label": "150℃动作的常开防火阀",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "防火阀，不属于目标类别"
+    },
+    {
+      "source_label": "加压送风口",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "通风口部件，不是换气扇"
+    },
+    {
+      "source_label": "压力开关",
+      "target_id": null,
+      "confidence": 0.99,
+      "reason": "消防压力检测开关，不是目标照明开关"
+    },
+    {
+      "source_label": "安全栅",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "防爆信号隔离元件，不属于目标类别"
+    },
+    {
+      "source_label": "双管荧光灯",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "明确为双管灯，不是单管灯"
+    },
+    {
+      "source_label": "双管格栅荧光灯",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "明确为双管格栅灯，不是单管灯"
+    },
+    {
+      "source_label": "三管格栅荧光灯",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "明确为三管格栅灯，不是单管灯"
+    },
+    {
+      "source_label": "扬声器",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "广播设备，不属于目标类别"
+    },
+    {
+      "source_label": "带熔断器的刀开关箱",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "配电开关箱，不是目标墙壁开关"
+    },
+    {
+      "source_label": "防火卷帘门控制器",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "消防卷帘控制设备，不属于目标类别"
+    },
+    {
+      "source_label": "按钮",
+      "target_id": null,
+      "confidence": 0.99,
+      "reason": "普通按钮，不是目标照明开关"
+    },
+    {
+      "source_label": "电阻箱",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "电气箱柜设备，不属于目标类别"
+    },
+    {
+      "source_label": "接线盒",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "线路连接附件，不属于目标类别"
+    },
+    {
+      "source_label": "电铃",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "信号设备，不属于目标类别"
+    },
+    {
+      "source_label": "应急疏散指示标识灯(向左、向右)",
+      "target_id": "direction_sign",
+      "confidence": 1,
+      "reason": "明确为左右双向疏散方向指示灯"
+    },
+    {
+      "source_label": "水泵压力开关",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "水泵压力检测开关，不是目标照明开关"
+    },
+    {
+      "source_label": "流量开关",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "流量检测开关，不是目标照明开关"
+    },
+    {
+      "source_label": "V",
+      "target_id": null,
+      "confidence": 0.98,
+      "reason": "电气元件代号，与目标类别无可靠对应"
+    },
+    {
+      "source_label": "元件2",
+      "target_id": null,
+      "confidence": 0.99,
+      "reason": "通用元件名称，无目标设备语义"
+    },
+    {
+      "source_label": "电流互感器",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "电气测量元件，不属于目标类别"
+    },
+    {
+      "source_label": "双向分配放大器",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "电视信号设备，不属于目标类别"
+    },
+    {
+      "source_label": "四路分配器",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "电视信号分配设备，不属于目标类别"
+    },
+    {
+      "source_label": "匹配终端",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "电视系统终端元件，不属于目标类别"
+    },
+    {
+      "source_label": "湿式报警阀（组）",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "消防水系统阀组，不属于目标类别"
+    },
+    {
+      "source_label": "可燃气体探测器",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "气体探测设备，不属于目标类别"
+    },
+    {
+      "source_label": "建筑设备监控系统设备箱",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "楼宇监控设备箱，不属于目标类别"
+    },
+    {
+      "source_label": "综合布线配线架",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "通信布线设备，不属于目标类别"
+    },
+    {
+      "source_label": "前端箱",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "电视系统箱体，不属于目标类别"
+    },
+    {
+      "source_label": "带接地插孔防爆三相插座",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "防爆插座，不是隔爆灯"
+    },
+    {
+      "source_label": "LEB",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "局部等电位端子箱代号，不属于目标类别"
+    },
+    {
+      "source_label": "输入/输出模块1",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "消防输入输出模块，不属于目标类别"
+    },
+    {
+      "source_label": "报警电话",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "报警通信设备，不属于目标类别"
+    },
+    {
+      "source_label": "CT",
+      "target_id": null,
+      "confidence": 0.95,
+      "reason": "常见为电流互感器或控制代号，不属于目标类别"
+    }
+  ],
+  "values": {
+    "wall_light": 4,
+    "single_tube_light": 17,
+    "waterproof_light": 18,
+    "explosion_proof_light": 2,
+    "wall_seat_light": 9,
+    "exhaust_fan": 11,
+    "delay_switch": 18,
+    "three_gang_switch": 4,
+    "two_way_switch": 8,
+    "direction_sign": 59
+  }
+}

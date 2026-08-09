@@ -1,0 +1,130 @@
+[
+  {
+    "id": "wall_light",
+    "label": "壁装灯",
+    "unit": "个",
+    "value": 4,
+    "evidence": [
+      {
+        "label": "壁灯",
+        "value": 4
+      }
+    ]
+  },
+  {
+    "id": "single_tube_light",
+    "label": "单管灯",
+    "unit": "个",
+    "value": 17,
+    "evidence": [
+      {
+        "label": "单管荧光灯",
+        "value": 17
+      }
+    ]
+  },
+  {
+    "id": "waterproof_light",
+    "label": "防水防尘灯",
+    "unit": "个",
+    "value": 18,
+    "evidence": [
+      {
+        "label": "防水防尘灯",
+        "value": 18
+      }
+    ]
+  },
+  {
+    "id": "explosion_proof_light",
+    "label": "隔爆灯",
+    "unit": "个",
+    "value": 1,
+    "evidence": [
+      {
+        "label": "隔爆灯",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "id": "wall_seat_light",
+    "label": "墙上座灯",
+    "unit": "个",
+    "value": 9,
+    "evidence": [
+      {
+        "label": "墙上座灯",
+        "value": 9
+      }
+    ]
+  },
+  {
+    "id": "exhaust_fan",
+    "label": "换气扇",
+    "unit": "个",
+    "value": 6,
+    "evidence": [
+      {
+        "label": "风扇",
+        "value": 6
+      }
+    ]
+  },
+  {
+    "id": "delay_switch",
+    "label": "延时开关",
+    "unit": "个",
+    "value": 18,
+    "evidence": [
+      {
+        "label": "延迟开关",
+        "value": 18
+      }
+    ]
+  },
+  {
+    "id": "three_gang_switch",
+    "label": "三联开关",
+    "unit": "个",
+    "value": 4,
+    "evidence": [
+      {
+        "label": "三联开关",
+        "value": 4
+      }
+    ]
+  },
+  {
+    "id": "two_way_switch",
+    "label": "双控开关",
+    "unit": "个",
+    "value": 7,
+    "evidence": [
+      {
+        "label": "双控开关",
+        "value": 7
+      }
+    ]
+  },
+  {
+    "id": "direction_sign",
+    "label": "疏散方向指示灯",
+    "unit": "个",
+    "value": 43,
+    "evidence": [
+      {
+        "label": "应急疏散指示标识灯(向右)",
+        "value": 33
+      },
+      {
+        "label": "应急疏散指示标识灯(向左、向右)",
+        "value": 1
+      },
+      {
+        "label": "应急疏散指示标识灯(向左)",
+        "value": 9
+      }
+    ]
+  }
+]

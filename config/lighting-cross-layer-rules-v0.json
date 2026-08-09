@@ -1,0 +1,18 @@
+{
+  "protocol": {
+    "truthAccess": "forbidden",
+    "method": "closed-set semantic retrieval across all model-space layers"
+  },
+  "rules": [
+    {"id":"wall_light","patterns":["^壁灯$"]},
+    {"id":"single_tube_light","patterns":["^单管荧光灯$"]},
+    {"id":"waterproof_light","patterns":["^防水防尘灯$"]},
+    {"id":"explosion_proof_light","patterns":["^隔爆灯$"]},
+    {"id":"wall_seat_light","patterns":["^墙上座灯$"]},
+    {"id":"exhaust_fan","patterns":["^风扇$"]},
+    {"id":"delay_switch","patterns":["^延迟开关$"]},
+    {"id":"three_gang_switch","patterns":["^三联开关$"]},
+    {"id":"two_way_switch","patterns":["^双控开关$"]},
+    {"id":"direction_sign","patterns":["^应急疏散指示标志灯$","^应急疏散指示标识灯\\(向左\\)$","^应急疏散指示标识灯\\(向右\\)$","^应急疏散指示标识灯\\(向左、向右\\)$"]}
+  ]
+}

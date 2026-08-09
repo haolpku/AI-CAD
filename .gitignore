@@ -1,0 +1,15 @@
+.DS_Store
+.env
+.env.*
+node_modules
+data/private/
+
+# Raw/proprietary construction files
+*.dwg
+*.dxf
+*.rar
+*.GQI4
+*.xlsx
+
+# Large intermediate CAD conversion output
+outputs/**/cad.json

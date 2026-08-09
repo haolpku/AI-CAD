@@ -1,0 +1,276 @@
+{
+  "protocol": {
+    "split": "calibration",
+    "truthAccess": "forbidden",
+    "allowedInputs": [
+      "CAD派生图块属性标签",
+      "每个标签在目标图层中的原始出现次数",
+      "预先定义的目标类别本体"
+    ],
+    "forbiddenInputs": [
+      "广联达Excel",
+      "GQI4内部数据库",
+      "广联达工程量数值",
+      "基于评分结果反向修改本次预测"
+    ]
+  },
+  "task": "把CAD图块属性标签映射到照明设备工程量类别",
+  "rules": [
+    "一个源标签最多映射到一个目标类别",
+    "标签可以不映射；禁止为了凑数量强行归类",
+    "只依据源标签语义和建筑电气常识，不推测广联达结果数值",
+    "数量由程序按映射关系确定性汇总，模型不直接修改源计数"
+  ],
+  "targetCategories": [
+    {
+      "id": "wall_light",
+      "label": "壁装灯",
+      "definition": "壁装LED灯或明确标注为壁灯的灯具"
+    },
+    {
+      "id": "single_tube_light",
+      "label": "单管灯",
+      "definition": "单管荧光灯或单管LED支架灯"
+    },
+    {
+      "id": "waterproof_light",
+      "label": "防水防尘灯",
+      "definition": "防水灯、防尘灯或防水防尘灯"
+    },
+    {
+      "id": "explosion_proof_light",
+      "label": "隔爆灯",
+      "definition": "明确标注隔爆的灯具；防爆荧光灯不自动视为隔爆LED灯"
+    },
+    {
+      "id": "wall_seat_light",
+      "label": "墙上座灯",
+      "definition": "明确标注墙上座灯"
+    },
+    {
+      "id": "exhaust_fan",
+      "label": "换气扇",
+      "definition": "建筑电气照明平面中的换气扇或排气扇，不含普通吊扇"
+    },
+    {
+      "id": "delay_switch",
+      "label": "延时开关",
+      "definition": "声光控或其他延时开关"
+    },
+    {
+      "id": "three_gang_switch",
+      "label": "三联开关",
+      "definition": "三联单控等三联墙壁开关"
+    },
+    {
+      "id": "two_way_switch",
+      "label": "双控开关",
+      "definition": "单联双控等双控开关；双联开关不是双控开关"
+    },
+    {
+      "id": "direction_sign",
+      "label": "疏散方向指示灯",
+      "definition": "带方向或明确属于疏散方向指示的标志灯；不含仅表示出口、楼层或应急照明的灯具"
+    }
+  ],
+  "cadEvidence": {
+    "selectedLayers": [
+      "EQUIP-照明"
+    ],
+    "selectedLayerInsertCount": 312,
+    "sourceLabels": [
+      {
+        "label": "开关",
+        "count": 40
+      },
+      {
+        "label": "应急灯",
+        "count": 34
+      },
+      {
+        "label": "应急疏散指示标识灯(向右)",
+        "count": 33
+      },
+      {
+        "label": "天棚灯",
+        "count": 19
+      },
+      {
+        "label": "防水防尘灯",
+        "count": 18
+      },
+      {
+        "label": "延迟开关",
+        "count": 18
+      },
+      {
+        "label": "单管荧光灯",
+        "count": 17
+      },
+      {
+        "label": "应急疏散指示标志灯",
+        "count": 16
+      },
+      {
+        "label": "感烟探测器",
+        "count": 10
+      },
+      {
+        "label": "墙上座灯",
+        "count": 9
+      },
+      {
+        "label": "应急疏散指示标识灯(向左)",
+        "count": 9
+      },
+      {
+        "label": "吊扇调速开关",
+        "count": 7
+      },
+      {
+        "label": "双控开关",
+        "count": 7
+      },
+      {
+        "label": "E",
+        "count": 7
+      },
+      {
+        "label": "区域型火灾报警控制器1",
+        "count": 6
+      },
+      {
+        "label": "风扇",
+        "count": 6
+      },
+      {
+        "label": "<无语义属性:$equip$00002540>",
+        "count": 6
+      },
+      {
+        "label": "三联开关",
+        "count": 4
+      },
+      {
+        "label": "壁灯",
+        "count": 4
+      },
+      {
+        "label": "灯",
+        "count": 3
+      },
+      {
+        "label": "防爆荧光灯",
+        "count": 3
+      },
+      {
+        "label": "F",
+        "count": 3
+      },
+      {
+        "label": "模块箱1",
+        "count": 3
+      },
+      {
+        "label": "70℃动作的常开防火阀",
+        "count": 3
+      },
+      {
+        "label": "<无语义属性:$equip$00002479>",
+        "count": 2
+      },
+      {
+        "label": "双联开关",
+        "count": 2
+      },
+      {
+        "label": "消火栓起泵按钮",
+        "count": 2
+      },
+      {
+        "label": "对讲天线",
+        "count": 1
+      },
+      {
+        "label": "<无语义属性:$equip$00002618>",
+        "count": 1
+      },
+      {
+        "label": "直接数字控制器",
+        "count": 1
+      },
+      {
+        "label": "电锁按键",
+        "count": 1
+      },
+      {
+        "label": "EL",
+        "count": 1
+      },
+      {
+        "label": "<无语义属性:$equip$00002617>",
+        "count": 1
+      },
+      {
+        "label": "电视插座",
+        "count": 1
+      },
+      {
+        "label": "隔爆灯",
+        "count": 1
+      },
+      {
+        "label": "双管荧光灯",
+        "count": 1
+      },
+      {
+        "label": "<无语义属性:$equip_U$00000077(tangxd14)>",
+        "count": 1
+      },
+      {
+        "label": "双管格栅荧光灯",
+        "count": 1
+      },
+      {
+        "label": "三管格栅荧光灯",
+        "count": 1
+      },
+      {
+        "label": "按钮",
+        "count": 1
+      },
+      {
+        "label": "应急疏散指示标识灯(向左、向右)",
+        "count": 1
+      },
+      {
+        "label": "<无语义属性:A$C37414D2F>",
+        "count": 1
+      },
+      {
+        "label": "<无语义属性:$equip$00002751>",
+        "count": 1
+      },
+      {
+        "label": "屏、台、箱、柜",
+        "count": 1
+      },
+      {
+        "label": "LEB",
+        "count": 1
+      },
+      {
+        "label": "报警电话",
+        "count": 1
+      },
+      {
+        "label": "多种电源配电箱",
+        "count": 1
+      },
+      {
+        "label": "280℃动作的常开排烟阀",
+        "count": 1
+      }
+    ]
+  }
+}

@@ -1,0 +1,319 @@
+{
+  "protocol": {
+    "inputHash": "fcf1c56db70c00c0e1c796f010a20b7f39ed208be3d063223aa8fb6980ea5a86",
+    "truthAccess": "forbidden",
+    "model": "gpt-5.6-sol",
+    "mode": "contextual",
+    "elapsedMs": 40085
+  },
+  "usage": {
+    "prompt_tokens": 5697,
+    "completion_tokens": 2148,
+    "total_tokens": 7845,
+    "completion_tokens_details": {
+      "reasoning_tokens": 415
+    }
+  },
+  "assignments": [
+    {
+      "source_label": "开关",
+      "target_id": null,
+      "confidence": 0.99,
+      "reason": "语义仅表明普通开关，无法确定为延时、三联或双控"
+    },
+    {
+      "source_label": "应急灯",
+      "target_id": null,
+      "confidence": 0.98,
+      "reason": "仅表示应急灯，目标类别不含一般应急照明灯"
+    },
+    {
+      "source_label": "应急疏散指示标识灯(向右)",
+      "target_id": "direction_sign",
+      "confidence": 1,
+      "reason": "明确为带向右方向的应急疏散指示灯"
+    },
+    {
+      "source_label": "天棚灯",
+      "target_id": null,
+      "confidence": 0.99,
+      "reason": "表示吸顶或棚面灯具，目标类别无普通天棚灯"
+    },
+    {
+      "source_label": "防水防尘灯",
+      "target_id": "waterproof_light",
+      "confidence": 1,
+      "reason": "标签明确标注防水防尘灯"
+    },
+    {
+      "source_label": "延迟开关",
+      "target_id": "delay_switch",
+      "confidence": 1,
+      "reason": "延迟开关是延时开关的同义表达"
+    },
+    {
+      "source_label": "单管荧光灯",
+      "target_id": "single_tube_light",
+      "confidence": 1,
+      "reason": "明确标注单管荧光灯"
+    },
+    {
+      "source_label": "应急疏散指示标志灯",
+      "target_id": "direction_sign",
+      "confidence": 0.9,
+      "reason": "明确属于疏散指示标志灯，符合疏散方向指示语义"
+    },
+    {
+      "source_label": "感烟探测器",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "属于火灾自动报警探测设备，不是照明目标类别"
+    },
+    {
+      "source_label": "墙上座灯",
+      "target_id": "wall_seat_light",
+      "confidence": 1,
+      "reason": "标签明确标注墙上座灯"
+    },
+    {
+      "source_label": "应急疏散指示标识灯(向左)",
+      "target_id": "direction_sign",
+      "confidence": 1,
+      "reason": "明确为带向左方向的应急疏散指示灯"
+    },
+    {
+      "source_label": "吊扇调速开关",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "属于吊扇调速控制，不是目标中的延时、三联或双控开关"
+    },
+    {
+      "source_label": "双控开关",
+      "target_id": "two_way_switch",
+      "confidence": 1,
+      "reason": "明确标注双控开关"
+    },
+    {
+      "source_label": "E",
+      "target_id": null,
+      "confidence": 0.99,
+      "reason": "单字母标签缺乏足够设备语义"
+    },
+    {
+      "source_label": "区域型火灾报警控制器1",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "属于火灾报警控制设备"
+    },
+    {
+      "source_label": "风扇",
+      "target_id": null,
+      "confidence": 0.98,
+      "reason": "仅标注风扇，无法确认是换气扇或排气扇"
+    },
+    {
+      "source_label": "<无语义属性:$equip$00002540>",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "无可用设备语义"
+    },
+    {
+      "source_label": "三联开关",
+      "target_id": "three_gang_switch",
+      "confidence": 1,
+      "reason": "明确标注三联开关"
+    },
+    {
+      "source_label": "壁灯",
+      "target_id": "wall_light",
+      "confidence": 1,
+      "reason": "标签明确标注壁灯"
+    },
+    {
+      "source_label": "灯",
+      "target_id": null,
+      "confidence": 0.99,
+      "reason": "普通灯具标签过于泛化，无法确定目标类别"
+    },
+    {
+      "source_label": "防爆荧光灯",
+      "target_id": null,
+      "confidence": 0.98,
+      "reason": "防爆荧光灯不按规则自动归为隔爆灯"
+    },
+    {
+      "source_label": "F",
+      "target_id": null,
+      "confidence": 0.99,
+      "reason": "单字母标签缺乏足够设备语义"
+    },
+    {
+      "source_label": "模块箱1",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "属于模块箱设备，不是目标类别"
+    },
+    {
+      "source_label": "70℃动作的常开防火阀",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "属于防火阀设备"
+    },
+    {
+      "source_label": "<无语义属性:$equip$00002479>",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "无可用设备语义"
+    },
+    {
+      "source_label": "双联开关",
+      "target_id": null,
+      "confidence": 0.98,
+      "reason": "双联表示两联，不等同于双控开关"
+    },
+    {
+      "source_label": "消火栓起泵按钮",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "属于消防水泵启动按钮"
+    },
+    {
+      "source_label": "对讲天线",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "属于通信设备"
+    },
+    {
+      "source_label": "<无语义属性:$equip$00002618>",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "无可用设备语义"
+    },
+    {
+      "source_label": "直接数字控制器",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "属于控制器设备"
+    },
+    {
+      "source_label": "电锁按键",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "属于门禁或电锁控制设备"
+    },
+    {
+      "source_label": "EL",
+      "target_id": null,
+      "confidence": 0.85,
+      "reason": "缩写含义不明确，无法仅据标签确认疏散方向指示灯"
+    },
+    {
+      "source_label": "<无语义属性:$equip$00002617>",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "无可用设备语义"
+    },
+    {
+      "source_label": "电视插座",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "属于弱电插座设备"
+    },
+    {
+      "source_label": "隔爆灯",
+      "target_id": "explosion_proof_light",
+      "confidence": 1,
+      "reason": "标签明确标注隔爆灯"
+    },
+    {
+      "source_label": "双管荧光灯",
+      "target_id": null,
+      "confidence": 0.98,
+      "reason": "明确为双管灯，不属于单管灯类别"
+    },
+    {
+      "source_label": "<无语义属性:$equip_U$00000077(tangxd14)>",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "无可用设备语义"
+    },
+    {
+      "source_label": "双管格栅荧光灯",
+      "target_id": null,
+      "confidence": 0.99,
+      "reason": "明确为双管格栅灯，不属于单管灯类别"
+    },
+    {
+      "source_label": "三管格栅荧光灯",
+      "target_id": null,
+      "confidence": 0.99,
+      "reason": "明确为三管格栅灯，不属于单管灯类别"
+    },
+    {
+      "source_label": "按钮",
+      "target_id": null,
+      "confidence": 0.99,
+      "reason": "普通按钮无法确定为目标类别中的开关"
+    },
+    {
+      "source_label": "应急疏散指示标识灯(向左、向右)",
+      "target_id": "direction_sign",
+      "confidence": 1,
+      "reason": "明确为带左右方向的应急疏散指示灯"
+    },
+    {
+      "source_label": "<无语义属性:A$C37414D2F>",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "无可用设备语义"
+    },
+    {
+      "source_label": "<无语义属性:$equip$00002751>",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "无可用设备语义"
+    },
+    {
+      "source_label": "屏、台、箱、柜",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "属于电气屏台箱柜设备，不是目标类别"
+    },
+    {
+      "source_label": "LEB",
+      "target_id": null,
+      "confidence": 0.99,
+      "reason": "通常表示局部等电位联结端子板，不是照明目标类别"
+    },
+    {
+      "source_label": "报警电话",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "属于消防或通信报警设备"
+    },
+    {
+      "source_label": "多种电源配电箱",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "属于配电箱设备"
+    },
+    {
+      "source_label": "280℃动作的常开排烟阀",
+      "target_id": null,
+      "confidence": 1,
+      "reason": "属于排烟阀设备，不是换气扇或排气扇"
+    }
+  ],
+  "values": {
+    "wall_light": 4,
+    "single_tube_light": 17,
+    "waterproof_light": 18,
+    "explosion_proof_light": 1,
+    "wall_seat_light": 9,
+    "exhaust_fan": 0,
+    "delay_switch": 18,
+    "three_gang_switch": 4,
+    "two_way_switch": 7,
+    "direction_sign": 59
+  }
+}
