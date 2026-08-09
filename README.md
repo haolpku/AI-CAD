@@ -6,6 +6,8 @@
 
 [查看 Leaderboard：总分、专业/单位细分、评分公式和分数区间](leaderboard/README.md)
 
+[查看 Experience Base：提炼建模经验但不保存项目答案](experience-base/README.md)
+
 ## 当前范围
 
 - 数据：匿名化的`Case-001`电气DWG及照明工程量真值

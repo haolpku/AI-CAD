@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AI-CAD Experience Base",
+  "type": "object",
+  "required": ["version", "protocol", "experiences"],
+  "properties": {
+    "version": { "type": "string" },
+    "protocol": {
+      "type": "object",
+      "required": ["containsProjectAnswers", "benchmarkTruthAccess"],
+      "properties": {
+        "containsProjectAnswers": { "const": false },
+        "benchmarkTruthAccess": { "const": "forbidden" }
+      }
+    },
+    "experiences": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "tier", "kind", "concept", "inferenceEligible", "supportProjectCount", "heldoutValidated"],
+        "properties": {
+          "id": { "type": "string", "pattern": "^[a-z0-9._-]+$" },
+          "tier": { "enum": ["T0-schema", "T2-promoted"] },
+          "kind": { "enum": ["property-schema", "structural-relation", "negative-evidence", "symbolic-formula", "semantic-mapping"] },
+          "concept": { "type": "string" },
+          "inferenceEligible": { "type": "boolean" },
+          "supportProjectCount": { "type": "integer", "minimum": 0 },
+          "heldoutValidated": { "type": "boolean" },
+          "inputs": { "type": "array", "items": { "type": "string" } },
+          "output": { "type": "string" },
+          "notes": { "type": "string" }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

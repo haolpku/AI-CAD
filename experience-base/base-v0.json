@@ -1,0 +1,69 @@
+{
+  "version": "experience-base-v0",
+  "protocol": {
+    "containsProjectAnswers": false,
+    "benchmarkTruthAccess": "forbidden"
+  },
+  "experiences": [
+    {
+      "id": "schema.element-context",
+      "tier": "T0-schema",
+      "kind": "property-schema",
+      "concept": "element-context",
+      "inferenceEligible": true,
+      "supportProjectCount": 0,
+      "heldoutValidated": false,
+      "inputs": ["floor", "calculation-region", "system", "model-type", "element-type", "element-subtype"],
+      "output": "normalized-element-context",
+      "notes": "Software-level field vocabulary only; contains no learned mapping or project value."
+    },
+    {
+      "id": "schema.route-components",
+      "tier": "T0-schema",
+      "kind": "property-schema",
+      "concept": "route-length-components",
+      "inferenceEligible": true,
+      "supportProjectCount": 0,
+      "heldoutValidated": false,
+      "inputs": ["horizontal-length", "vertical-length", "bridge-length", "reserved-length", "entry-length", "terminal-length"],
+      "output": "typed-length-components",
+      "notes": "Declares components, not coefficients or a project quantity."
+    },
+    {
+      "id": "schema.device-properties",
+      "tier": "T0-schema",
+      "kind": "property-schema",
+      "concept": "device-and-line-properties",
+      "inferenceEligible": true,
+      "supportProjectCount": 0,
+      "heldoutValidated": false,
+      "inputs": ["class", "description", "standard", "material", "diameter", "elevation", "lay-type", "circuit-number"],
+      "output": "normalized-technical-properties",
+      "notes": "Field names only; candidate values remain private until cross-project promotion."
+    },
+    {
+      "id": "candidate.sheet-role-negative-evidence",
+      "tier": "T0-schema",
+      "kind": "negative-evidence",
+      "concept": "sheet-role-must-be-resolved-before-counting",
+      "inferenceEligible": false,
+      "supportProjectCount": 0,
+      "heldoutValidated": false,
+      "inputs": ["plan", "system", "legend", "notes", "bound-reference"],
+      "output": "countability-gate",
+      "notes": "Hypothesis awaiting project-level held-out validation."
+    },
+    {
+      "id": "candidate.route-total-formula",
+      "tier": "T0-schema",
+      "kind": "symbolic-formula",
+      "concept": "route-total-from-typed-components",
+      "inferenceEligible": false,
+      "supportProjectCount": 0,
+      "heldoutValidated": false,
+      "inputs": ["typed-length-components", "multiplicity", "termination-policy"],
+      "output": "route-total",
+      "notes": "No coefficient is stored; exact formula must be learned outside the evaluated project and validated on held-out projects."
+    }
+  ]
+}
