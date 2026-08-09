@@ -26,7 +26,18 @@ npm run benchmark:full:score -- --predictions=path/to/predictions.json
 npm test
 ```
 
-统一总分为`Bench Score`（80分 Core + 20分 Derived）。各层先按“专业×单位”分组，避免把米、平方米、立方米和个数直接混合。当前单项目盲测基线为`26.51/100`；使用同一项目做管线选择后是`26.93/100`，后者只是 calibration 结果，不是泛化成绩。
+统一总分为`Bench Score`（80分 Core + 20分 Derived）。各层先按“专业×单位”分组，避免把米、平方米、立方米和个数直接混合。单项目盲测基线为`26.51/100`；hybrid v1 将 LLM 限制为语义证据选择，由程序执行平面图计数、管线拓扑长度和 Derived 公式，在同一 calibration case 上达到`34.68/100`。后者是开发/调参结果，不是隐藏测试成绩。
+
+## Hybrid v1
+
+```bash
+npm run benchmark:hybrid:evidence
+CAD_BENCH_API_KEY=... CAD_BENCH_BASE_URL=... \
+  npm run benchmark:hybrid:map -- gpt-5.6-sol --group=lighting --reasoning=medium
+npm run benchmark:hybrid:execute -- --threshold=0.85 --mapping=path/to/mapping.json
+```
+
+v1 使用图纸标题的空间位置将实体分为平面图、系统图、图例、说明和未知区域；管线长度包含 LINE、LWPOLYLINE bulge 圆弧和 ARC，并记录连通分量与悬空端点。同一 route 证据若被多个目标共享，执行器会拒绝自动替换，避免把整层长度分配给单一管径。
 
 ## 运行
 

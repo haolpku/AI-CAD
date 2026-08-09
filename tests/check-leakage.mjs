@@ -15,6 +15,10 @@ assert.doesNotMatch(fullPredictorSource, /truth\.json|\.xlsx|GQI4|工程量_解�
 assert.match(fullPredictorSource, /CAD_BENCH_API_KEY/);
 const fullEvidenceSource = await fs.readFile(path.join(projectDir, "scripts", "prepare-full-cad-evidence.mjs"), "utf8");
 assert.doesNotMatch(fullEvidenceSource, /truth\.json|\.xlsx|GQI4|工程量_解压/);
+for (const script of ["prepare-hybrid-evidence-v1.mjs", "run-semantic-map-v1.mjs", "execute-hybrid-v1.mjs"]) {
+  const source = await fs.readFile(path.join(projectDir, "scripts", script), "utf8");
+  assert.doesNotMatch(source, /truth\.json|\.xlsx|GQI4|工程量_解压/);
+}
 
 for (const inputName of ["input.json", "input-all-layers.json"]) {
   const input = JSON.parse(await fs.readFile(path.join(experimentDir, inputName), "utf8"));
