@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "benchmark": "node scripts/run-benchmark.mjs",
-    "test": "node tests/check-results.mjs && node tests/check-leakage.mjs && node tests/check-full-benchmark.mjs && node tests/check-full-score.mjs && node tests/check-hybrid-v1.mjs && node tests/check-route-v1-1.mjs && node tests/check-project-ir-v1-2.mjs && node tests/check-leaderboard.mjs",
+    "test": "node tests/check-results.mjs && node tests/check-leakage.mjs && node tests/check-full-benchmark.mjs && node tests/check-full-score.mjs && node tests/check-hybrid-v1.mjs && node tests/check-route-v1-1.mjs && node tests/check-project-ir-v1-2.mjs && node tests/check-hybrid-v1-2.mjs && node tests/check-leaderboard.mjs",
     "benchmark:full:build": "node scripts/build-full-benchmark.mjs",
     "benchmark:full:score": "node scripts/score-full-benchmark.mjs",
     "benchmark:full:evidence": "node scripts/prepare-full-cad-evidence.mjs",
@@ -14,6 +14,7 @@
     "benchmark:v1.1:segments": "node scripts/prepare-route-segments-v1-1.mjs",
     "benchmark:v1.1:map": "node scripts/run-route-map-v1-1.mjs",
     "benchmark:v1.2:ir": "node scripts/prepare-project-ir-v1-2.mjs",
+    "benchmark:v1.2:evidence": "node scripts/prepare-hybrid-evidence-v1-2.mjs",
     "leaderboard:export": "node scripts/export-leaderboard-submission.mjs",
     "benchmark:full:predict": "node scripts/run-full-llm-predict.mjs",
     "benchmark:full:merge": "node scripts/merge-full-predictions.mjs",

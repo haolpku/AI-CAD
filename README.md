@@ -28,7 +28,7 @@ npm run benchmark:full:score -- --predictions=path/to/predictions.json
 npm test
 ```
 
-统一总分为`Bench Score`（80分 Core + 20分 Derived）。各层先按“专业×单位”分组，避免把米、平方米、立方米和个数直接混合。单项目盲测基线为`26.51/100`；Hybrid v1 达到`34.68/100`；v1.1 将 DN 文字绑定到管线边并沿拓扑传播/分段，达到`35.67/100`。后两者都是同一 calibration case 上的开发/调参结果，不是隐藏测试成绩。
+统一总分为`Bench Score`（80分 Core + 20分 Derived）。各层先按“专业×单位”分组，避免把米、平方米、立方米和个数直接混合。单项目盲测基线为`26.51/100`；Hybrid v1 达到`34.68/100`；v1.1 将 DN 文字绑定到管线边并沿拓扑传播/分段，达到`35.67/100`；v1.2 在保留 v1.1 管线证据的基础上加入递归块 IR 和项目图谱，达到`36.85/100`。这些都是同一 calibration case 上的开发/调参结果，不是隐藏测试成绩。
 
 ## Hybrid v1
 
@@ -53,7 +53,7 @@ CAD_BENCH_API_KEY=... CAD_BENCH_BASE_URL=... \
 
 v1.2 不再把模型空间顶层实体当作全部信息，而是递归展开普通块/嵌套块，组合插入变换得到世界坐标，并为每个实体实例保留稳定 ID、源 handle、图层和完整块路径。同时把电气、给排水、暖通、建筑和总图组织成有角色与跨图关系的项目图谱。
 
-当前 4 张可解析图从 69,388 个顶层引用恢复出 404,518 个实体实例，其中 335,582 个来自嵌套块；稳定 ID 零冲突，未触发截断。建筑图因当前 LibreDWG 读取错误显式记为不可用，专业图内已绑定的建筑参照只作为替代上下文。实现、五图职责和质量口径见[Preprocessing v1.2](preprocessing/v1-2/README.md)。这些是预处理覆盖指标，不是新的 Bench Score。
+当前 4 张可解析图从 69,388 个顶层引用恢复出 404,518 个实体实例，其中 335,582 个来自嵌套块；稳定 ID 零冲突，未触发截断。建筑图因当前 LibreDWG 读取错误显式记为不可用，专业图内已绑定的建筑参照只作为替代上下文。实现、五图职责和质量口径见[Preprocessing v1.2](preprocessing/v1-2/README.md)。接入冻结预测链路后的 calibration 分数为`36.85`，实验分析见[Hybrid v1.2 rerun](experiments/hybrid-v1-2/README.md)。
 
 ```bash
 npm run benchmark:full:evidence -- --all

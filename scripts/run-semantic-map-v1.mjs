@@ -6,7 +6,9 @@ const projectDir = path.resolve(path.dirname(fileURLToPath(import.meta.url)), ".
 const benchmarkDir = path.join(projectDir, "benchmarks", "full-quantity-v0");
 const outputDir = path.join(projectDir, "outputs", "full-quantity-v0", "hybrid-mappings-v1");
 const catalog = JSON.parse(await fs.readFile(path.join(benchmarkDir, "targets.json"), "utf8"));
-const evidence = JSON.parse(await fs.readFile(path.join(projectDir, "outputs", "full-quantity-v0", "hybrid-evidence-v1.json"), "utf8"));
+const evidenceArg = process.argv.find((value) => value.startsWith("--evidence="))?.slice("--evidence=".length)
+  ?? "outputs/full-quantity-v0/hybrid-evidence-v1.json";
+const evidence = JSON.parse(await fs.readFile(path.resolve(projectDir, evidenceArg), "utf8"));
 const apiKey = process.env.CAD_BENCH_API_KEY;
 const baseUrl = (process.env.CAD_BENCH_BASE_URL ?? "https://api.openai.com").replace(/\/$/, "");
 if (!apiKey) throw new Error("CAD_BENCH_API_KEY is required and must not be stored in the repository.");
@@ -14,6 +16,7 @@ if (!apiKey) throw new Error("CAD_BENCH_API_KEY is required and must not be stor
 const group = process.argv.find((value) => value.startsWith("--group="))?.slice("--group=".length) ?? "lighting";
 const model = process.argv.slice(2).find((value) => !value.startsWith("--")) ?? "gpt-5.6-sol";
 const reasoningEffort = process.argv.find((value) => value.startsWith("--reasoning="))?.slice("--reasoning=".length) ?? "medium";
+const tag = process.argv.find((value) => value.startsWith("--tag="))?.slice("--tag=".length) ?? "";
 const groupDiscipline = {
   power: "power-electrical",
   fire: "fire-low-voltage",
@@ -133,12 +136,12 @@ for (const target of targets) {
   if (!seen.has(target.id)) mappings.push({ id: target.id, evidenceType: "none", evidenceIds: [], confidence: 0, basis: "模型未返回映射" });
 }
 const result = {
-  protocol: { benchmarkId: "full-quantity-v0", caseId: "case-001", version: "semantic-map-v1", truthAccess: "forbidden", model, group, reasoningEffort, elapsedMs: Date.now() - startedAt },
+  protocol: { benchmarkId: "full-quantity-v0", caseId: "case-001", version: tag ? `semantic-map-${tag}` : "semantic-map-v1", evidence: evidenceArg, truthAccess: "forbidden", model, group, reasoningEffort, elapsedMs: Date.now() - startedAt },
   usage: body.usage ?? null,
   mappings,
 };
 await fs.mkdir(outputDir, { recursive: true });
 const safeModel = model.replace(/[^a-zA-Z0-9._-]/g, "_");
-const outputPath = path.join(outputDir, `${safeModel}--${group}.json`);
+const outputPath = path.join(outputDir, `${safeModel}--${group}${tag ? `--${tag}` : ""}.json`);
 await fs.writeFile(outputPath, `${JSON.stringify(result, null, 2)}\n`);
 console.log(JSON.stringify({ outputPath, targets: targets.length, mapped: mappings.filter((mapping) => mapping.evidenceType !== "none").length, elapsedMs: result.protocol.elapsedMs, usage: result.usage }, null, 2));

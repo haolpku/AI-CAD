@@ -6,7 +6,9 @@ const projectDir = path.resolve(path.dirname(fileURLToPath(import.meta.url)), ".
 const outputDir = path.join(projectDir, "outputs", "full-quantity-v0", "predictions");
 const benchmarkDir = path.join(projectDir, "benchmarks", "full-quantity-v0");
 const catalog = JSON.parse(await fs.readFile(path.join(benchmarkDir, "targets.json"), "utf8"));
-const evidence = JSON.parse(await fs.readFile(path.join(projectDir, "outputs", "full-quantity-v0", "hybrid-evidence-v1.json"), "utf8"));
+const evidenceArg = process.argv.find((value) => value.startsWith("--evidence="))?.slice("--evidence=".length)
+  ?? "outputs/full-quantity-v0/hybrid-evidence-v1.json";
+const evidence = JSON.parse(await fs.readFile(path.resolve(projectDir, evidenceArg), "utf8"));
 const baseArg = process.argv.find((value) => value.startsWith("--base="))?.slice("--base=".length)
   ?? "outputs/full-quantity-v0/predictions/gpt-5.6-sol--closed_world--full.json";
 const mappingArgs = process.argv.filter((value) => value.startsWith("--mapping=")).map((value) => value.slice("--mapping=".length));
@@ -162,6 +164,7 @@ const result = {
     confidenceThreshold: threshold,
     deterministicDerivedFormulas: applyDerived,
     segmentedEvidence: segmentedEvidenceArg ?? null,
+    evidence: evidenceArg,
   },
   predictions,
   decisions,

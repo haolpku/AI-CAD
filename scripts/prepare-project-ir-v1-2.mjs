@@ -165,6 +165,9 @@ for (const input of config.inputs) {
         const blockName = cleanText(block?.name) || "<unknown>";
         record.blockNameHash = hash(input.id, blockName);
         record.blockName = blockName;
+        record.attributes = (entity.attribs ?? [])
+          .map((reference) => cleanText(byHandle.get(lastHandle(reference))?.text_value))
+          .filter(Boolean);
         const reference = boundReference(blockName);
         if (reference) increment(referenceNames, reference);
         const childMatrix = multiply(matrix, insertMatrix(entity, block));
