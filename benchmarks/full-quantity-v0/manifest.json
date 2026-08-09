@@ -1,0 +1,127 @@
+{
+  "protocol": {
+    "truthAccess": "forbidden",
+    "targetCatalogAccess": "allowed",
+    "predictionMustBeFrozenBeforeScoring": true,
+    "targetHash": "b09b64cba295333f563158d91d857e7ad080983906a4458f795aeababf7a3aae"
+  },
+  "benchmark": {
+    "id": "full-quantity-v0",
+    "title": "Case-001全专业工程量基准",
+    "caseId": "case-001",
+    "split": "calibration"
+  },
+  "scope": {
+    "workbookCount": 5,
+    "cadInputCount": 5,
+    "sheetCount": 11,
+    "detailRows": 326,
+    "scalarTargets": 380,
+    "primaryTargets": 366,
+    "derivedTotals": 14
+  },
+  "byDiscipline": [
+    {
+      "discipline": "power-electrical",
+      "label": "动力电气",
+      "detailRows": 85,
+      "scalarTargets": 85,
+      "primaryTargets": 73
+    },
+    {
+      "discipline": "fire-low-voltage",
+      "label": "消防、弱电预埋",
+      "detailRows": 41,
+      "scalarTargets": 41,
+      "primaryTargets": 41
+    },
+    {
+      "discipline": "lighting-electrical",
+      "label": "照明电",
+      "detailRows": 48,
+      "scalarTargets": 48,
+      "primaryTargets": 46
+    },
+    {
+      "discipline": "plumbing-heating",
+      "label": "给排水、采暖",
+      "detailRows": 141,
+      "scalarTargets": 195,
+      "primaryTargets": 195
+    },
+    {
+      "discipline": "lightning-grounding",
+      "label": "防雷接地",
+      "detailRows": 11,
+      "scalarTargets": 11,
+      "primaryTargets": 11
+    }
+  ],
+  "frozenInputs": [
+    {
+      "id": "electrical-cad",
+      "usedBy": [
+        "power-electrical",
+        "fire-low-voltage",
+        "lighting-electrical",
+        "lightning-grounding"
+      ],
+      "bytes": 1922336,
+      "sha256": "9d1e8012d8c5b30827a5423c0a9b1e6b8f43b0ae14c29de057626cab59406115"
+    },
+    {
+      "id": "plumbing-cad",
+      "usedBy": [
+        "plumbing-heating"
+      ],
+      "bytes": 1482592,
+      "sha256": "c480c7484f977750ac5b44352b285079fb24f8cbeaa4c33d036f14eba07ff59f"
+    },
+    {
+      "id": "hvac-cad",
+      "usedBy": [
+        "plumbing-heating"
+      ],
+      "bytes": 1692160,
+      "sha256": "e53a332e2ddfd4c3787970ff933c7a8a33ac660a015ea37338ba209a07aa98e7"
+    },
+    {
+      "id": "architecture-cad",
+      "usedBy": [
+        "supporting-context"
+      ],
+      "bytes": 28081093,
+      "sha256": "b1d7a93119885be95116fbc618e943a7d5140aa756b916d9f020bbd0cfd0f404"
+    },
+    {
+      "id": "general-cad",
+      "usedBy": [
+        "supporting-context"
+      ],
+      "bytes": 2223962,
+      "sha256": "b8abe9353f0df6002d94dce78c10bf8cac12fd1eee6c2f053999b94118185db6"
+    }
+  ],
+  "byUnit": {
+    "m": 88,
+    "m2": 52,
+    "m3": 5,
+    "个": 235
+  },
+  "primaryByUnit": {
+    "m": 74,
+    "m2": 52,
+    "m3": 5,
+    "个": 235
+  },
+  "scoring": {
+    "defaultRole": "primary",
+    "aggregateAcrossUnits": false,
+    "metrics": [
+      "coverage",
+      "MAE",
+      "WAPE",
+      "exactRate"
+    ]
+  }
+}

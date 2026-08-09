@@ -1,0 +1,1530 @@
+{
+  "protocol": {
+    "benchmarkId": "full-quantity-v0",
+    "caseId": "case-001",
+    "targetHash": "b09b64cba295333f563158d91d857e7ad080983906a4458f795aeababf7a3aae",
+    "truthAccess": "forbidden"
+  },
+  "predictions": [
+    {
+      "id": "case-001:power-electrical:s1:r3:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:power-electrical:s1:r4:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:power-electrical:s1:r5:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:power-electrical:s1:r6:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:power-electrical:s1:r7:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:power-electrical:s1:r8:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:power-electrical:s1:r9:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:power-electrical:s1:r10:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:power-electrical:s1:r11:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:power-electrical:s1:r12:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:power-electrical:s1:r13:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:power-electrical:s1:r14:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:power-electrical:s1:r15:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:power-electrical:s1:r16:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:power-electrical:s1:r17:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:power-electrical:s1:r18:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:power-electrical:s1:r19:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:power-electrical:s1:r20:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:power-electrical:s1:r21:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:power-electrical:s1:r22:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:power-electrical:s1:r23:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:power-electrical:s1:r24:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:power-electrical:s1:r26:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:power-electrical:s1:r27:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:power-electrical:s1:r28:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:power-electrical:s1:r29:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:power-electrical:s1:r31:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:power-electrical:s1:r32:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:power-electrical:s1:r33:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:power-electrical:s1:r34:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:power-electrical:s1:r35:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:power-electrical:s1:r36:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:power-electrical:s1:r37:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:power-electrical:s1:r39:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:power-electrical:s1:r40:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:power-electrical:s2:r3:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:power-electrical:s2:r4:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:power-electrical:s2:r5:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:power-electrical:s2:r6:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:power-electrical:s2:r7:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:power-electrical:s2:r8:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:power-electrical:s2:r10:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:power-electrical:s2:r11:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:power-electrical:s2:r12:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:power-electrical:s2:r13:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:power-electrical:s2:r14:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:power-electrical:s2:r15:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:power-electrical:s2:r16:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:power-electrical:s2:r17:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:power-electrical:s2:r18:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:power-electrical:s2:r19:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:power-electrical:s2:r20:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:power-electrical:s2:r21:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:power-electrical:s2:r22:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:power-electrical:s2:r23:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:power-electrical:s2:r24:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:power-electrical:s2:r25:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:power-electrical:s2:r27:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:power-electrical:s2:r28:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:power-electrical:s2:r29:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:power-electrical:s2:r31:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:power-electrical:s2:r32:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:power-electrical:s2:r33:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:power-electrical:s2:r34:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:power-electrical:s2:r35:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:power-electrical:s2:r36:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:power-electrical:s2:r37:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:power-electrical:s2:r38:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:power-electrical:s2:r39:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:power-electrical:s2:r40:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:power-electrical:s2:r41:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:power-electrical:s2:r42:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:power-electrical:s2:r43:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:power-electrical:s2:r45:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:power-electrical:s2:r46:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:power-electrical:s2:r47:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:power-electrical:s2:r48:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:power-electrical:s2:r49:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:power-electrical:s2:r50:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:power-electrical:s2:r51:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:power-electrical:s2:r52:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:power-electrical:s2:r53:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:power-electrical:s2:r54:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:power-electrical:s2:r55:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:power-electrical:s2:r56:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:fire-low-voltage:s1:r3:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:fire-low-voltage:s1:r4:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:fire-low-voltage:s1:r5:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:fire-low-voltage:s1:r7:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:fire-low-voltage:s1:r8:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:fire-low-voltage:s2:r3:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:fire-low-voltage:s2:r4:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:fire-low-voltage:s2:r5:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:fire-low-voltage:s2:r6:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:fire-low-voltage:s2:r7:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:fire-low-voltage:s2:r8:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:fire-low-voltage:s2:r9:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:fire-low-voltage:s2:r10:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:fire-low-voltage:s2:r12:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:fire-low-voltage:s2:r13:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:fire-low-voltage:s2:r14:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:fire-low-voltage:s2:r16:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:fire-low-voltage:s2:r17:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:fire-low-voltage:s2:r18:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:fire-low-voltage:s2:r19:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:fire-low-voltage:s2:r20:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:fire-low-voltage:s2:r21:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:fire-low-voltage:s2:r22:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:fire-low-voltage:s2:r23:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:fire-low-voltage:s2:r24:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:fire-low-voltage:s2:r25:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:fire-low-voltage:s2:r26:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:fire-low-voltage:s2:r27:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:fire-low-voltage:s2:r28:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:fire-low-voltage:s2:r29:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:fire-low-voltage:s2:r30:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:fire-low-voltage:s2:r31:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:fire-low-voltage:s2:r32:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:fire-low-voltage:s2:r33:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:fire-low-voltage:s2:r34:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:fire-low-voltage:s2:r35:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:fire-low-voltage:s2:r36:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:fire-low-voltage:s2:r37:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:fire-low-voltage:s2:r38:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:fire-low-voltage:s2:r39:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:fire-low-voltage:s2:r40:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:lighting-electrical:s1:r3:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:lighting-electrical:s1:r4:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:lighting-electrical:s1:r5:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:lighting-electrical:s1:r6:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:lighting-electrical:s1:r8:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:lighting-electrical:s1:r9:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:lighting-electrical:s2:r3:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:lighting-electrical:s2:r4:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:lighting-electrical:s2:r5:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:lighting-electrical:s2:r6:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:lighting-electrical:s2:r7:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:lighting-electrical:s2:r8:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:lighting-electrical:s2:r9:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:lighting-electrical:s2:r10:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:lighting-electrical:s2:r11:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:lighting-electrical:s2:r12:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:lighting-electrical:s2:r13:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:lighting-electrical:s2:r14:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:lighting-electrical:s2:r15:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:lighting-electrical:s2:r16:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:lighting-electrical:s2:r17:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:lighting-electrical:s2:r18:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:lighting-electrical:s2:r19:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:lighting-electrical:s2:r20:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:lighting-electrical:s2:r21:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:lighting-electrical:s2:r22:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:lighting-electrical:s2:r23:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:lighting-electrical:s2:r24:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:lighting-electrical:s2:r25:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:lighting-electrical:s2:r26:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:lighting-electrical:s2:r27:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:lighting-electrical:s2:r29:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:lighting-electrical:s2:r30:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:lighting-electrical:s2:r31:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:lighting-electrical:s2:r32:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:lighting-electrical:s2:r33:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:lighting-electrical:s2:r35:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:lighting-electrical:s2:r36:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:lighting-electrical:s2:r37:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:lighting-electrical:s2:r38:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:lighting-electrical:s2:r39:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:lighting-electrical:s2:r40:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:lighting-electrical:s2:r41:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:lighting-electrical:s2:r42:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:lighting-electrical:s2:r43:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:lighting-electrical:s2:r45:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:lighting-electrical:s2:r47:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:lighting-electrical:s2:r48:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s1:r4:c2",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s1:r4:c3",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s1:r4:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s1:r4:c5",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s1:r5:c2",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s1:r5:c3",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s1:r5:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s1:r5:c5",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s1:r7:c2",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s1:r7:c3",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s1:r7:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s1:r7:c5",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s1:r8:c2",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s1:r8:c3",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s1:r8:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s1:r8:c5",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s1:r9:c2",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s1:r9:c3",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s1:r9:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s1:r9:c5",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s1:r10:c2",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s1:r10:c3",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s1:r10:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s1:r10:c5",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s1:r12:c2",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s1:r12:c3",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s1:r12:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s1:r12:c5",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s1:r14:c2",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s1:r14:c3",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s1:r14:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s1:r14:c5",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s1:r15:c2",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s1:r15:c3",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s1:r15:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s1:r15:c5",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s1:r16:c2",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s1:r16:c3",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s1:r16:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s1:r16:c5",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s1:r17:c2",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s1:r17:c3",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s1:r17:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s1:r17:c5",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s1:r19:c2",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s1:r19:c3",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s1:r19:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s1:r19:c5",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s1:r21:c2",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s1:r21:c3",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s1:r21:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s1:r21:c5",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s1:r22:c2",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s1:r22:c3",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s1:r22:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s1:r22:c5",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s1:r24:c2",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s1:r24:c3",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s1:r24:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s1:r24:c5",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s1:r25:c2",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s1:r25:c3",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s1:r25:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s1:r25:c5",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s1:r27:c2",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s1:r27:c3",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s1:r27:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s1:r27:c5",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s1:r28:c2",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s1:r28:c3",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s1:r28:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s1:r28:c5",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s2:r4:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s2:r6:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s2:r7:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s2:r9:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s2:r10:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s2:r12:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s2:r14:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s2:r16:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s2:r17:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s2:r20:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s2:r22:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s2:r23:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s2:r24:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s2:r26:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s2:r28:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s2:r29:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s2:r31:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s2:r32:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s2:r34:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s2:r36:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s2:r38:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s2:r39:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s2:r40:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s2:r41:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s2:r42:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s2:r44:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s2:r45:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s2:r46:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s2:r47:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s2:r48:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s2:r49:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s2:r50:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s2:r51:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s2:r52:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s2:r53:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s2:r54:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s2:r55:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s2:r57:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s2:r59:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s2:r60:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s2:r61:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s2:r63:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s2:r65:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s2:r66:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s2:r69:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s2:r71:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s3:r5:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s3:r6:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s3:r8:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s3:r9:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s3:r11:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s3:r13:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s3:r14:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s3:r17:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s3:r18:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s3:r19:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s3:r20:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s3:r22:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s3:r23:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s3:r24:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s3:r25:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s3:r27:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s3:r28:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s3:r29:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s3:r31:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s3:r33:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s3:r36:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s3:r38:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s3:r41:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s3:r42:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s3:r43:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s3:r45:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s3:r46:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s3:r47:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s3:r49:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s3:r50:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s3:r52:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s3:r54:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s3:r55:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s3:r57:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s3:r59:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s3:r60:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s3:r61:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s3:r63:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s3:r66:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s3:r68:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s3:r70:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s3:r71:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s3:r73:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s3:r75:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s3:r78:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s3:r79:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s3:r81:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s3:r82:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s3:r84:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s3:r86:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s3:r89:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s3:r90:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s3:r92:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s3:r93:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s3:r95:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s3:r97:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s4:r4:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s4:r5:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s4:r6:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s4:r8:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s4:r9:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s4:r10:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s4:r12:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s4:r13:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s4:r15:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s4:r16:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s4:r18:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s4:r19:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s4:r20:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s4:r22:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s4:r23:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s4:r24:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s4:r26:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s4:r27:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s4:r28:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s4:r30:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:plumbing-heating:s4:r31:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:lightning-grounding:s1:r3:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:lightning-grounding:s1:r4:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:lightning-grounding:s1:r6:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:lightning-grounding:s1:r8:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:lightning-grounding:s1:r9:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:lightning-grounding:s1:r10:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:lightning-grounding:s1:r12:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:lightning-grounding:s1:r13:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:lightning-grounding:s1:r14:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:lightning-grounding:s1:r16:c4",
+      "value": null
+    },
+    {
+      "id": "case-001:lightning-grounding:s1:r17:c4",
+      "value": null
+    }
+  ]
+}

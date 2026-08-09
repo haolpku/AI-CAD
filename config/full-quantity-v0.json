@@ -1,0 +1,66 @@
+{
+  "id": "full-quantity-v0",
+  "title": "Case-001全专业工程量基准",
+  "split": "calibration",
+  "caseId": "case-001",
+  "inputs": [
+    {
+      "id": "electrical-cad",
+      "path": "../data/private/case-001/cad/electrical.dwg",
+      "usedBy": ["power-electrical", "fire-low-voltage", "lighting-electrical", "lightning-grounding"]
+    },
+    {
+      "id": "plumbing-cad",
+      "path": "../data/private/case-001/cad/plumbing.dwg",
+      "usedBy": ["plumbing-heating"]
+    },
+    {
+      "id": "hvac-cad",
+      "path": "../data/private/case-001/cad/hvac.dwg",
+      "usedBy": ["plumbing-heating"]
+    },
+    {
+      "id": "architecture-cad",
+      "path": "../data/private/case-001/cad/architecture.dwg",
+      "usedBy": ["supporting-context"]
+    },
+    {
+      "id": "general-cad",
+      "path": "../data/private/case-001/cad/general.dwg",
+      "usedBy": ["supporting-context"]
+    }
+  ],
+  "workbooks": [
+    {
+      "discipline": "power-electrical",
+      "label": "动力电气",
+      "path": "../data/private/case-001/full/power-electrical.xlsx"
+    },
+    {
+      "discipline": "fire-low-voltage",
+      "label": "消防、弱电预埋",
+      "path": "../data/private/case-001/full/fire-low-voltage.xlsx"
+    },
+    {
+      "discipline": "lighting-electrical",
+      "label": "照明电",
+      "path": "../data/private/case-001/full/lighting.xlsx"
+    },
+    {
+      "discipline": "plumbing-heating",
+      "label": "给排水、采暖",
+      "path": "../data/private/case-001/full/plumbing-heating.xlsx"
+    },
+    {
+      "discipline": "lightning-grounding",
+      "label": "防雷接地",
+      "path": "../data/private/case-001/full/lightning-grounding.xlsx"
+    }
+  ],
+  "evaluation": {
+    "primaryExclusionPatterns": ["^线/缆合计\\(m\\)$"],
+    "units": ["个", "m", "m2", "m3"],
+    "metrics": ["coverage", "MAE", "WAPE", "exactRate"],
+    "aggregateAcrossUnits": false
+  }
+}

@@ -15,6 +15,16 @@
 
 由于目前只有一个项目，而且规则是在该项目上建立的，它是 benchmark 的种子数据与校准集，还不是能证明泛化能力的正式测试集。
 
+## 全量工程量基准
+
+`benchmarks/full-quantity-v0/`冻结5份CAD作为预测输入，并把5份广联达导出工作簿标准化为全量目标目录：326个原始明细行展开为380个标量目标。默认评分排除14个重复的线缆合计，得到366个主目标，覆盖数量、长度、面积和体积。公开目录只包含目标定义、CAD哈希和真值哈希，不包含原始文件或全量真值；本地评分器在预测冻结后才读取`data/private/`中的真值。
+
+```bash
+npm run benchmark:full:build
+npm run benchmark:full:score -- --predictions=path/to/predictions.json
+npm test
+```
+
 ## 运行
 
 依赖：Node.js 18+、LibreDWG 的 `dwgread`、`@oai/artifact-tool`。

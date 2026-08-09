@@ -4,7 +4,9 @@
   "type": "module",
   "scripts": {
     "benchmark": "node scripts/run-benchmark.mjs",
-    "test": "node tests/check-results.mjs && node tests/check-leakage.mjs",
+    "test": "node tests/check-results.mjs && node tests/check-leakage.mjs && node tests/check-full-benchmark.mjs",
+    "benchmark:full:build": "node scripts/build-full-benchmark.mjs",
+    "benchmark:full:score": "node scripts/score-full-benchmark.mjs",
     "prepare:llm": "node scripts/prepare-llm-input.mjs",
     "prepare:llm:all": "node scripts/prepare-llm-input-all-layers.mjs",
     "predict:cross-layer": "node scripts/predict-cross-layer.mjs",

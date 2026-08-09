@@ -13,3 +13,6 @@ data/private/
 
 # Large intermediate CAD conversion output
 outputs/**/cad.json
+
+# Full benchmark scores can contain private row-level truth
+outputs/full-quantity-v0/
