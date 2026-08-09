@@ -18,7 +18,7 @@
       "item": "<空>-FS-ZR-YJV-4*2.5",
       "measurement": "管内/裸线线缆小计(含预留)(m)",
       "unit": "m",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D3"
     },
     {
@@ -34,7 +34,7 @@
       "item": "<空>-FS-ZR-YJV-4*2.5",
       "measurement": "线/缆合计(m)",
       "unit": "m",
-      "role": "derived_total",
+      "role": "audit",
       "sourceCell": "D4"
     },
     {
@@ -50,7 +50,7 @@
       "item": "<空>-NH-YJV-5*6",
       "measurement": "桥架内线缆小计(含预留)(m)",
       "unit": "m",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D5"
     },
     {
@@ -66,7 +66,7 @@
       "item": "<空>-NH-YJV-5*6",
       "measurement": "线/缆合计(m)",
       "unit": "m",
-      "role": "derived_total",
+      "role": "audit",
       "sourceCell": "D6"
     },
     {
@@ -82,7 +82,7 @@
       "item": "<空>-ZR-YJV-3*120+2*70",
       "measurement": "管内/裸线线缆小计(含预留)(m)",
       "unit": "m",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D7"
     },
     {
@@ -98,7 +98,7 @@
       "item": "<空>-ZR-YJV-3*120+2*70",
       "measurement": "桥架内线缆小计(含预留)(m)",
       "unit": "m",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D8"
     },
     {
@@ -114,7 +114,7 @@
       "item": "<空>-ZR-YJV-3*120+2*70",
       "measurement": "线/缆合计(m)",
       "unit": "m",
-      "role": "derived_total",
+      "role": "audit",
       "sourceCell": "D9"
     },
     {
@@ -130,7 +130,7 @@
       "item": "<空>-ZR-YJV-3*25+2*16",
       "measurement": "桥架内线缆小计(含预留)(m)",
       "unit": "m",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D10"
     },
     {
@@ -146,7 +146,7 @@
       "item": "<空>-ZR-YJV-3*25+2*16",
       "measurement": "线/缆合计(m)",
       "unit": "m",
-      "role": "derived_total",
+      "role": "audit",
       "sourceCell": "D11"
     },
     {
@@ -162,7 +162,7 @@
       "item": "<空>-ZR-YJV-3*50+2*16",
       "measurement": "管内/裸线线缆小计(含预留)(m)",
       "unit": "m",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D12"
     },
     {
@@ -178,7 +178,7 @@
       "item": "<空>-ZR-YJV-3*50+2*16",
       "measurement": "线/缆合计(m)",
       "unit": "m",
-      "role": "derived_total",
+      "role": "audit",
       "sourceCell": "D13"
     },
     {
@@ -194,7 +194,7 @@
       "item": "<空>-ZR-YJV-4*35+1*16",
       "measurement": "桥架内线缆小计(含预留)(m)",
       "unit": "m",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D14"
     },
     {
@@ -210,7 +210,7 @@
       "item": "<空>-ZR-YJV-4*35+1*16",
       "measurement": "线/缆合计(m)",
       "unit": "m",
-      "role": "derived_total",
+      "role": "audit",
       "sourceCell": "D15"
     },
     {
@@ -226,7 +226,7 @@
       "item": "<空>-ZR-YJV-5*10",
       "measurement": "管内/裸线线缆小计(含预留)(m)",
       "unit": "m",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D16"
     },
     {
@@ -242,7 +242,7 @@
       "item": "<空>-ZR-YJV-5*10",
       "measurement": "线/缆合计(m)",
       "unit": "m",
-      "role": "derived_total",
+      "role": "audit",
       "sourceCell": "D17"
     },
     {
@@ -258,7 +258,7 @@
       "item": "<空>-ZR-YJV-5*16",
       "measurement": "桥架内线缆小计(含预留)(m)",
       "unit": "m",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D18"
     },
     {
@@ -274,7 +274,7 @@
       "item": "<空>-ZR-YJV-5*16",
       "measurement": "线/缆合计(m)",
       "unit": "m",
-      "role": "derived_total",
+      "role": "audit",
       "sourceCell": "D19"
     },
     {
@@ -290,7 +290,7 @@
       "item": "<空>-ZR-YJV-5*4",
       "measurement": "管内/裸线线缆小计(含预留)(m)",
       "unit": "m",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D20"
     },
     {
@@ -306,7 +306,7 @@
       "item": "<空>-ZR-YJV-5*4",
       "measurement": "桥架内线缆小计(含预留)(m)",
       "unit": "m",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D21"
     },
     {
@@ -322,7 +322,7 @@
       "item": "<空>-ZR-YJV-5*4",
       "measurement": "线/缆合计(m)",
       "unit": "m",
-      "role": "derived_total",
+      "role": "audit",
       "sourceCell": "D22"
     },
     {
@@ -338,7 +338,7 @@
       "item": "<空>-ZR-YJV-5*6",
       "measurement": "管内/裸线线缆小计(含预留)(m)",
       "unit": "m",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D23"
     },
     {
@@ -354,7 +354,7 @@
       "item": "<空>-ZR-YJV-5*6",
       "measurement": "线/缆合计(m)",
       "unit": "m",
-      "role": "derived_total",
+      "role": "audit",
       "sourceCell": "D24"
     },
     {
@@ -370,7 +370,7 @@
       "item": "<空>-NH-BV2.5",
       "measurement": "管内/裸线线缆小计(含预留)(m)",
       "unit": "m",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D26"
     },
     {
@@ -386,7 +386,7 @@
       "item": "<空>-NH-BV2.5",
       "measurement": "线/缆合计(m)",
       "unit": "m",
-      "role": "derived_total",
+      "role": "audit",
       "sourceCell": "D27"
     },
     {
@@ -402,7 +402,7 @@
       "item": "<空>-ZR-BV2.5",
       "measurement": "管内/裸线线缆小计(含预留)(m)",
       "unit": "m",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D28"
     },
     {
@@ -418,7 +418,7 @@
       "item": "<空>-ZR-BV2.5",
       "measurement": "线/缆合计(m)",
       "unit": "m",
-      "role": "derived_total",
+      "role": "audit",
       "sourceCell": "D29"
     },
     {
@@ -434,7 +434,7 @@
       "item": "PVC-20",
       "measurement": "长度合计(m)",
       "unit": "m",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D31"
     },
     {
@@ -450,7 +450,7 @@
       "item": "焊接钢管-100",
       "measurement": "长度合计(m)",
       "unit": "m",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D32"
     },
     {
@@ -466,7 +466,7 @@
       "item": "焊接钢管-20",
       "measurement": "长度合计(m)",
       "unit": "m",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D33"
     },
     {
@@ -482,7 +482,7 @@
       "item": "焊接钢管-25",
       "measurement": "长度合计(m)",
       "unit": "m",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D34"
     },
     {
@@ -498,7 +498,7 @@
       "item": "焊接钢管-32",
       "measurement": "长度合计(m)",
       "unit": "m",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D35"
     },
     {
@@ -514,7 +514,7 @@
       "item": "焊接钢管-40",
       "measurement": "长度合计(m)",
       "unit": "m",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D36"
     },
     {
@@ -530,7 +530,7 @@
       "item": "焊接钢管-70",
       "measurement": "长度合计(m)",
       "unit": "m",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D37"
     },
     {
@@ -546,7 +546,7 @@
       "item": "动力金属线槽-200*100",
       "measurement": "长度合计(m)",
       "unit": "m",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D39"
     },
     {
@@ -562,7 +562,7 @@
       "item": "应急照明金属防火槽盒-50*50",
       "measurement": "长度合计(m)",
       "unit": "m",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D40"
     },
     {
@@ -578,7 +578,7 @@
       "item": "单相五孔插座(三孔、两孔各一)(安全型)  250V,10A-<空>",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D3"
     },
     {
@@ -594,7 +594,7 @@
       "item": "风机盘管温控开关-<空>",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D4"
     },
     {
@@ -610,7 +610,7 @@
       "item": "卷帘门开关-<空>",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D5"
     },
     {
@@ -626,7 +626,7 @@
       "item": "空调控制器-<空>",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D6"
     },
     {
@@ -642,7 +642,7 @@
       "item": "三相四孔插座(安全型) 450V,20A-<空>",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D7"
     },
     {
@@ -658,7 +658,7 @@
       "item": "卫生间烘手器插座(安全型)  250V,16A-<空>",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D8"
     },
     {
@@ -674,7 +674,7 @@
       "item": "(CASE-001)AA1-600*1800*400",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D10"
     },
     {
@@ -690,7 +690,7 @@
       "item": "(CASE-001)AL-B1-600*1200*200",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D11"
     },
     {
@@ -706,7 +706,7 @@
       "item": "(CASE-001)ALE-B2-600*1200*200",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D12"
     },
     {
@@ -722,7 +722,7 @@
       "item": "(CASE-001)AL-F1-600*1200*200",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D13"
     },
     {
@@ -738,7 +738,7 @@
       "item": "(CASE-001)AL-F2-600*1200*200",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D14"
     },
     {
@@ -754,7 +754,7 @@
       "item": "(CASE-001)AL-F3-600*1200*200",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D15"
     },
     {
@@ -770,7 +770,7 @@
       "item": "(CASE-001)AL-F4-600*1200*200",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D16"
     },
     {
@@ -786,7 +786,7 @@
       "item": "(CASE-001)AP-B2-600*1800*400",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D17"
     },
     {
@@ -802,7 +802,7 @@
       "item": "(CASE-001)AP-B2-1-600*600*200",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D18"
     },
     {
@@ -818,7 +818,7 @@
       "item": "(CASE-001)AP-DT-600*1200*200",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D19"
     },
     {
@@ -834,7 +834,7 @@
       "item": "(CASE-001)APE-B2-600*600*200",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D20"
     },
     {
@@ -850,7 +850,7 @@
       "item": "(CASE-001)AP-WD-600*1800*400",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D21"
     },
     {
@@ -866,7 +866,7 @@
       "item": "AC-QWB1-600*600*200",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D22"
     },
     {
@@ -882,7 +882,7 @@
       "item": "AC-QWB2-600*600*200",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D23"
     },
     {
@@ -898,7 +898,7 @@
       "item": "电梯电源-600*600*200",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D24"
     },
     {
@@ -914,7 +914,7 @@
       "item": "卷帘门控制箱RS-600*600*200",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D25"
     },
     {
@@ -930,7 +930,7 @@
       "item": "QJTT-1-(200*100)(200*100)",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D27"
     },
     {
@@ -946,7 +946,7 @@
       "item": "QJTT-1-(200*100)(200*100)(200*100)",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D28"
     },
     {
@@ -962,7 +962,7 @@
       "item": "QJTT-1-(50*50)(50*50)",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D29"
     },
     {
@@ -978,7 +978,7 @@
       "item": "1.1KW污水泵-<空>",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D31"
     },
     {
@@ -994,7 +994,7 @@
       "item": "4KW污水泵-<空>",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D32"
     },
     {
@@ -1010,7 +1010,7 @@
       "item": "B2F-1EF排风机-<空>",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D33"
     },
     {
@@ -1026,7 +1026,7 @@
       "item": "B2F-1OAHU新风机-<空>",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D34"
     },
     {
@@ -1042,7 +1042,7 @@
       "item": "B2F-1SEF排烟风机-<空>",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D35"
     },
     {
@@ -1058,7 +1058,7 @@
       "item": "B2F-2EF排风机-<空>",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D36"
     },
     {
@@ -1074,7 +1074,7 @@
       "item": "B2F-2SF补风兼消防补风-<空>",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D37"
     },
     {
@@ -1090,7 +1090,7 @@
       "item": "B2F-2SF送风机-<空>",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D38"
     },
     {
@@ -1106,7 +1106,7 @@
       "item": "B2F-3EF排风机-<空>",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D39"
     },
     {
@@ -1122,7 +1122,7 @@
       "item": "CPP补水排气机组(自带控制箱)-<空>",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D40"
     },
     {
@@ -1138,7 +1138,7 @@
       "item": "CP循环泵-<空>",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D41"
     },
     {
@@ -1154,7 +1154,7 @@
       "item": "风机盘管-<空>",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D42"
     },
     {
@@ -1170,7 +1170,7 @@
       "item": "软化水装置-<空>",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D43"
     },
     {
@@ -1186,7 +1186,7 @@
       "item": "线缆端头-FS-ZR-YJV-4*2.5",
       "measurement": "线缆端头个数(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "derived",
       "sourceCell": "D45"
     },
     {
@@ -1202,7 +1202,7 @@
       "item": "线缆端头-NH-BV2.5",
       "measurement": "线缆端头个数(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "derived",
       "sourceCell": "D46"
     },
     {
@@ -1218,7 +1218,7 @@
       "item": "线缆端头-NH-YJV-5*6",
       "measurement": "线缆端头个数(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "derived",
       "sourceCell": "D47"
     },
     {
@@ -1234,7 +1234,7 @@
       "item": "线缆端头-ZR-BV2.5",
       "measurement": "线缆端头个数(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "derived",
       "sourceCell": "D48"
     },
     {
@@ -1250,7 +1250,7 @@
       "item": "线缆端头-ZR-YJV-3*120+2*70",
       "measurement": "线缆端头个数(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "derived",
       "sourceCell": "D49"
     },
     {
@@ -1266,7 +1266,7 @@
       "item": "线缆端头-ZR-YJV-3*25+2*16",
       "measurement": "线缆端头个数(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "derived",
       "sourceCell": "D50"
     },
     {
@@ -1282,7 +1282,7 @@
       "item": "线缆端头-ZR-YJV-3*50+2*16",
       "measurement": "线缆端头个数(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "derived",
       "sourceCell": "D51"
     },
     {
@@ -1298,7 +1298,7 @@
       "item": "线缆端头-ZR-YJV-4*35+1*16",
       "measurement": "线缆端头个数(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "derived",
       "sourceCell": "D52"
     },
     {
@@ -1314,7 +1314,7 @@
       "item": "线缆端头-ZR-YJV-5*10",
       "measurement": "线缆端头个数(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "derived",
       "sourceCell": "D53"
     },
     {
@@ -1330,7 +1330,7 @@
       "item": "线缆端头-ZR-YJV-5*16",
       "measurement": "线缆端头个数(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "derived",
       "sourceCell": "D54"
     },
     {
@@ -1346,7 +1346,7 @@
       "item": "线缆端头-ZR-YJV-5*4",
       "measurement": "线缆端头个数(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "derived",
       "sourceCell": "D55"
     },
     {
@@ -1362,7 +1362,7 @@
       "item": "线缆端头-ZR-YJV-5*6",
       "measurement": "线缆端头个数(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "derived",
       "sourceCell": "D56"
     },
     {
@@ -1378,7 +1378,7 @@
       "item": "焊接钢管-32",
       "measurement": "长度合计(m)",
       "unit": "m",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D3"
     },
     {
@@ -1394,7 +1394,7 @@
       "item": "焊接钢管-25",
       "measurement": "长度合计(m)",
       "unit": "m",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D4"
     },
     {
@@ -1410,7 +1410,7 @@
       "item": "焊接钢管-20",
       "measurement": "长度合计(m)",
       "unit": "m",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D5"
     },
     {
@@ -1426,7 +1426,7 @@
       "item": "弱电通信金属线槽-300*100",
       "measurement": "长度合计(m)",
       "unit": "m",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D7"
     },
     {
@@ -1442,7 +1442,7 @@
       "item": "消防防火金属线槽-100*50",
       "measurement": "长度合计(m)",
       "unit": "m",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D8"
     },
     {
@@ -1458,7 +1458,7 @@
       "item": "M-600*500*200",
       "measurement": "数量合计(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D3"
     },
     {
@@ -1474,7 +1474,7 @@
       "item": "VH前端箱-600*500*300",
       "measurement": "数量合计(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D4"
     },
     {
@@ -1490,7 +1490,7 @@
       "item": "Z消防控制箱-600*500*300",
       "measurement": "数量合计(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D5"
     },
     {
@@ -1506,7 +1506,7 @@
       "item": "可燃气体报警控制盘-600*600*200",
       "measurement": "数量合计(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D6"
     },
     {
@@ -1522,7 +1522,7 @@
       "item": "配电箱-600*600*200",
       "measurement": "数量合计(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D7"
     },
     {
@@ -1538,7 +1538,7 @@
       "item": "配电箱-1-600*600*200",
       "measurement": "数量合计(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D8"
     },
     {
@@ -1554,7 +1554,7 @@
       "item": "配电箱-2-600*600*200",
       "measurement": "数量合计(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D9"
     },
     {
@@ -1570,7 +1570,7 @@
       "item": "信息网络交接柜（弱电机柜）-600*2000*400",
       "measurement": "数量合计(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D10"
     },
     {
@@ -1586,7 +1586,7 @@
       "item": "QJTT-1-(300*100)(300*100)",
       "measurement": "数量合计(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D12"
     },
     {
@@ -1602,7 +1602,7 @@
       "item": "QJTT-1-(100*50)(100*50)",
       "measurement": "数量合计(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D13"
     },
     {
@@ -1618,7 +1618,7 @@
       "item": "QJTT-1-(100*50)(100*50)(100*50)",
       "measurement": "数量合计(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D14"
     },
     {
@@ -1634,7 +1634,7 @@
       "item": "XFQJ-1-<空>",
       "measurement": "数量合计(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D16"
     },
     {
@@ -1650,7 +1650,7 @@
       "item": "XFQJ-10-<空>",
       "measurement": "数量合计(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D17"
     },
     {
@@ -1666,7 +1666,7 @@
       "item": "XFQJ-11-<空>",
       "measurement": "数量合计(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D18"
     },
     {
@@ -1682,7 +1682,7 @@
       "item": "XFQJ-12-<空>",
       "measurement": "数量合计(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D19"
     },
     {
@@ -1698,7 +1698,7 @@
       "item": "XFQJ-13-<空>",
       "measurement": "数量合计(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D20"
     },
     {
@@ -1714,7 +1714,7 @@
       "item": "XFQJ-14-<空>",
       "measurement": "数量合计(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D21"
     },
     {
@@ -1730,7 +1730,7 @@
       "item": "XFQJ-15-<空>",
       "measurement": "数量合计(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D22"
     },
     {
@@ -1746,7 +1746,7 @@
       "item": "XFQJ-16-<空>",
       "measurement": "数量合计(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D23"
     },
     {
@@ -1762,7 +1762,7 @@
       "item": "XFQJ-17-<空>",
       "measurement": "数量合计(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D24"
     },
     {
@@ -1778,7 +1778,7 @@
       "item": "XFQJ-18-<空>",
       "measurement": "数量合计(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D25"
     },
     {
@@ -1794,7 +1794,7 @@
       "item": "XFQJ-19-<空>",
       "measurement": "数量合计(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D26"
     },
     {
@@ -1810,7 +1810,7 @@
       "item": "XFQJ-2-<空>",
       "measurement": "数量合计(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D27"
     },
     {
@@ -1826,7 +1826,7 @@
       "item": "XFQJ-20-<空>",
       "measurement": "数量合计(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D28"
     },
     {
@@ -1842,7 +1842,7 @@
       "item": "XFQJ-21-<空>",
       "measurement": "数量合计(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D29"
     },
     {
@@ -1858,7 +1858,7 @@
       "item": "XFQJ-22-<空>",
       "measurement": "数量合计(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D30"
     },
     {
@@ -1874,7 +1874,7 @@
       "item": "XFQJ-23-<空>",
       "measurement": "数量合计(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D31"
     },
     {
@@ -1890,7 +1890,7 @@
       "item": "XFQJ-24-<空>",
       "measurement": "数量合计(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D32"
     },
     {
@@ -1906,7 +1906,7 @@
       "item": "XFQJ-25-<空>",
       "measurement": "数量合计(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D33"
     },
     {
@@ -1922,7 +1922,7 @@
       "item": "XFQJ-3-<空>",
       "measurement": "数量合计(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D34"
     },
     {
@@ -1938,7 +1938,7 @@
       "item": "XFQJ-4-<空>",
       "measurement": "数量合计(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D35"
     },
     {
@@ -1954,7 +1954,7 @@
       "item": "XFQJ-5-<空>",
       "measurement": "数量合计(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D36"
     },
     {
@@ -1970,7 +1970,7 @@
       "item": "XFQJ-6-<空>",
       "measurement": "数量合计(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D37"
     },
     {
@@ -1986,7 +1986,7 @@
       "item": "XFQJ-7-<空>",
       "measurement": "数量合计(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D38"
     },
     {
@@ -2002,7 +2002,7 @@
       "item": "XFQJ-8-<空>",
       "measurement": "数量合计(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D39"
     },
     {
@@ -2018,7 +2018,7 @@
       "item": "XFQJ-9-<空>",
       "measurement": "数量合计(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D40"
     },
     {
@@ -2034,7 +2034,7 @@
       "item": "<空>-NH-BV2.5",
       "measurement": "管内/裸线线缆小计(含预留)(m)",
       "unit": "m",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D3"
     },
     {
@@ -2050,7 +2050,7 @@
       "item": "<空>-NH-BV2.5",
       "measurement": "线/缆合计(m)",
       "unit": "m",
-      "role": "derived_total",
+      "role": "audit",
       "sourceCell": "D4"
     },
     {
@@ -2066,7 +2066,7 @@
       "item": "<空>-ZR-BV2.5",
       "measurement": "管内/裸线线缆小计(含预留)(m)",
       "unit": "m",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D5"
     },
     {
@@ -2082,7 +2082,7 @@
       "item": "<空>-ZR-BV2.5",
       "measurement": "线/缆合计(m)",
       "unit": "m",
-      "role": "derived_total",
+      "role": "audit",
       "sourceCell": "D6"
     },
     {
@@ -2098,7 +2098,7 @@
       "item": "PVC-20",
       "measurement": "长度合计(m)",
       "unit": "m",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D8"
     },
     {
@@ -2114,7 +2114,7 @@
       "item": "焊接钢管-20",
       "measurement": "长度合计(m)",
       "unit": "m",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D9"
     },
     {
@@ -2130,7 +2130,7 @@
       "item": "壁装LED灯-220V 13W",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D3"
     },
     {
@@ -2146,7 +2146,7 @@
       "item": "壁装LED灯-1-220V 13W",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D4"
     },
     {
@@ -2162,7 +2162,7 @@
       "item": "单管LED防尘支架荧光灯-220V 20W",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D5"
     },
     {
@@ -2178,7 +2178,7 @@
       "item": "防水LED灯-220V 13W",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D6"
     },
     {
@@ -2194,7 +2194,7 @@
       "item": "隔爆LED灯-220V 13W",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D7"
     },
     {
@@ -2210,7 +2210,7 @@
       "item": "换气扇-<空>",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D8"
     },
     {
@@ -2226,7 +2226,7 @@
       "item": "换气扇-1-<空>",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D9"
     },
     {
@@ -2242,7 +2242,7 @@
       "item": "换气扇-2-<空>",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D10"
     },
     {
@@ -2258,7 +2258,7 @@
       "item": "换气扇-3-<空>",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D11"
     },
     {
@@ -2274,7 +2274,7 @@
       "item": "换气扇-4-<空>",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D12"
     },
     {
@@ -2290,7 +2290,7 @@
       "item": "换气扇-5-<空>",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D13"
     },
     {
@@ -2306,7 +2306,7 @@
       "item": "嵌入式筒灯LED灯-220V 13W",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D14"
     },
     {
@@ -2322,7 +2322,7 @@
       "item": "墙上座灯-220V 13W",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D15"
     },
     {
@@ -2338,7 +2338,7 @@
       "item": "应急型嵌入式筒灯LED灯-220V 13W",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D16"
     },
     {
@@ -2354,7 +2354,7 @@
       "item": "应急型嵌入式筒灯LED灯-1-220V 13W",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D17"
     },
     {
@@ -2370,7 +2370,7 @@
       "item": "应急型嵌入式筒灯LED灯-2-220V 13W",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D18"
     },
     {
@@ -2386,7 +2386,7 @@
       "item": "应急型嵌入式筒灯LED灯-3-220V 13W",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D19"
     },
     {
@@ -2402,7 +2402,7 @@
       "item": "应急型嵌入式筒灯LED灯-4-220V 13W",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D20"
     },
     {
@@ -2418,7 +2418,7 @@
       "item": "应急型嵌入式筒灯LED灯-5-220V 13W",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D21"
     },
     {
@@ -2434,7 +2434,7 @@
       "item": "应急型吸顶LED灯-220V 13W",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D22"
     },
     {
@@ -2450,7 +2450,7 @@
       "item": "智能型楼层指示标志灯-220V 1W",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D23"
     },
     {
@@ -2466,7 +2466,7 @@
       "item": "智能型应急疏散出口指示标志灯-220V 1W",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D24"
     },
     {
@@ -2482,7 +2482,7 @@
       "item": "智能型应急疏散方向指示标志灯-220V 1W",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D25"
     },
     {
@@ -2498,7 +2498,7 @@
       "item": "智能型应急疏散方向指示标志灯-1-220V 1W",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D26"
     },
     {
@@ -2514,7 +2514,7 @@
       "item": "智能型应急疏散方向指示标志灯-2-220V 1W",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D27"
     },
     {
@@ -2530,7 +2530,7 @@
       "item": "单联单控暗开关-<空>",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D29"
     },
     {
@@ -2546,7 +2546,7 @@
       "item": "单联双控暗开关-<空>",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D30"
     },
     {
@@ -2562,7 +2562,7 @@
       "item": "三联单控暗开关-<空>",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D31"
     },
     {
@@ -2578,7 +2578,7 @@
       "item": "声光控双触点延时开关-<空>",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D32"
     },
     {
@@ -2594,7 +2594,7 @@
       "item": "双联单控暗开关-<空>",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D33"
     },
     {
@@ -2610,7 +2610,7 @@
       "item": "(CASE-001)AA1-600*1800*400",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D35"
     },
     {
@@ -2626,7 +2626,7 @@
       "item": "(CASE-001)AL-B1-600*1200*200",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D36"
     },
     {
@@ -2642,7 +2642,7 @@
       "item": "(CASE-001)ALE-B2-600*1200*200",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D37"
     },
     {
@@ -2658,7 +2658,7 @@
       "item": "(CASE-001)AL-F1-600*1200*200",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D38"
     },
     {
@@ -2674,7 +2674,7 @@
       "item": "(CASE-001)AL-F2-600*1200*200",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D39"
     },
     {
@@ -2690,7 +2690,7 @@
       "item": "(CASE-001)AL-F3-600*1200*200",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D40"
     },
     {
@@ -2706,7 +2706,7 @@
       "item": "(CASE-001)AL-F4-600*1200*200",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D41"
     },
     {
@@ -2722,7 +2722,7 @@
       "item": "AC-QWB2-600*600*200",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D42"
     },
     {
@@ -2738,7 +2738,7 @@
       "item": "电梯电源-600*600*200",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D43"
     },
     {
@@ -2754,7 +2754,7 @@
       "item": "燃气表间风机-<空>",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D45"
     },
     {
@@ -2770,7 +2770,7 @@
       "item": "线缆端头-NH-BV2.5",
       "measurement": "线缆端头个数(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "derived",
       "sourceCell": "D47"
     },
     {
@@ -2786,7 +2786,7 @@
       "item": "线缆端头-ZR-BV2.5",
       "measurement": "线缆端头个数(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "derived",
       "sourceCell": "D48"
     },
     {
@@ -2803,7 +2803,7 @@
       "item": "内衬PE塑钢管-25",
       "measurement": "长度(m)",
       "unit": "m",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "B4"
     },
     {
@@ -2820,7 +2820,7 @@
       "item": "内衬PE塑钢管-25",
       "measurement": "超高长度(m)",
       "unit": "m",
-      "role": "primary",
+      "role": "derived",
       "sourceCell": "C4"
     },
     {
@@ -2837,7 +2837,7 @@
       "item": "内衬PE塑钢管-25",
       "measurement": "内表面积(m2)",
       "unit": "m2",
-      "role": "primary",
+      "role": "derived",
       "sourceCell": "D4"
     },
     {
@@ -2854,7 +2854,7 @@
       "item": "内衬PE塑钢管-25",
       "measurement": "外表面积(m2)",
       "unit": "m2",
-      "role": "primary",
+      "role": "derived",
       "sourceCell": "E4"
     },
     {
@@ -2871,7 +2871,7 @@
       "item": "内衬PE塑钢管-20",
       "measurement": "长度(m)",
       "unit": "m",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "B5"
     },
     {
@@ -2888,7 +2888,7 @@
       "item": "内衬PE塑钢管-20",
       "measurement": "超高长度(m)",
       "unit": "m",
-      "role": "primary",
+      "role": "derived",
       "sourceCell": "C5"
     },
     {
@@ -2905,7 +2905,7 @@
       "item": "内衬PE塑钢管-20",
       "measurement": "内表面积(m2)",
       "unit": "m2",
-      "role": "primary",
+      "role": "derived",
       "sourceCell": "D5"
     },
     {
@@ -2922,7 +2922,7 @@
       "item": "内衬PE塑钢管-20",
       "measurement": "外表面积(m2)",
       "unit": "m2",
-      "role": "primary",
+      "role": "derived",
       "sourceCell": "E5"
     },
     {
@@ -2939,7 +2939,7 @@
       "item": "内衬PE塑钢管-50",
       "measurement": "长度(m)",
       "unit": "m",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "B7"
     },
     {
@@ -2956,7 +2956,7 @@
       "item": "内衬PE塑钢管-50",
       "measurement": "超高长度(m)",
       "unit": "m",
-      "role": "primary",
+      "role": "derived",
       "sourceCell": "C7"
     },
     {
@@ -2973,7 +2973,7 @@
       "item": "内衬PE塑钢管-50",
       "measurement": "内表面积(m2)",
       "unit": "m2",
-      "role": "primary",
+      "role": "derived",
       "sourceCell": "D7"
     },
     {
@@ -2990,7 +2990,7 @@
       "item": "内衬PE塑钢管-50",
       "measurement": "外表面积(m2)",
       "unit": "m2",
-      "role": "primary",
+      "role": "derived",
       "sourceCell": "E7"
     },
     {
@@ -3007,7 +3007,7 @@
       "item": "内衬PE塑钢管-32",
       "measurement": "长度(m)",
       "unit": "m",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "B8"
     },
     {
@@ -3024,7 +3024,7 @@
       "item": "内衬PE塑钢管-32",
       "measurement": "超高长度(m)",
       "unit": "m",
-      "role": "primary",
+      "role": "derived",
       "sourceCell": "C8"
     },
     {
@@ -3041,7 +3041,7 @@
       "item": "内衬PE塑钢管-32",
       "measurement": "内表面积(m2)",
       "unit": "m2",
-      "role": "primary",
+      "role": "derived",
       "sourceCell": "D8"
     },
     {
@@ -3058,7 +3058,7 @@
       "item": "内衬PE塑钢管-32",
       "measurement": "外表面积(m2)",
       "unit": "m2",
-      "role": "primary",
+      "role": "derived",
       "sourceCell": "E8"
     },
     {
@@ -3075,7 +3075,7 @@
       "item": "内衬PE塑钢管-25",
       "measurement": "长度(m)",
       "unit": "m",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "B9"
     },
     {
@@ -3092,7 +3092,7 @@
       "item": "内衬PE塑钢管-25",
       "measurement": "超高长度(m)",
       "unit": "m",
-      "role": "primary",
+      "role": "derived",
       "sourceCell": "C9"
     },
     {
@@ -3109,7 +3109,7 @@
       "item": "内衬PE塑钢管-25",
       "measurement": "内表面积(m2)",
       "unit": "m2",
-      "role": "primary",
+      "role": "derived",
       "sourceCell": "D9"
     },
     {
@@ -3126,7 +3126,7 @@
       "item": "内衬PE塑钢管-25",
       "measurement": "外表面积(m2)",
       "unit": "m2",
-      "role": "primary",
+      "role": "derived",
       "sourceCell": "E9"
     },
     {
@@ -3143,7 +3143,7 @@
       "item": "内衬PE塑钢管-20",
       "measurement": "长度(m)",
       "unit": "m",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "B10"
     },
     {
@@ -3160,7 +3160,7 @@
       "item": "内衬PE塑钢管-20",
       "measurement": "超高长度(m)",
       "unit": "m",
-      "role": "primary",
+      "role": "derived",
       "sourceCell": "C10"
     },
     {
@@ -3177,7 +3177,7 @@
       "item": "内衬PE塑钢管-20",
       "measurement": "内表面积(m2)",
       "unit": "m2",
-      "role": "primary",
+      "role": "derived",
       "sourceCell": "D10"
     },
     {
@@ -3194,7 +3194,7 @@
       "item": "内衬PE塑钢管-20",
       "measurement": "外表面积(m2)",
       "unit": "m2",
-      "role": "primary",
+      "role": "derived",
       "sourceCell": "E10"
     },
     {
@@ -3211,7 +3211,7 @@
       "item": "柔性接口承插式机制铸铁管-100",
       "measurement": "长度(m)",
       "unit": "m",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "B12"
     },
     {
@@ -3228,7 +3228,7 @@
       "item": "柔性接口承插式机制铸铁管-100",
       "measurement": "超高长度(m)",
       "unit": "m",
-      "role": "primary",
+      "role": "derived",
       "sourceCell": "C12"
     },
     {
@@ -3245,7 +3245,7 @@
       "item": "柔性接口承插式机制铸铁管-100",
       "measurement": "内表面积(m2)",
       "unit": "m2",
-      "role": "primary",
+      "role": "derived",
       "sourceCell": "D12"
     },
     {
@@ -3262,7 +3262,7 @@
       "item": "柔性接口承插式机制铸铁管-100",
       "measurement": "外表面积(m2)",
       "unit": "m2",
-      "role": "primary",
+      "role": "derived",
       "sourceCell": "E12"
     },
     {
@@ -3279,7 +3279,7 @@
       "item": "柔性接口承插式机制铸铁管-150",
       "measurement": "长度(m)",
       "unit": "m",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "B14"
     },
     {
@@ -3296,7 +3296,7 @@
       "item": "柔性接口承插式机制铸铁管-150",
       "measurement": "超高长度(m)",
       "unit": "m",
-      "role": "primary",
+      "role": "derived",
       "sourceCell": "C14"
     },
     {
@@ -3313,7 +3313,7 @@
       "item": "柔性接口承插式机制铸铁管-150",
       "measurement": "内表面积(m2)",
       "unit": "m2",
-      "role": "primary",
+      "role": "derived",
       "sourceCell": "D14"
     },
     {
@@ -3330,7 +3330,7 @@
       "item": "柔性接口承插式机制铸铁管-150",
       "measurement": "外表面积(m2)",
       "unit": "m2",
-      "role": "primary",
+      "role": "derived",
       "sourceCell": "E14"
     },
     {
@@ -3347,7 +3347,7 @@
       "item": "柔性接口承插式机制铸铁管-100",
       "measurement": "长度(m)",
       "unit": "m",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "B15"
     },
     {
@@ -3364,7 +3364,7 @@
       "item": "柔性接口承插式机制铸铁管-100",
       "measurement": "超高长度(m)",
       "unit": "m",
-      "role": "primary",
+      "role": "derived",
       "sourceCell": "C15"
     },
     {
@@ -3381,7 +3381,7 @@
       "item": "柔性接口承插式机制铸铁管-100",
       "measurement": "内表面积(m2)",
       "unit": "m2",
-      "role": "primary",
+      "role": "derived",
       "sourceCell": "D15"
     },
     {
@@ -3398,7 +3398,7 @@
       "item": "柔性接口承插式机制铸铁管-100",
       "measurement": "外表面积(m2)",
       "unit": "m2",
-      "role": "primary",
+      "role": "derived",
       "sourceCell": "E15"
     },
     {
@@ -3415,7 +3415,7 @@
       "item": "柔性接口承插式机制铸铁管-75",
       "measurement": "长度(m)",
       "unit": "m",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "B16"
     },
     {
@@ -3432,7 +3432,7 @@
       "item": "柔性接口承插式机制铸铁管-75",
       "measurement": "超高长度(m)",
       "unit": "m",
-      "role": "primary",
+      "role": "derived",
       "sourceCell": "C16"
     },
     {
@@ -3449,7 +3449,7 @@
       "item": "柔性接口承插式机制铸铁管-75",
       "measurement": "内表面积(m2)",
       "unit": "m2",
-      "role": "primary",
+      "role": "derived",
       "sourceCell": "D16"
     },
     {
@@ -3466,7 +3466,7 @@
       "item": "柔性接口承插式机制铸铁管-75",
       "measurement": "外表面积(m2)",
       "unit": "m2",
-      "role": "primary",
+      "role": "derived",
       "sourceCell": "E16"
     },
     {
@@ -3483,7 +3483,7 @@
       "item": "柔性接口承插式机制铸铁管-50",
       "measurement": "长度(m)",
       "unit": "m",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "B17"
     },
     {
@@ -3500,7 +3500,7 @@
       "item": "柔性接口承插式机制铸铁管-50",
       "measurement": "超高长度(m)",
       "unit": "m",
-      "role": "primary",
+      "role": "derived",
       "sourceCell": "C17"
     },
     {
@@ -3517,7 +3517,7 @@
       "item": "柔性接口承插式机制铸铁管-50",
       "measurement": "内表面积(m2)",
       "unit": "m2",
-      "role": "primary",
+      "role": "derived",
       "sourceCell": "D17"
     },
     {
@@ -3534,7 +3534,7 @@
       "item": "柔性接口承插式机制铸铁管-50",
       "measurement": "外表面积(m2)",
       "unit": "m2",
-      "role": "primary",
+      "role": "derived",
       "sourceCell": "E17"
     },
     {
@@ -3551,7 +3551,7 @@
       "item": "高压内喷塑热镀锌无缝钢管-80",
       "measurement": "长度(m)",
       "unit": "m",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "B19"
     },
     {
@@ -3568,7 +3568,7 @@
       "item": "高压内喷塑热镀锌无缝钢管-80",
       "measurement": "超高长度(m)",
       "unit": "m",
-      "role": "primary",
+      "role": "derived",
       "sourceCell": "C19"
     },
     {
@@ -3585,7 +3585,7 @@
       "item": "高压内喷塑热镀锌无缝钢管-80",
       "measurement": "内表面积(m2)",
       "unit": "m2",
-      "role": "primary",
+      "role": "derived",
       "sourceCell": "D19"
     },
     {
@@ -3602,7 +3602,7 @@
       "item": "高压内喷塑热镀锌无缝钢管-80",
       "measurement": "外表面积(m2)",
       "unit": "m2",
-      "role": "primary",
+      "role": "derived",
       "sourceCell": "E19"
     },
     {
@@ -3619,7 +3619,7 @@
       "item": "内衬PE塑钢管-50",
       "measurement": "长度(m)",
       "unit": "m",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "B21"
     },
     {
@@ -3636,7 +3636,7 @@
       "item": "内衬PE塑钢管-50",
       "measurement": "超高长度(m)",
       "unit": "m",
-      "role": "primary",
+      "role": "derived",
       "sourceCell": "C21"
     },
     {
@@ -3653,7 +3653,7 @@
       "item": "内衬PE塑钢管-50",
       "measurement": "内表面积(m2)",
       "unit": "m2",
-      "role": "primary",
+      "role": "derived",
       "sourceCell": "D21"
     },
     {
@@ -3670,7 +3670,7 @@
       "item": "内衬PE塑钢管-50",
       "measurement": "外表面积(m2)",
       "unit": "m2",
-      "role": "primary",
+      "role": "derived",
       "sourceCell": "E21"
     },
     {
@@ -3687,7 +3687,7 @@
       "item": "内衬PE塑钢管-15",
       "measurement": "长度(m)",
       "unit": "m",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "B22"
     },
     {
@@ -3704,7 +3704,7 @@
       "item": "内衬PE塑钢管-15",
       "measurement": "超高长度(m)",
       "unit": "m",
-      "role": "primary",
+      "role": "derived",
       "sourceCell": "C22"
     },
     {
@@ -3721,7 +3721,7 @@
       "item": "内衬PE塑钢管-15",
       "measurement": "内表面积(m2)",
       "unit": "m2",
-      "role": "primary",
+      "role": "derived",
       "sourceCell": "D22"
     },
     {
@@ -3738,7 +3738,7 @@
       "item": "内衬PE塑钢管-15",
       "measurement": "外表面积(m2)",
       "unit": "m2",
-      "role": "primary",
+      "role": "derived",
       "sourceCell": "E22"
     },
     {
@@ -3755,7 +3755,7 @@
       "item": "内衬PE塑钢管-50",
       "measurement": "长度(m)",
       "unit": "m",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "B24"
     },
     {
@@ -3772,7 +3772,7 @@
       "item": "内衬PE塑钢管-50",
       "measurement": "超高长度(m)",
       "unit": "m",
-      "role": "primary",
+      "role": "derived",
       "sourceCell": "C24"
     },
     {
@@ -3789,7 +3789,7 @@
       "item": "内衬PE塑钢管-50",
       "measurement": "内表面积(m2)",
       "unit": "m2",
-      "role": "primary",
+      "role": "derived",
       "sourceCell": "D24"
     },
     {
@@ -3806,7 +3806,7 @@
       "item": "内衬PE塑钢管-50",
       "measurement": "外表面积(m2)",
       "unit": "m2",
-      "role": "primary",
+      "role": "derived",
       "sourceCell": "E24"
     },
     {
@@ -3823,7 +3823,7 @@
       "item": "内衬PE塑钢管-15",
       "measurement": "长度(m)",
       "unit": "m",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "B25"
     },
     {
@@ -3840,7 +3840,7 @@
       "item": "内衬PE塑钢管-15",
       "measurement": "超高长度(m)",
       "unit": "m",
-      "role": "primary",
+      "role": "derived",
       "sourceCell": "C25"
     },
     {
@@ -3857,7 +3857,7 @@
       "item": "内衬PE塑钢管-15",
       "measurement": "内表面积(m2)",
       "unit": "m2",
-      "role": "primary",
+      "role": "derived",
       "sourceCell": "D25"
     },
     {
@@ -3874,7 +3874,7 @@
       "item": "内衬PE塑钢管-15",
       "measurement": "外表面积(m2)",
       "unit": "m2",
-      "role": "primary",
+      "role": "derived",
       "sourceCell": "E25"
     },
     {
@@ -3891,7 +3891,7 @@
       "item": "镀锌钢管-DN70",
       "measurement": "长度(m)",
       "unit": "m",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "B27"
     },
     {
@@ -3908,7 +3908,7 @@
       "item": "镀锌钢管-DN70",
       "measurement": "超高长度(m)",
       "unit": "m",
-      "role": "primary",
+      "role": "derived",
       "sourceCell": "C27"
     },
     {
@@ -3925,7 +3925,7 @@
       "item": "镀锌钢管-DN70",
       "measurement": "内表面积(m2)",
       "unit": "m2",
-      "role": "primary",
+      "role": "derived",
       "sourceCell": "D27"
     },
     {
@@ -3942,7 +3942,7 @@
       "item": "镀锌钢管-DN70",
       "measurement": "外表面积(m2)",
       "unit": "m2",
-      "role": "primary",
+      "role": "derived",
       "sourceCell": "E27"
     },
     {
@@ -3959,7 +3959,7 @@
       "item": "镀锌钢管-DN50",
       "measurement": "长度(m)",
       "unit": "m",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "B28"
     },
     {
@@ -3976,7 +3976,7 @@
       "item": "镀锌钢管-DN50",
       "measurement": "超高长度(m)",
       "unit": "m",
-      "role": "primary",
+      "role": "derived",
       "sourceCell": "C28"
     },
     {
@@ -3993,7 +3993,7 @@
       "item": "镀锌钢管-DN50",
       "measurement": "内表面积(m2)",
       "unit": "m2",
-      "role": "primary",
+      "role": "derived",
       "sourceCell": "D28"
     },
     {
@@ -4010,7 +4010,7 @@
       "item": "镀锌钢管-DN50",
       "measurement": "外表面积(m2)",
       "unit": "m2",
-      "role": "primary",
+      "role": "derived",
       "sourceCell": "E28"
     },
     {
@@ -4027,7 +4027,7 @@
       "item": "阀门-DN25",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D4"
     },
     {
@@ -4044,7 +4044,7 @@
       "item": "阀门-DN32",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D6"
     },
     {
@@ -4061,7 +4061,7 @@
       "item": "阀门-DN25",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D7"
     },
     {
@@ -4078,7 +4078,7 @@
       "item": "阀门-<空>",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D9"
     },
     {
@@ -4095,7 +4095,7 @@
       "item": "阀门-DN80",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D10"
     },
     {
@@ -4112,7 +4112,7 @@
       "item": "阀门-DN50",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D12"
     },
     {
@@ -4129,7 +4129,7 @@
       "item": "阀门-DN20",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D14"
     },
     {
@@ -4146,7 +4146,7 @@
       "item": "阀门-DN50",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D16"
     },
     {
@@ -4163,7 +4163,7 @@
       "item": "阀门-DN15",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D17"
     },
     {
@@ -4180,7 +4180,7 @@
       "item": "套管-DN25",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D20"
     },
     {
@@ -4197,7 +4197,7 @@
       "item": "套管-DN50",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D22"
     },
     {
@@ -4214,7 +4214,7 @@
       "item": "套管-DN32",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D23"
     },
     {
@@ -4231,7 +4231,7 @@
       "item": "套管-DN25",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D24"
     },
     {
@@ -4248,7 +4248,7 @@
       "item": "套管-DN100",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D26"
     },
     {
@@ -4265,7 +4265,7 @@
       "item": "套管-DN150",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D28"
     },
     {
@@ -4282,7 +4282,7 @@
       "item": "套管-DN100",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D29"
     },
     {
@@ -4299,7 +4299,7 @@
       "item": "套管-DN100",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D31"
     },
     {
@@ -4316,7 +4316,7 @@
       "item": "套管-DN70",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D32"
     },
     {
@@ -4333,7 +4333,7 @@
       "item": "套管-DN50",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D34"
     },
     {
@@ -4350,7 +4350,7 @@
       "item": "套管-DN50",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D36"
     },
     {
@@ -4367,7 +4367,7 @@
       "item": "套管-DN150",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D38"
     },
     {
@@ -4384,7 +4384,7 @@
       "item": "套管-DN100",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D39"
     },
     {
@@ -4401,7 +4401,7 @@
       "item": "套管-DN40",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D40"
     },
     {
@@ -4418,7 +4418,7 @@
       "item": "套管-DN32",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D41"
     },
     {
@@ -4435,7 +4435,7 @@
       "item": "套管-DN25",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D42"
     },
     {
@@ -4452,7 +4452,7 @@
       "item": "套管-DN100",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D44"
     },
     {
@@ -4469,7 +4469,7 @@
       "item": "套管-DN70",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D45"
     },
     {
@@ -4486,7 +4486,7 @@
       "item": "套管-DN50",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D46"
     },
     {
@@ -4503,7 +4503,7 @@
       "item": "套管-DN32",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D47"
     },
     {
@@ -4520,7 +4520,7 @@
       "item": "套管-DN25",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D48"
     },
     {
@@ -4537,7 +4537,7 @@
       "item": "预留洞-1000*800",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D49"
     },
     {
@@ -4554,7 +4554,7 @@
       "item": "预留洞-800*400",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D50"
     },
     {
@@ -4571,7 +4571,7 @@
       "item": "预留洞-700*700",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D51"
     },
     {
@@ -4588,7 +4588,7 @@
       "item": "预留洞-600*300",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D52"
     },
     {
@@ -4605,7 +4605,7 @@
       "item": "预留洞-400*250",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D53"
     },
     {
@@ -4622,7 +4622,7 @@
       "item": "预留洞-300*150",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D54"
     },
     {
@@ -4639,7 +4639,7 @@
       "item": "预留洞-250*150",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D55"
     },
     {
@@ -4656,7 +4656,7 @@
       "item": "套管-DN25",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D57"
     },
     {
@@ -4673,7 +4673,7 @@
       "item": "套管-DN100",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D59"
     },
     {
@@ -4690,7 +4690,7 @@
       "item": "套管-DN75",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D60"
     },
     {
@@ -4707,7 +4707,7 @@
       "item": "套管-DN50",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D61"
     },
     {
@@ -4724,7 +4724,7 @@
       "item": "套管-DN80",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D63"
     },
     {
@@ -4741,7 +4741,7 @@
       "item": "套管-DN50",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D65"
     },
     {
@@ -4758,7 +4758,7 @@
       "item": "套管-DN15",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D66"
     },
     {
@@ -4775,7 +4775,7 @@
       "item": "卫生器具-<空>",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D69"
     },
     {
@@ -4792,7 +4792,7 @@
       "item": "WSQJ-1-<空>",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D71"
     },
     {
@@ -4810,7 +4810,7 @@
       "item": "DN25*DN25",
       "measurement": "数量合计(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D5"
     },
     {
@@ -4828,7 +4828,7 @@
       "item": "DN20*DN20",
       "measurement": "数量合计(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D6"
     },
     {
@@ -4846,7 +4846,7 @@
       "item": "DN25",
       "measurement": "数量合计(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D8"
     },
     {
@@ -4864,7 +4864,7 @@
       "item": "DN25*DN25",
       "measurement": "数量合计(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D9"
     },
     {
@@ -4882,7 +4882,7 @@
       "item": "DN25*DN20*DN20",
       "measurement": "数量合计(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D11"
     },
     {
@@ -4900,7 +4900,7 @@
       "item": "DN25*DN25*DN25",
       "measurement": "数量合计(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D13"
     },
     {
@@ -4918,7 +4918,7 @@
       "item": "DN20*DN20*DN20",
       "measurement": "数量合计(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D14"
     },
     {
@@ -4936,7 +4936,7 @@
       "item": "DN50*DN50",
       "measurement": "数量合计(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D17"
     },
     {
@@ -4954,7 +4954,7 @@
       "item": "DN32*DN32",
       "measurement": "数量合计(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D18"
     },
     {
@@ -4972,7 +4972,7 @@
       "item": "DN25*DN25",
       "measurement": "数量合计(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D19"
     },
     {
@@ -4990,7 +4990,7 @@
       "item": "DN20*DN20",
       "measurement": "数量合计(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D20"
     },
     {
@@ -5008,7 +5008,7 @@
       "item": "DN50",
       "measurement": "数量合计(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D22"
     },
     {
@@ -5026,7 +5026,7 @@
       "item": "DN50*DN50",
       "measurement": "数量合计(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D23"
     },
     {
@@ -5044,7 +5044,7 @@
       "item": "DN32*DN32",
       "measurement": "数量合计(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D24"
     },
     {
@@ -5062,7 +5062,7 @@
       "item": "DN20*DN20",
       "measurement": "数量合计(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D25"
     },
     {
@@ -5080,7 +5080,7 @@
       "item": "DN50*DN32*DN32",
       "measurement": "数量合计(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D27"
     },
     {
@@ -5098,7 +5098,7 @@
       "item": "DN32*DN32*DN25",
       "measurement": "数量合计(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D28"
     },
     {
@@ -5116,7 +5116,7 @@
       "item": "DN25*DN20*DN20",
       "measurement": "数量合计(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D29"
     },
     {
@@ -5134,7 +5134,7 @@
       "item": "DN32*DN32*DN25",
       "measurement": "数量合计(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D31"
     },
     {
@@ -5152,7 +5152,7 @@
       "item": "DN20*DN20*DN20",
       "measurement": "数量合计(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D33"
     },
     {
@@ -5170,7 +5170,7 @@
       "item": "DN100*DN100",
       "measurement": "数量合计(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D36"
     },
     {
@@ -5188,7 +5188,7 @@
       "item": "DN100*DN100",
       "measurement": "数量合计(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D38"
     },
     {
@@ -5206,7 +5206,7 @@
       "item": "DN150*DN150",
       "measurement": "数量合计(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D41"
     },
     {
@@ -5224,7 +5224,7 @@
       "item": "DN100*DN100",
       "measurement": "数量合计(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D42"
     },
     {
@@ -5242,7 +5242,7 @@
       "item": "DN75*DN75",
       "measurement": "数量合计(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D43"
     },
     {
@@ -5260,7 +5260,7 @@
       "item": "DN150*DN150",
       "measurement": "数量合计(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D45"
     },
     {
@@ -5278,7 +5278,7 @@
       "item": "DN100*DN100",
       "measurement": "数量合计(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D46"
     },
     {
@@ -5296,7 +5296,7 @@
       "item": "DN50*DN50",
       "measurement": "数量合计(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D47"
     },
     {
@@ -5314,7 +5314,7 @@
       "item": "DN150*DN150*DN150",
       "measurement": "数量合计(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D49"
     },
     {
@@ -5332,7 +5332,7 @@
       "item": "DN100*DN100*DN100",
       "measurement": "数量合计(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D50"
     },
     {
@@ -5350,7 +5350,7 @@
       "item": "DN150*DN100",
       "measurement": "数量合计(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D52"
     },
     {
@@ -5368,7 +5368,7 @@
       "item": "DN150*DN150",
       "measurement": "数量合计(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D54"
     },
     {
@@ -5386,7 +5386,7 @@
       "item": "DN100*DN100",
       "measurement": "数量合计(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D55"
     },
     {
@@ -5404,7 +5404,7 @@
       "item": "DN75*DN50*DN50",
       "measurement": "数量合计(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D57"
     },
     {
@@ -5422,7 +5422,7 @@
       "item": "DN150*DN150*DN100",
       "measurement": "数量合计(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D59"
     },
     {
@@ -5440,7 +5440,7 @@
       "item": "DN100*DN100*DN75",
       "measurement": "数量合计(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D60"
     },
     {
@@ -5458,7 +5458,7 @@
       "item": "DN100*DN100*DN50",
       "measurement": "数量合计(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D61"
     },
     {
@@ -5476,7 +5476,7 @@
       "item": "DN100*DN100*DN100",
       "measurement": "数量合计(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D63"
     },
     {
@@ -5494,7 +5494,7 @@
       "item": "DN80*DN80",
       "measurement": "数量合计(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D66"
     },
     {
@@ -5512,7 +5512,7 @@
       "item": "DN80*DN80",
       "measurement": "数量合计(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D68"
     },
     {
@@ -5530,7 +5530,7 @@
       "item": "DN80",
       "measurement": "数量合计(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D70"
     },
     {
@@ -5548,7 +5548,7 @@
       "item": "DN80*DN80",
       "measurement": "数量合计(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D71"
     },
     {
@@ -5566,7 +5566,7 @@
       "item": "DN80*DN80",
       "measurement": "数量合计(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D73"
     },
     {
@@ -5584,7 +5584,7 @@
       "item": "DN80*DN80*DN80",
       "measurement": "数量合计(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D75"
     },
     {
@@ -5602,7 +5602,7 @@
       "item": "DN50*DN50",
       "measurement": "数量合计(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D78"
     },
     {
@@ -5620,7 +5620,7 @@
       "item": "DN15*DN15",
       "measurement": "数量合计(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D79"
     },
     {
@@ -5638,7 +5638,7 @@
       "item": "DN50",
       "measurement": "数量合计(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D81"
     },
     {
@@ -5656,7 +5656,7 @@
       "item": "DN50*DN50",
       "measurement": "数量合计(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D82"
     },
     {
@@ -5674,7 +5674,7 @@
       "item": "DN50*DN50*DN15",
       "measurement": "数量合计(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D84"
     },
     {
@@ -5692,7 +5692,7 @@
       "item": "DN50*DN50*DN50",
       "measurement": "数量合计(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D86"
     },
     {
@@ -5710,7 +5710,7 @@
       "item": "DN50*DN50",
       "measurement": "数量合计(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D89"
     },
     {
@@ -5728,7 +5728,7 @@
       "item": "DN15*DN15",
       "measurement": "数量合计(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D90"
     },
     {
@@ -5746,7 +5746,7 @@
       "item": "DN50",
       "measurement": "数量合计(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D92"
     },
     {
@@ -5764,7 +5764,7 @@
       "item": "DN50*DN50",
       "measurement": "数量合计(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D93"
     },
     {
@@ -5782,7 +5782,7 @@
       "item": "DN50*DN50*DN15",
       "measurement": "数量合计(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D95"
     },
     {
@@ -5800,7 +5800,7 @@
       "item": "DN50*DN50*DN50",
       "measurement": "数量合计(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D97"
     },
     {
@@ -5817,7 +5817,7 @@
       "item": "<空>",
       "measurement": "外表面积(m2)",
       "unit": "m2",
-      "role": "primary",
+      "role": "derived",
       "sourceCell": "D4"
     },
     {
@@ -5834,7 +5834,7 @@
       "item": "橡塑保温壳-10",
       "measurement": "保温体积(m3)",
       "unit": "m3",
-      "role": "primary",
+      "role": "derived",
       "sourceCell": "D5"
     },
     {
@@ -5851,7 +5851,7 @@
       "item": "<空>",
       "measurement": "保护层面积(m2)",
       "unit": "m2",
-      "role": "primary",
+      "role": "derived",
       "sourceCell": "D6"
     },
     {
@@ -5868,7 +5868,7 @@
       "item": "<空>",
       "measurement": "外表面积(m2)",
       "unit": "m2",
-      "role": "primary",
+      "role": "derived",
       "sourceCell": "D8"
     },
     {
@@ -5885,7 +5885,7 @@
       "item": "橡塑保温壳-10",
       "measurement": "保温体积(m3)",
       "unit": "m3",
-      "role": "primary",
+      "role": "derived",
       "sourceCell": "D9"
     },
     {
@@ -5902,7 +5902,7 @@
       "item": "<空>",
       "measurement": "保护层面积(m2)",
       "unit": "m2",
-      "role": "primary",
+      "role": "derived",
       "sourceCell": "D10"
     },
     {
@@ -5919,7 +5919,7 @@
       "item": "<空>",
       "measurement": "外表面积(m2)",
       "unit": "m2",
-      "role": "primary",
+      "role": "derived",
       "sourceCell": "D12"
     },
     {
@@ -5936,7 +5936,7 @@
       "item": "<空>",
       "measurement": "保护层面积(m2)",
       "unit": "m2",
-      "role": "primary",
+      "role": "derived",
       "sourceCell": "D13"
     },
     {
@@ -5953,7 +5953,7 @@
       "item": "<空>",
       "measurement": "外表面积(m2)",
       "unit": "m2",
-      "role": "primary",
+      "role": "derived",
       "sourceCell": "D15"
     },
     {
@@ -5970,7 +5970,7 @@
       "item": "<空>",
       "measurement": "保护层面积(m2)",
       "unit": "m2",
-      "role": "primary",
+      "role": "derived",
       "sourceCell": "D16"
     },
     {
@@ -5987,7 +5987,7 @@
       "item": "<空>",
       "measurement": "外表面积(m2)",
       "unit": "m2",
-      "role": "primary",
+      "role": "derived",
       "sourceCell": "D18"
     },
     {
@@ -6004,7 +6004,7 @@
       "item": "橡塑保温壳-10",
       "measurement": "保温体积(m3)",
       "unit": "m3",
-      "role": "primary",
+      "role": "derived",
       "sourceCell": "D19"
     },
     {
@@ -6021,7 +6021,7 @@
       "item": "<空>",
       "measurement": "保护层面积(m2)",
       "unit": "m2",
-      "role": "primary",
+      "role": "derived",
       "sourceCell": "D20"
     },
     {
@@ -6038,7 +6038,7 @@
       "item": "<空>",
       "measurement": "外表面积(m2)",
       "unit": "m2",
-      "role": "primary",
+      "role": "derived",
       "sourceCell": "D22"
     },
     {
@@ -6055,7 +6055,7 @@
       "item": "橡塑保温壳-10",
       "measurement": "保温体积(m3)",
       "unit": "m3",
-      "role": "primary",
+      "role": "derived",
       "sourceCell": "D23"
     },
     {
@@ -6072,7 +6072,7 @@
       "item": "<空>",
       "measurement": "保护层面积(m2)",
       "unit": "m2",
-      "role": "primary",
+      "role": "derived",
       "sourceCell": "D24"
     },
     {
@@ -6089,7 +6089,7 @@
       "item": "<空>",
       "measurement": "外表面积(m2)",
       "unit": "m2",
-      "role": "primary",
+      "role": "derived",
       "sourceCell": "D26"
     },
     {
@@ -6106,7 +6106,7 @@
       "item": "橡塑保温壳-10",
       "measurement": "保温体积(m3)",
       "unit": "m3",
-      "role": "primary",
+      "role": "derived",
       "sourceCell": "D27"
     },
     {
@@ -6123,7 +6123,7 @@
       "item": "<空>",
       "measurement": "保护层面积(m2)",
       "unit": "m2",
-      "role": "primary",
+      "role": "derived",
       "sourceCell": "D28"
     },
     {
@@ -6140,7 +6140,7 @@
       "item": "<空>",
       "measurement": "外表面积(m2)",
       "unit": "m2",
-      "role": "primary",
+      "role": "derived",
       "sourceCell": "D30"
     },
     {
@@ -6157,7 +6157,7 @@
       "item": "<空>",
       "measurement": "保护层面积(m2)",
       "unit": "m2",
-      "role": "primary",
+      "role": "derived",
       "sourceCell": "D31"
     },
     {
@@ -6173,7 +6173,7 @@
       "item": "避雷网-10",
       "measurement": "长度(m)",
       "unit": "m",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D3"
     },
     {
@@ -6189,7 +6189,7 @@
       "item": "避雷网-10",
       "measurement": "附加长度(m)",
       "unit": "m",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D4"
     },
     {
@@ -6205,7 +6205,7 @@
       "item": "支架-<空>",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D6"
     },
     {
@@ -6221,7 +6221,7 @@
       "item": "避雷引下线-<空>",
       "measurement": "长度(m)",
       "unit": "m",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D8"
     },
     {
@@ -6237,7 +6237,7 @@
       "item": "避雷引下线-<空>",
       "measurement": "附加长度(m)",
       "unit": "m",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D9"
     },
     {
@@ -6253,7 +6253,7 @@
       "item": "避雷引下线-<空>",
       "measurement": "断接卡子数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D10"
     },
     {
@@ -6269,7 +6269,7 @@
       "item": "局部等电位端子箱-160*75*45",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D12"
     },
     {
@@ -6285,7 +6285,7 @@
       "item": "局部等电位端子箱-1-160*75*45",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D13"
     },
     {
@@ -6301,7 +6301,7 @@
       "item": "总等电位端子箱-160*75*45",
       "measurement": "数量(个)",
       "unit": "个",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D14"
     },
     {
@@ -6317,7 +6317,7 @@
       "item": "接地母线-40*4",
       "measurement": "长度(m)",
       "unit": "m",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D16"
     },
     {
@@ -6333,7 +6333,7 @@
       "item": "接地母线-40*4",
       "measurement": "附加长度(m)",
       "unit": "m",
-      "role": "primary",
+      "role": "core",
       "sourceCell": "D17"
     }
   ]

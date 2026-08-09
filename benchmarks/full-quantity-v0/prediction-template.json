@@ -2,7 +2,7 @@
   "protocol": {
     "benchmarkId": "full-quantity-v0",
     "caseId": "case-001",
-    "targetHash": "b09b64cba295333f563158d91d857e7ad080983906a4458f795aeababf7a3aae",
+    "targetHash": "522a0fc4a41136e389373001fd2fa535b4882a9f274f67e75641e5aafb61f1bf",
     "truthAccess": "forbidden"
   },
   "predictions": [

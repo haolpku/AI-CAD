@@ -10,6 +10,11 @@ assert.doesNotMatch(predictorSource, /truth\.json|\.xlsx|GQI4|工程量_解压/)
 assert.match(predictorSource, /CAD_BENCH_API_KEY/);
 const routePredictorSource = await fs.readFile(path.join(projectDir, "scripts", "extract-route-geometry.mjs"), "utf8");
 assert.doesNotMatch(routePredictorSource, /truth\.json|\.xlsx|GQI4|工程量_解压/);
+const fullPredictorSource = await fs.readFile(path.join(projectDir, "scripts", "run-full-llm-predict.mjs"), "utf8");
+assert.doesNotMatch(fullPredictorSource, /truth\.json|\.xlsx|GQI4|工程量_解压/);
+assert.match(fullPredictorSource, /CAD_BENCH_API_KEY/);
+const fullEvidenceSource = await fs.readFile(path.join(projectDir, "scripts", "prepare-full-cad-evidence.mjs"), "utf8");
+assert.doesNotMatch(fullEvidenceSource, /truth\.json|\.xlsx|GQI4|工程量_解压/);
 
 for (const inputName of ["input.json", "input-all-layers.json"]) {
   const input = JSON.parse(await fs.readFile(path.join(experimentDir, inputName), "utf8"));

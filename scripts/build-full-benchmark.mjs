@@ -39,6 +39,8 @@ const inferUnit = (headers, row, columnIndex, metric) => {
 };
 
 const primaryExclusions = config.evaluation.primaryExclusionPatterns.map((pattern) => new RegExp(pattern));
+const derivedPatterns = config.evaluation.derivedMeasurementPatterns.map((pattern) => new RegExp(pattern));
+const derivedUnits = new Set(config.evaluation.derivedUnits);
 const targets = [];
 const truthTargets = [];
 const disciplineSummary = [];
@@ -80,8 +82,10 @@ for (const workbookConfig of config.workbooks) {
         const measurement = inferMetric(headers, row, columnIndex);
         const unit = inferUnit(headers, row, columnIndex, measurement);
         const role = primaryExclusions.some((pattern) => pattern.test(measurement))
-          ? "derived_total"
-          : "primary";
+          ? "audit"
+          : derivedUnits.has(unit) || derivedPatterns.some((pattern) => pattern.test(measurement))
+            ? "derived"
+            : "core";
         const id = [
           config.caseId,
           workbookConfig.discipline,
@@ -106,7 +110,7 @@ for (const workbookConfig of config.workbooks) {
         targets.push(target);
         truthTargets.push({ ...target, value });
         disciplineTargets += 1;
-        if (role === "primary") disciplinePrimaryTargets += 1;
+        if (role !== "audit") disciplinePrimaryTargets += 1;
       }
     }
   }
@@ -116,7 +120,7 @@ for (const workbookConfig of config.workbooks) {
     label: workbookConfig.label,
     detailRows: disciplineRows,
     scalarTargets: disciplineTargets,
-    primaryTargets: disciplinePrimaryTargets,
+    scoredTargets: disciplinePrimaryTargets,
   });
 }
 
@@ -124,7 +128,9 @@ const countBy = (items, key) => Object.fromEntries(
   [...items.reduce((map, item) => map.set(item[key], (map.get(item[key]) ?? 0) + 1), new Map())]
     .sort(([left], [right]) => String(left).localeCompare(String(right))),
 );
-const primaryTargets = targets.filter((target) => target.role === "primary");
+const scoredTargets = targets.filter((target) => target.role !== "audit");
+const coreTargets = targets.filter((target) => target.role === "core");
+const derivedTargets = targets.filter((target) => target.role === "derived");
 const frozenInputs = [];
 for (const input of config.inputs) {
   const bytes = await fs.readFile(resolveFromConfig(input.path));
@@ -138,15 +144,22 @@ const summary = {
     sheetCount: new Set(targets.map((target) => `${target.discipline}:${target.sheet}`)).size,
     detailRows: detailRowCount,
     scalarTargets: targets.length,
-    primaryTargets: primaryTargets.length,
-    derivedTotals: targets.length - primaryTargets.length,
+    scoredTargets: scoredTargets.length,
+    coreTargets: coreTargets.length,
+    derivedTargets: derivedTargets.length,
+    auditTargets: targets.length - scoredTargets.length,
   },
   byDiscipline: disciplineSummary,
   frozenInputs,
   byUnit: countBy(targets, "unit"),
-  primaryByUnit: countBy(primaryTargets, "unit"),
+  scoredByUnit: countBy(scoredTargets, "unit"),
+  coreByUnit: countBy(coreTargets, "unit"),
+  derivedByUnit: countBy(derivedTargets, "unit"),
   scoring: {
-    defaultRole: "primary",
+    defaultRoles: ["core", "derived"],
+    roleWeights: config.evaluation.roleWeights,
+    absoluteTolerances: config.evaluation.absoluteTolerances,
+    relativeTolerance: config.evaluation.relativeTolerance,
     aggregateAcrossUnits: config.evaluation.aggregateAcrossUnits,
     metrics: config.evaluation.metrics,
   },

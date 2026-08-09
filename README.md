@@ -17,13 +17,16 @@
 
 ## 全量工程量基准
 
-`benchmarks/full-quantity-v0/`冻结5份CAD作为预测输入，并把5份广联达导出工作簿标准化为全量目标目录：326个原始明细行展开为380个标量目标。默认评分排除14个重复的线缆合计，得到366个主目标，覆盖数量、长度、面积和体积。公开目录只包含目标定义、CAD哈希和真值哈希，不包含原始文件或全量真值；本地评分器在预测冻结后才读取`data/private/`中的真值。
+`benchmarks/full-quantity-v0/`冻结5份CAD作为预测输入，并把5份广联达导出工作簿标准化为全量目标目录：326个原始明细行展开为380个标量目标。其中277个`Core`目标是主要的独立计量对象，89个`Derived`目标是由主工程量派生的超高、保温面积/体积和端头等量，14个`Audit`合计项仅用于校验。默认评分覆盖前两层共366项。公开目录只包含目标定义、CAD哈希和真值哈希，不包含原始文件或全量真值；本地评分器在预测冻结后才读取`data/private/`中的真值。
 
 ```bash
 npm run benchmark:full:build
+npm run benchmark:full:evidence
 npm run benchmark:full:score -- --predictions=path/to/predictions.json
 npm test
 ```
+
+统一总分为`Bench Score`（80分 Core + 20分 Derived）。各层先按“专业×单位”分组，避免把米、平方米、立方米和个数直接混合。当前单项目盲测基线为`26.51/100`；使用同一项目做管线选择后是`26.93/100`，后者只是 calibration 结果，不是泛化成绩。
 
 ## 运行
 

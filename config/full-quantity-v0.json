@@ -59,8 +59,13 @@
   ],
   "evaluation": {
     "primaryExclusionPatterns": ["^线/缆合计\\(m\\)$"],
+    "derivedMeasurementPatterns": ["^超高长度\\(m\\)$", "^线缆端头个数\\(个\\)$"],
+    "derivedUnits": ["m2", "m3"],
+    "roleWeights": { "core": 0.8, "derived": 0.2 },
+    "absoluteTolerances": { "个": 1, "m": 0.5, "m2": 0.5, "m3": 0.01 },
+    "relativeTolerance": 0.05,
     "units": ["个", "m", "m2", "m3"],
-    "metrics": ["coverage", "MAE", "WAPE", "exactRate"],
+    "metrics": ["coverage", "MAE", "WAPE", "toleranceHitRate", "exactRate", "benchScore"],
     "aggregateAcrossUnits": false
   }
 }

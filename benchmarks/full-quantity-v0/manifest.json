@@ -3,7 +3,7 @@
     "truthAccess": "forbidden",
     "targetCatalogAccess": "allowed",
     "predictionMustBeFrozenBeforeScoring": true,
-    "targetHash": "b09b64cba295333f563158d91d857e7ad080983906a4458f795aeababf7a3aae"
+    "targetHash": "522a0fc4a41136e389373001fd2fa535b4882a9f274f67e75641e5aafb61f1bf"
   },
   "benchmark": {
     "id": "full-quantity-v0",
@@ -17,8 +17,10 @@
     "sheetCount": 11,
     "detailRows": 326,
     "scalarTargets": 380,
-    "primaryTargets": 366,
-    "derivedTotals": 14
+    "scoredTargets": 366,
+    "coreTargets": 277,
+    "derivedTargets": 89,
+    "auditTargets": 14
   },
   "byDiscipline": [
     {
@@ -26,35 +28,35 @@
       "label": "动力电气",
       "detailRows": 85,
       "scalarTargets": 85,
-      "primaryTargets": 73
+      "scoredTargets": 73
     },
     {
       "discipline": "fire-low-voltage",
       "label": "消防、弱电预埋",
       "detailRows": 41,
       "scalarTargets": 41,
-      "primaryTargets": 41
+      "scoredTargets": 41
     },
     {
       "discipline": "lighting-electrical",
       "label": "照明电",
       "detailRows": 48,
       "scalarTargets": 48,
-      "primaryTargets": 46
+      "scoredTargets": 46
     },
     {
       "discipline": "plumbing-heating",
       "label": "给排水、采暖",
       "detailRows": 141,
       "scalarTargets": 195,
-      "primaryTargets": 195
+      "scoredTargets": 195
     },
     {
       "discipline": "lightning-grounding",
       "label": "防雷接地",
       "detailRows": 11,
       "scalarTargets": 11,
-      "primaryTargets": 11
+      "scoredTargets": 11
     }
   ],
   "frozenInputs": [
@@ -108,20 +110,46 @@
     "m3": 5,
     "个": 235
   },
-  "primaryByUnit": {
+  "scoredByUnit": {
     "m": 74,
     "m2": 52,
     "m3": 5,
     "个": 235
   },
+  "coreByUnit": {
+    "m": 56,
+    "个": 221
+  },
+  "derivedByUnit": {
+    "m": 18,
+    "m2": 52,
+    "m3": 5,
+    "个": 14
+  },
   "scoring": {
-    "defaultRole": "primary",
+    "defaultRoles": [
+      "core",
+      "derived"
+    ],
+    "roleWeights": {
+      "core": 0.8,
+      "derived": 0.2
+    },
+    "absoluteTolerances": {
+      "个": 1,
+      "m": 0.5,
+      "m2": 0.5,
+      "m3": 0.01
+    },
+    "relativeTolerance": 0.05,
     "aggregateAcrossUnits": false,
     "metrics": [
       "coverage",
       "MAE",
       "WAPE",
-      "exactRate"
+      "toleranceHitRate",
+      "exactRate",
+      "benchScore"
     ]
   }
 }
