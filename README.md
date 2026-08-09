@@ -4,6 +4,8 @@
 
 > A leakage-resistant benchmark for AI-assisted quantity takeoff from CAD drawings.
 
+[查看 Leaderboard：总分、专业/单位细分、评分公式和分数区间](leaderboard/README.md)
+
 ## 当前范围
 
 - 数据：匿名化的`Case-001`电气DWG及照明工程量真值

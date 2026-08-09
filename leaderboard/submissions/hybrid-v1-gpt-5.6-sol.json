@@ -1,0 +1,115 @@
+{
+  "benchmark": {
+    "id": "full-quantity-v0",
+    "split": "calibration",
+    "targetHash": "522a0fc4a41136e389373001fd2fa535b4882a9f274f67e75641e5aafb61f1bf"
+  },
+  "method": "Hybrid v1",
+  "model": "gpt-5.6-sol",
+  "protocol": "Calibration threshold 0.85; LLM selects evidence IDs; deterministic plan counts, route lengths and derived formulas; shared-route gate",
+  "scores": {
+    "overall": 34.6772,
+    "core": 36.2976,
+    "derived": 28.196,
+    "coverage": 1,
+    "disciplines": {
+      "power-electrical": 39.3052,
+      "fire-low-voltage": 19.796,
+      "lighting-electrical": 38.532,
+      "plumbing-heating": 31.4632,
+      "lightning-grounding": 42.2683
+    },
+    "groups": {
+      "core/power-electrical|m": {
+        "score": 17.259,
+        "targets": 23,
+        "wape": 0.772076,
+        "toleranceHitRate": 0.043478
+      },
+      "core/power-electrical|个": {
+        "score": 64.7419,
+        "targets": 38,
+        "wape": 0.413462,
+        "toleranceHitRate": 0.789474
+      },
+      "core/fire-low-voltage|m": {
+        "score": 20.2799,
+        "targets": 5,
+        "wape": 0.710287,
+        "toleranceHitRate": 0
+      },
+      "core/fire-low-voltage|个": {
+        "score": 19.6156,
+        "targets": 36,
+        "wape": 0.874539,
+        "toleranceHitRate": 0.361111
+      },
+      "core/lighting-electrical|m": {
+        "score": 45.1424,
+        "targets": 4,
+        "wape": 0.462252,
+        "toleranceHitRate": 0.25
+      },
+      "core/lighting-electrical|个": {
+        "score": 49.1208,
+        "targets": 40,
+        "wape": 0.501845,
+        "toleranceHitRate": 0.475
+      },
+      "core/plumbing-heating|m": {
+        "score": 20.1279,
+        "targets": 18,
+        "wape": 0.712458,
+        "toleranceHitRate": 0
+      },
+      "core/plumbing-heating|个": {
+        "score": 35.6743,
+        "targets": 102,
+        "wape": 0.641628,
+        "toleranceHitRate": 0.352941
+      },
+      "core/lightning-grounding|m": {
+        "score": 69.8994,
+        "targets": 6,
+        "wape": 0.144295,
+        "toleranceHitRate": 0.333333
+      },
+      "core/lightning-grounding|个": {
+        "score": 12,
+        "targets": 5,
+        "wape": 1.968354,
+        "toleranceHitRate": 0.4
+      },
+      "derived/power-electrical|个": {
+        "score": 20.6658,
+        "targets": 12,
+        "wape": 0.91906,
+        "toleranceHitRate": 0.5
+      },
+      "derived/lighting-electrical|个": {
+        "score": 0,
+        "targets": 2,
+        "wape": 10.321429,
+        "toleranceHitRate": 0
+      },
+      "derived/plumbing-heating|m": {
+        "score": 1.6667,
+        "targets": 18,
+        "wape": 1.780283,
+        "toleranceHitRate": 0.055556
+      },
+      "derived/plumbing-heating|m2": {
+        "score": 39.8184,
+        "targets": 52,
+        "wape": 0.513583,
+        "toleranceHitRate": 0.192308
+      },
+      "derived/plumbing-heating|m3": {
+        "score": 70.5488,
+        "targets": 5,
+        "wape": 0.163588,
+        "toleranceHitRate": 0.4
+      }
+    }
+  }
+}

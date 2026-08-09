@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AI-CAD aggregate leaderboard submission",
+  "type": "object",
+  "required": ["benchmark", "method", "model", "scores"],
+  "properties": {
+    "benchmark": {
+      "type": "object",
+      "required": ["id", "split", "targetHash"],
+      "properties": {
+        "id": { "const": "full-quantity-v0" },
+        "split": { "enum": ["calibration", "hidden-test"] },
+        "targetHash": { "type": "string", "pattern": "^[a-f0-9]{64}$" }
+      },
+      "additionalProperties": false
+    },
+    "method": { "type": "string", "minLength": 1 },
+    "model": { "type": "string", "minLength": 1 },
+    "protocol": { "type": "string" },
+    "scores": {
+      "type": "object",
+      "required": ["overall", "core", "derived", "coverage", "disciplines", "groups"],
+      "properties": {
+        "overall": { "type": "number", "minimum": 0, "maximum": 100 },
+        "core": { "type": "number", "minimum": 0, "maximum": 100 },
+        "derived": { "type": "number", "minimum": 0, "maximum": 100 },
+        "coverage": { "type": "number", "minimum": 0, "maximum": 1 },
+        "disciplines": { "type": "object", "additionalProperties": { "type": "number", "minimum": 0, "maximum": 100 } },
+        "groups": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "object",
+            "required": ["score", "targets", "wape", "toleranceHitRate"],
+            "properties": {
+              "score": { "type": "number", "minimum": 0, "maximum": 100 },
+              "targets": { "type": "integer", "minimum": 1 },
+              "wape": { "type": "number", "minimum": 0 },
+              "toleranceHitRate": { "type": "number", "minimum": 0, "maximum": 1 }
+            },
+            "additionalProperties": false
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}
