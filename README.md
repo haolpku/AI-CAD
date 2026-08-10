@@ -8,6 +8,8 @@
 
 [查看 Experience Base：提炼建模经验但不保存项目答案](experience-base/README.md)
 
+[查看 Oracle 摸高实验：区分候选上限与直接答案上限](experiments/oracle-ceiling-v0/README.md)
+
 ## 当前范围
 
 - 数据：匿名化的`Case-001`电气DWG及照明工程量真值

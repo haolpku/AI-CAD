@@ -4,9 +4,10 @@
   "type": "module",
   "scripts": {
     "benchmark": "node scripts/run-benchmark.mjs",
-    "test": "node tests/check-results.mjs && node tests/check-leakage.mjs && node tests/check-experience-base.mjs && node tests/check-full-benchmark.mjs && node tests/check-full-score.mjs && node tests/check-hybrid-v1.mjs && node tests/check-route-v1-1.mjs && node tests/check-project-ir-v1-2.mjs && node tests/check-hybrid-v1-2.mjs && node tests/check-leaderboard.mjs",
+    "test": "node tests/check-results.mjs && node tests/check-leakage.mjs && node tests/check-experience-base.mjs && node tests/check-oracle-ceiling.mjs && node tests/check-full-benchmark.mjs && node tests/check-full-score.mjs && node tests/check-hybrid-v1.mjs && node tests/check-route-v1-1.mjs && node tests/check-project-ir-v1-2.mjs && node tests/check-hybrid-v1-2.mjs && node tests/check-leaderboard.mjs",
     "experience:extract": "node scripts/extract-gqi-experience-candidates.mjs",
     "experience:validate": "node scripts/validate-experience-base.mjs",
+    "benchmark:oracle": "node scripts/run-oracle-ceiling.mjs",
     "benchmark:full:build": "node scripts/build-full-benchmark.mjs",
     "benchmark:full:score": "node scripts/score-full-benchmark.mjs",
     "benchmark:full:evidence": "node scripts/prepare-full-cad-evidence.mjs",
