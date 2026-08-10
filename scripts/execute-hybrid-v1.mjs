@@ -9,11 +9,15 @@ const catalog = JSON.parse(await fs.readFile(path.join(benchmarkDir, "targets.js
 const evidenceArg = process.argv.find((value) => value.startsWith("--evidence="))?.slice("--evidence=".length)
   ?? "outputs/full-quantity-v0/hybrid-evidence-v1.json";
 const evidence = JSON.parse(await fs.readFile(path.resolve(projectDir, evidenceArg), "utf8"));
+const registryArg = process.argv.find((value) => value.startsWith("--registry="))?.slice("--registry=".length);
+const registry = registryArg ? JSON.parse(await fs.readFile(path.resolve(projectDir, registryArg), "utf8")) : null;
+const contextByTarget = new Map((registry?.targetContexts ?? []).map((context) => [context.id, context]));
 const baseArg = process.argv.find((value) => value.startsWith("--base="))?.slice("--base=".length)
   ?? "outputs/full-quantity-v0/predictions/gpt-5.6-sol--closed_world--full.json";
 const mappingArgs = process.argv.filter((value) => value.startsWith("--mapping=")).map((value) => value.slice("--mapping=".length));
 const segmentedEvidenceArg = process.argv.find((value) => value.startsWith("--segmented-evidence="))?.slice("--segmented-evidence=".length);
 const threshold = Number(process.argv.find((value) => value.startsWith("--threshold="))?.slice("--threshold=".length) ?? 0.75);
+const contextThreshold = Number(process.argv.find((value) => value.startsWith("--context-threshold="))?.slice("--context-threshold=".length) ?? 0.6);
 const applyDerived = !process.argv.includes("--no-derived");
 const tag = process.argv.find((value) => value.startsWith("--tag="))?.slice("--tag=".length) ?? "hybrid-v1";
 if (!mappingArgs.length) throw new Error("Pass one or more --mapping=path arguments.");
@@ -44,7 +48,9 @@ const decisions = [];
 const allEligibleMappings = mappingDocuments.flatMap((document) => document.mappings ?? []).filter((mapping) =>
   targetMap.has(mapping.id)
   && mapping.confidence >= threshold
-  && ["block", "route", "route-segment"].includes(mapping.evidenceType));
+  && ["block", "route", "route-segment"].includes(mapping.evidenceType)
+  && (!registry || ((contextByTarget.get(mapping.id)?.missingCritical?.length ?? 1) === 0
+    && Number(contextByTarget.get(mapping.id)?.contextCompleteness ?? 0) >= contextThreshold)));
 const mappingPriority = { block: 1, route: 1, "route-segment": 2 };
 const eligibleByTarget = new Map();
 for (const mapping of allEligibleMappings) {
@@ -165,6 +171,8 @@ const result = {
     deterministicDerivedFormulas: applyDerived,
     segmentedEvidence: segmentedEvidenceArg ?? null,
     evidence: evidenceArg,
+    registry: registryArg ?? null,
+    contextThreshold: registry ? contextThreshold : null,
   },
   predictions,
   decisions,

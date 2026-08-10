@@ -12,6 +12,8 @@
 
 [查看 v1.3 Evidence Registry：按目标声明数据需求和关系](preprocessing/v1-3/README.md)
 
+[查看 v1.3 Target-aware实验：Context门控持平，重新映射未提升](experiments/target-aware-v1-3/README.md)
+
 ## 当前范围
 
 - 数据：匿名化的`Case-001`电气DWG及照明工程量真值

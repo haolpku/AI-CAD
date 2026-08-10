@@ -9,6 +9,11 @@ const catalog = JSON.parse(await fs.readFile(path.join(benchmarkDir, "targets.js
 const evidenceArg = process.argv.find((value) => value.startsWith("--evidence="))?.slice("--evidence=".length)
   ?? "outputs/full-quantity-v0/hybrid-evidence-v1.json";
 const evidence = JSON.parse(await fs.readFile(path.resolve(projectDir, evidenceArg), "utf8"));
+const registryArg = process.argv.find((value) => value.startsWith("--registry="))?.slice("--registry=".length);
+const registry = registryArg ? JSON.parse(await fs.readFile(path.resolve(projectDir, registryArg), "utf8")) : null;
+const contextByTarget = new Map((registry?.targetContexts ?? []).map((context) => [context.id, context]));
+const requirements = registry ? JSON.parse(await fs.readFile(path.join(benchmarkDir, "data-requirements-v1-3.json"), "utf8")) : null;
+const requirementByTarget = new Map((requirements?.targets ?? []).map((requirement) => [requirement.id, requirement]));
 const apiKey = process.env.CAD_BENCH_API_KEY;
 const baseUrl = (process.env.CAD_BENCH_BASE_URL ?? "https://api.openai.com").replace(/\/$/, "");
 if (!apiKey) throw new Error("CAD_BENCH_API_KEY is required and must not be stored in the repository.");
@@ -17,6 +22,9 @@ const group = process.argv.find((value) => value.startsWith("--group="))?.slice(
 const model = process.argv.slice(2).find((value) => !value.startsWith("--")) ?? "gpt-5.6-sol";
 const reasoningEffort = process.argv.find((value) => value.startsWith("--reasoning="))?.slice("--reasoning=".length) ?? "medium";
 const tag = process.argv.find((value) => value.startsWith("--tag="))?.slice("--tag=".length) ?? "";
+const contextThreshold = Number(process.argv.find((value) => value.startsWith("--context-threshold="))?.slice("--context-threshold=".length) ?? 0.6);
+const targetTypesArg = process.argv.find((value) => value.startsWith("--target-types="))?.slice("--target-types=".length);
+const allowedTargetTypes = targetTypesArg ? new Set(targetTypesArg.split(",").filter(Boolean)) : null;
 const groupDiscipline = {
   power: "power-electrical",
   fire: "fire-low-voltage",
@@ -35,7 +43,8 @@ const targets = catalog.targets.filter((target) =>
   target.role === "core"
   && target.discipline === groupDiscipline[group]
   && ["个", "m"].includes(target.unit)
-  && (!plumbingSheets[group] || plumbingSheets[group].has(target.sheet)));
+  && (!plumbingSheets[group] || plumbingSheets[group].has(target.sheet))
+  && (!allowedTargetTypes || allowedTargetTypes.has(contextByTarget.get(target.id)?.targetType)));
 if (!targets.length) throw new Error(`Unknown or empty group: ${group}`);
 const drawingIds = group.startsWith("plumbing") ? new Set(["plumbing-cad", "hvac-cad"]) : new Set(["electrical-cad"]);
 const drawings = evidence.drawings.filter((drawing) => drawingIds.has(drawing.id));
@@ -75,12 +84,21 @@ const candidatesFor = (target) => {
       || (target.unit === "个" ? right.item.planCount - left.item.planCount : right.item.planLengthM - left.item.planLengthM))
     .slice(0, 10)
     .map(({ item, score }) => target.unit === "个"
-      ? { id: item.id, drawing: item.drawing, label: item.label, relevance: score, planCount: item.planCount, systemCount: item.systemCount, legendCount: item.legendCount, unknownCount: item.unknownCount, sheetTitles: item.sheetTitles }
+      ? { id: item.id, drawing: item.drawing, label: item.label, relevance: score, planCount: item.planCount, systemCount: item.systemCount, legendCount: item.legendCount, notesCount: item.notesCount, unknownCount: item.unknownCount, nestedCount: item.nestedCount ?? 0, maxDepth: item.maxDepth ?? 0, sheetTitles: item.sheetTitles }
       : { id: item.id, drawing: item.drawing, layer: item.layer, relevance: score, planLengthM: item.planLengthM, componentCount: item.componentCount, danglingEndpointCount: item.danglingEndpointCount, nearbyAnnotations: item.nearbyAnnotations });
 };
 const targetPayload = targets.map(({ id, disciplineLabel, sheet, context, item, measurement, unit }) => ({
   id, disciplineLabel, sheet, context, item, measurement, unit,
   evidenceType: unit === "个" ? "block" : "route",
+  dataPlan: registry ? {
+    targetType: contextByTarget.get(id)?.targetType,
+    formula: contextByTarget.get(id)?.formula,
+    contextCompleteness: contextByTarget.get(id)?.contextCompleteness,
+    missingCritical: contextByTarget.get(id)?.missingCritical ?? [],
+    requiredStatus: contextByTarget.get(id)?.required.map(({ variable, status }) => ({ variable, status })) ?? [],
+    optionalStatus: contextByTarget.get(id)?.optional.map(({ variable, status }) => ({ variable, status })) ?? [],
+    negativeEvidence: requirementByTarget.get(id)?.negativeEvidence ?? [],
+  } : undefined,
   candidates: candidatesFor({ id, disciplineLabel, sheet, context, item, measurement, unit }),
 }));
 const allowedEvidence = new Map(targetPayload.map((target) => [target.id, new Set(target.candidates.map((candidate) => candidate.id))]));
@@ -88,6 +106,7 @@ const systemPrompt = `你是CAD工程量语义映射器，不是数值预测器�
 对每个目标，只能从其 candidates 中选择真正代表该工程量的证据ID。
 数量目标只选 block；长度目标只选 route。需合并多个同类证据时可选多个ID。
 严禁生成、修改、估算或缩放任何工程量数字。如果候选证据不足或可能把图例/系统图当成平面实体，返回 none。
+${registry ? `必须先阅读dataPlan：missingCritical非空或contextCompleteness低于${contextThreshold}时返回none。partial只表示候选证据，不得当成已确认关系。必须使用negativeEvidence排除图例、系统图重复项和绑定底图。` : ""}
 只返回JSON：{"mappings":[{"id":"目标ID","evidenceType":"block|route|none","evidenceIds":[],"confidence":0到1,"basis":"不超过60字"}]}。`;
 const request = {
   model,
@@ -101,11 +120,23 @@ const request = {
   reasoning_effort: reasoningEffort,
 };
 const startedAt = Date.now();
-const response = await fetch(`${baseUrl}/v1/chat/completions`, {
-  method: "POST",
-  headers: { "content-type": "application/json", authorization: `Bearer ${apiKey}` },
-  body: JSON.stringify(request),
-});
+let response;
+let lastNetworkError;
+for (let attempt = 1; attempt <= 3; attempt += 1) {
+  try {
+    response = await fetch(`${baseUrl}/v1/chat/completions`, {
+      method: "POST",
+      headers: { "content-type": "application/json", authorization: `Bearer ${apiKey}` },
+      body: JSON.stringify(request),
+    });
+    if (response.ok || response.status < 500) break;
+    lastNetworkError = new Error(`HTTP ${response.status}`);
+  } catch (error) {
+    lastNetworkError = error;
+  }
+  if (attempt < 3) await new Promise((resolve) => setTimeout(resolve, 1000 * attempt));
+}
+if (!response) throw lastNetworkError ?? new Error("semantic mapping request failed without a response");
 const responseText = await response.text();
 if (!response.ok) throw new Error(`${model}/${group} failed (${response.status}): ${responseText.slice(0, 1000)}`);
 const body = JSON.parse(responseText);
@@ -122,21 +153,23 @@ for (const mapping of parsed.mappings ?? []) {
   seen.add(mapping.id);
   const target = targetMap.get(mapping.id);
   const expectedType = target.unit === "个" ? "block" : "route";
+  const targetContext = contextByTarget.get(mapping.id);
+  const contextEligible = !registry || ((targetContext?.missingCritical?.length ?? 1) === 0 && Number(targetContext?.contextCompleteness ?? 0) >= contextThreshold);
   const evidenceIds = [...new Set((mapping.evidenceIds ?? []).filter((id) => allowedEvidence.get(mapping.id).has(id)))];
-  const evidenceType = mapping.evidenceType === expectedType && evidenceIds.length ? expectedType : "none";
+  const evidenceType = contextEligible && mapping.evidenceType === expectedType && evidenceIds.length ? expectedType : "none";
   mappings.push({
     id: mapping.id,
     evidenceType,
     evidenceIds: evidenceType === "none" ? [] : evidenceIds,
     confidence: Number.isFinite(Number(mapping.confidence)) ? Math.max(0, Math.min(1, Number(mapping.confidence))) : 0,
-    basis: String(mapping.basis ?? "").slice(0, 180),
+    basis: contextEligible ? String(mapping.basis ?? "").slice(0, 180) : `context gate: ${(targetContext?.missingCritical ?? ["context-unavailable"]).join(",")}`,
   });
 }
 for (const target of targets) {
   if (!seen.has(target.id)) mappings.push({ id: target.id, evidenceType: "none", evidenceIds: [], confidence: 0, basis: "模型未返回映射" });
 }
 const result = {
-  protocol: { benchmarkId: "full-quantity-v0", caseId: "case-001", version: tag ? `semantic-map-${tag}` : "semantic-map-v1", evidence: evidenceArg, truthAccess: "forbidden", model, group, reasoningEffort, elapsedMs: Date.now() - startedAt },
+  protocol: { benchmarkId: "full-quantity-v0", caseId: "case-001", version: tag ? `semantic-map-${tag}` : "semantic-map-v1", evidence: evidenceArg, registry: registryArg ?? null, contextThreshold: registry ? contextThreshold : null, targetTypes: targetTypesArg ?? null, truthAccess: "forbidden", model, group, reasoningEffort, elapsedMs: Date.now() - startedAt },
   usage: body.usage ?? null,
   mappings,
 };
