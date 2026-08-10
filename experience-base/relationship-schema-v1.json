@@ -1,0 +1,25 @@
+{
+  "version": "evidence-relationship-schema-v1.3",
+  "nodeTypes": ["target", "drawing", "frame", "floor", "system", "entity", "evidence", "variable", "formula", "experience"],
+  "edgeTypes": {
+    "requires": ["target", "variable"],
+    "optional": ["target", "variable"],
+    "rejects": ["target", "evidence"],
+    "computed-by": ["target", "formula"],
+    "derived-from": ["target", "target"],
+    "supported-by": ["variable", "evidence"],
+    "located-in": ["entity", "frame"],
+    "on-floor": ["frame", "floor"],
+    "belongs-to": ["entity", "system"],
+    "connected-to": ["entity", "entity"],
+    "sourced-from": ["evidence", "drawing"],
+    "governed-by": ["formula", "experience"]
+  },
+  "statusValues": ["available", "partial", "missing", "not-applicable"],
+  "statusWeights": {
+    "available": 1,
+    "partial": 0.5,
+    "missing": 0,
+    "not-applicable": 1
+  }
+}

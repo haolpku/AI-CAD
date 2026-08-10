@@ -10,6 +10,8 @@
 
 [查看 Oracle 摸高实验：区分候选上限与直接答案上限](experiments/oracle-ceiling-v0/README.md)
 
+[查看 v1.3 Evidence Registry：按目标声明数据需求和关系](preprocessing/v1-3/README.md)
+
 ## 当前范围
 
 - 数据：匿名化的`Case-001`电气DWG及照明工程量真值

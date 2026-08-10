@@ -1,0 +1,81 @@
+{
+  "version": "requirement-recipes-v1.3",
+  "protocol": {
+    "containsProjectAnswers": false,
+    "benchmarkTruthAccess": "forbidden"
+  },
+  "recipes": {
+    "device-count": {
+      "required": ["discipline-drawing", "plan-frame", "floor", "semantic-block-instance", "stable-occurrence-id", "countability-gate"],
+      "optional": ["system", "room", "standard-floor-multiplier"],
+      "negativeEvidence": ["legend-region", "system-diagram-region", "notes-region", "bound-architecture-reference", "duplicate-cross-view-instance"],
+      "formula": "deduplicated-count"
+    },
+    "fitting-count": {
+      "required": ["discipline-drawing", "plan-frame", "floor", "system", "diameter", "route-topology", "junction-or-fitting-instance", "countability-gate"],
+      "optional": ["riser-link", "standard-floor-multiplier"],
+      "negativeEvidence": ["legend-region", "system-diagram-duplicate", "bound-architecture-reference"],
+      "formula": "typed-topology-count"
+    },
+    "pipe-length": {
+      "required": ["discipline-drawing", "plan-frame", "floor", "system", "diameter", "horizontal-route", "route-topology"],
+      "optional": ["riser-link", "vertical-length", "floor-height", "reserved-length", "standard-floor-multiplier"],
+      "negativeEvidence": ["legend-line", "system-diagram-duplicate", "symbol-outline", "bound-architecture-line"],
+      "formula": "pipe-total-length"
+    },
+    "conduit-length": {
+      "required": ["discipline-drawing", "plan-frame", "floor", "conduit-standard", "horizontal-route", "route-topology"],
+      "optional": ["vertical-length", "floor-height", "reserved-length", "standard-floor-multiplier"],
+      "negativeEvidence": ["legend-line", "system-diagram-duplicate", "symbol-outline", "bound-architecture-line"],
+      "formula": "conduit-total-length"
+    },
+    "grounding-route-length": {
+      "required": ["discipline-drawing", "plan-frame", "floor", "grounding-route-type", "horizontal-route", "route-topology"],
+      "optional": ["vertical-length", "floor-height", "additional-length", "standard-floor-multiplier"],
+      "negativeEvidence": ["legend-line", "system-diagram-duplicate", "symbol-outline", "bound-architecture-line"],
+      "formula": "grounding-route-total-length"
+    },
+    "conductor-length": {
+      "required": ["discipline-drawing", "plan-frame", "floor", "circuit-number", "conductor-standard", "source-device", "terminal-device", "circuit-route"],
+      "optional": ["bridge-assignment", "vertical-length", "entry-length", "reserved-length", "conductor-multiplicity", "standard-floor-multiplier"],
+      "negativeEvidence": ["legend-line", "system-diagram-duplicate", "unconnected-annotation"],
+      "formula": "conductor-total-length"
+    },
+    "route-attachment-count": {
+      "required": ["discipline-drawing", "plan-frame", "floor", "route-topology", "attachment-rule"],
+      "optional": ["system", "diameter", "standard-floor-multiplier"],
+      "negativeEvidence": ["legend-region", "system-diagram-duplicate"],
+      "formula": "route-attachment-count"
+    },
+    "terminal-count": {
+      "required": ["circuit-route", "source-device", "terminal-device", "termination-policy", "conductor-standard"],
+      "optional": ["conductor-multiplicity"],
+      "negativeEvidence": ["unconnected-circuit", "audit-total"],
+      "formula": "terminal-count"
+    },
+    "surface-area": {
+      "required": ["base-length-dependency", "diameter", "surface-selection", "surface-area-formula"],
+      "optional": ["material-outside-diameter"],
+      "negativeEvidence": ["missing-base-length", "ambiguous-diameter"],
+      "formula": "cylindrical-surface-area"
+    },
+    "insulation-volume": {
+      "required": ["base-length-dependency", "material-outside-diameter", "insulation-thickness", "insulation-volume-formula"],
+      "optional": [],
+      "negativeEvidence": ["missing-base-length", "missing-insulation-thickness"],
+      "formula": "annular-insulation-volume"
+    },
+    "protective-area": {
+      "required": ["base-length-dependency", "material-outside-diameter", "insulation-thickness", "protective-area-formula"],
+      "optional": [],
+      "negativeEvidence": ["missing-base-length", "missing-insulation-thickness"],
+      "formula": "insulated-outer-surface-area"
+    },
+    "audit-total": {
+      "required": ["component-targets", "audit-sum-formula"],
+      "optional": [],
+      "negativeEvidence": ["direct-cad-estimate"],
+      "formula": "sum-component-targets"
+    }
+  }
+}

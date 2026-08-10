@@ -1,0 +1,150 @@
+{
+  "protocol": {
+    "benchmarkId": "full-quantity-v0",
+    "version": "evidence-registry-v1.3",
+    "truthAccess": "forbidden",
+    "containsQuantityValues": false
+  },
+  "summary": {
+    "scoredTargetCount": 366,
+    "meanContextCompleteness": 0.685685,
+    "targetsWithAllRequiredAvailable": 0,
+    "targetsWithPartialOrMissing": 366,
+    "targetsWithNoCriticalMissing": 319,
+    "targetsWithCriticalMissing": 47,
+    "graphNodeCount": 466,
+    "graphEdgeCount": 7768,
+    "topMissingCritical": [
+      {
+        "variable": "circuit-route",
+        "count": 30
+      },
+      {
+        "variable": "termination-policy",
+        "count": 14
+      },
+      {
+        "variable": "diameter",
+        "count": 8
+      },
+      {
+        "variable": "material-outside-diameter",
+        "count": 8
+      },
+      {
+        "variable": "insulation-thickness",
+        "count": 8
+      },
+      {
+        "variable": "attachment-rule",
+        "count": 1
+      }
+    ],
+    "byTargetType": [
+      {
+        "targetType": "device-count",
+        "targetCount": 164,
+        "meanContextCompleteness": 0.75,
+        "topMissingCritical": []
+      },
+      {
+        "targetType": "fitting-count",
+        "targetCount": 56,
+        "meanContextCompleteness": 0.625,
+        "topMissingCritical": []
+      },
+      {
+        "targetType": "surface-area",
+        "targetCount": 44,
+        "meanContextCompleteness": 0.727273,
+        "topMissingCritical": [
+          {
+            "variable": "diameter",
+            "count": 8
+          }
+        ]
+      },
+      {
+        "targetType": "pipe-length",
+        "targetCount": 41,
+        "meanContextCompleteness": 0.714286,
+        "topMissingCritical": []
+      },
+      {
+        "targetType": "conductor-length",
+        "targetCount": 16,
+        "meanContextCompleteness": 0.5,
+        "topMissingCritical": [
+          {
+            "variable": "circuit-route",
+            "count": 16
+          }
+        ]
+      },
+      {
+        "targetType": "terminal-count",
+        "targetCount": 14,
+        "meanContextCompleteness": 0.3,
+        "topMissingCritical": [
+          {
+            "variable": "circuit-route",
+            "count": 14
+          },
+          {
+            "variable": "termination-policy",
+            "count": 14
+          }
+        ]
+      },
+      {
+        "targetType": "conduit-length",
+        "targetCount": 11,
+        "meanContextCompleteness": 0.75,
+        "topMissingCritical": []
+      },
+      {
+        "targetType": "protective-area",
+        "targetCount": 8,
+        "meanContextCompleteness": 0.375,
+        "topMissingCritical": [
+          {
+            "variable": "material-outside-diameter",
+            "count": 8
+          },
+          {
+            "variable": "insulation-thickness",
+            "count": 8
+          }
+        ]
+      },
+      {
+        "targetType": "grounding-route-length",
+        "targetCount": 6,
+        "meanContextCompleteness": 0.75,
+        "topMissingCritical": []
+      },
+      {
+        "targetType": "insulation-volume",
+        "targetCount": 5,
+        "meanContextCompleteness": 0.625,
+        "topMissingCritical": []
+      },
+      {
+        "targetType": "route-attachment-count",
+        "targetCount": 1,
+        "meanContextCompleteness": 0.6,
+        "topMissingCritical": [
+          {
+            "variable": "attachment-rule",
+            "count": 1
+          }
+        ]
+      }
+    ]
+  },
+  "statusMeaning": {
+    "available": "evidence provider exists and is structurally usable",
+    "partial": "some evidence exists but binding/coverage is incomplete",
+    "missing": "no current evidence provider"
+  }
+}
